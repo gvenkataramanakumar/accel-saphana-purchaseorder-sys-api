@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/SalesChannel",
+  "definitions": {
+    "SalesChannel": {
+      "type": "object",
+      "example": {
+        "id": "qui minim sunt",
+        "name": "veniam ex",
+        "externalRecord": "enim nulla",
+        "salesChannelType": [
+          {
+            "id": "Ut",
+            "name": "adipisicing nisi"
+          }
+        ],
+        "description": "irure cupidatat voluptate",
+        "salesChannelNumber": "anim in"
+      },
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "salesChannelNumber",
+        "id",
+        "salesChannelType",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "externalRecord": {
+          "type": "string"
+        },
+        "salesChannelType": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "description": {
+          "type": "string"
+        },
+        "salesChannelNumber": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

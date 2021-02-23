@@ -1,0 +1,177 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/ContactPointApp",
+  "definitions": {
+    "ContactPointApp": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "contactPointType",
+        "id",
+        "activeFromDate"
+      ],
+      "properties": {
+        "primaryFlag": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bestTimeToContactStartTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "profileLastUpdatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "partyRole": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "activeFromDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "activeToDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "profileOccurrenceCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "profileFirstCreatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bestTimeToContactEndTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "party": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "contactPointType": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "optInPriority": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "forBusinessUse": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "forPersonalUse": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "applicationLogin": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

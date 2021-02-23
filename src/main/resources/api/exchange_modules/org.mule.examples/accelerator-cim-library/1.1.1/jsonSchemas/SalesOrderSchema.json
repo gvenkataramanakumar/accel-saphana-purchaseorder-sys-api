@@ -1,0 +1,866 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/SalesOrder",
+  "definitions": {
+    "SalesOrder": {
+      "type": "object",
+      "example": {
+        "id": "ut in aliquip irure laboris",
+        "name": "esse mollit dolor sunt enim",
+        "confirmationRecipientEmailText": "deserunt ipsum",
+        "description": "minim labore tempor aliqua",
+        "requestedStartDate": "1963-03-10",
+        "salesOrderConfirmationStatus": [
+          {
+            "id": "quis pariatur",
+            "name": "ullamco"
+          }
+        ],
+        "salesOrderType": [
+          {
+            "id": "aute in ad",
+            "name": "ad proident Excepteur laboris ut"
+          }
+        ],
+        "paymentMethod": [
+          "et consequat proident"
+        ],
+        "salesOrderStatus": [
+          {
+            "id": "laboris in nostrud dolor",
+            "name": "laboris elit"
+          }
+        ],
+        "billToAccount": [
+          "consectetur in tempor pariatur sint"
+        ],
+        "orderNumber": "Duis fugiat ad proident",
+        "billToAddress": [
+          "reprehenderit"
+        ],
+        "billToContact": [
+          "consequat Excepteur"
+        ],
+        "salesChannel": [
+          "nisi enim sit adipisicing exercitation"
+        ],
+        "developerStatusCode": "anim",
+        "isAnonymous": true,
+        "activatedDate": "2015-09-08",
+        "isGiftOrder": false,
+        "canBillNow": false,
+        "totalAdjustmentTaxAmount": -73359846,
+        "orderDiscount": -86137529,
+        "customerAuthorizedDate": "1986-07-21",
+        "isReductionOrder": false,
+        "totalBookingAmount": -18256590,
+        "isTaxExempt": false,
+        "totalProductAmount": -56786561,
+        "renewalUpliftRate": -27886356,
+        "billToEmail": [
+          "ipsum labore commodo"
+        ],
+        "priceCalculationStatusMessageText": "et sint fugiat amet",
+        "filedDate": "1969-02-27",
+        "iSOCulture": "eiusmod deserunt pariatur fugiat",
+        "isSuspended": false,
+        "shipToContact": [
+          "sit consectetur anim magna"
+        ],
+        "totalProductTaxAmount": -20236576,
+        "billingDayOfTheMonth": -5084531,
+        "promiseFulfillmentDate": "1984-03-12",
+        "taxRate": -35174527,
+        "userDeviceSession": [
+          {
+            "id": "ad Excepteur",
+            "name": "eiusmod in magna nulla aute"
+          }
+        ],
+        "originalOrder": [
+          "do non"
+        ],
+        "internalBusinessUnit": [
+          "dolor ipsum do consequat"
+        ],
+        "renewalTerm": [
+          {
+            "id": "laboris do cillum ad id",
+            "name": "eu laboris ut"
+          }
+        ],
+        "totalAdjustedDeliveryTaxAmount": 10319057,
+        "purchaseOrderDate": "1999-06-04",
+        "salesOrderSystemStatus": "velit magna qui",
+        "isContracted": true,
+        "isHistoricalOnly": true,
+        "promiseDate": "1977-02-08",
+        "shipToAddress": [
+          "Lorem eiusmod consequat sed"
+        ],
+        "seller": [
+          "reprehenderit incididunt"
+        ],
+        "purchaseOrderNumber": "anim",
+        "soldToCustomer": [
+          "elit"
+        ],
+        "packedDate": "1993-06-04",
+        "totalDeliveryTaxAmount": 23139982,
+        "totalDeliveryFeeAmount": -52736441,
+        "paidDate": "1965-07-07",
+        "companyAuthorizedDate": "1946-12-26",
+        "billToPhoneNumber": [
+          "incididunt minim"
+        ],
+        "totalAdjustmentAmount": 97297935,
+        "cancelDateType": "aliqua ullamco nostrud dolore Excepteur",
+        "adjustedTotalProductAmount": -94139954,
+        "checkoutDate": "1983-11-15",
+        "adjustedProductTaxAmount": -20153505,
+        "isClosed": false,
+        "totalCancelledBillingAmount": 16424628,
+        "cancelDate": "2006-06-07",
+        "grandTotalAmount": 43569616,
+        "totalDeliveryAmount": 96406747,
+        "orderEndDate": "1967-07-20",
+        "orderStartDate": "1988-01-01",
+        "fulfilledDate": "1984-03-01",
+        "orderInsuranceAmount": 67166313,
+        "isAlerted": false,
+        "shipToEmail": [
+          "sed voluptate quis do ex"
+        ],
+        "totalTaxAmount": -75239073,
+        "totalPendingBillingAmount": 35763771
+      },
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "requestedStartDate",
+        "salesOrderStatus",
+        "id",
+        "orderNumber",
+        "salesOrderConfirmationStatus",
+        "salesOrderType",
+        "confirmationRecipientEmailText",
+        "description",
+        "developerStatusCode"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "totalPendingBillingAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "checkoutDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "priceCalculationStatusMessageText": {
+          "type": "string"
+        },
+        "confirmationRecipientEmailText": {
+          "type": "string"
+        },
+        "orderEndDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isTaxExempt": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalProductTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isAlerted": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isAnonymous": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "activatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "billToEmail": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "requestedStartDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "companyAuthorizedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "orderInsuranceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isClosed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shipToEmail": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "totalDeliveryAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesOrderConfirmationStatus": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "salesOrderType": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "customerAuthorizedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalCancelledBillingAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalAdjustedDeliveryTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentMethod": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "totalAdjustmentAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesOrderStatus": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "renewalUpliftRate": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalProductAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "renewalTerm": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "originalOrder": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "billToAccount": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "totalAdjustmentTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isGiftOrder": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "promiseFulfillmentDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "filedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "iSOCulture": {
+          "type": "string"
+        },
+        "userDeviceSession": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "purchaseOrderNumber": {
+          "type": "string"
+        },
+        "totalDeliveryFeeAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalDeliveryTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "orderNumber": {
+          "type": "string"
+        },
+        "seller": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "billToAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "shipToAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fulfilledDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "billToContact": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paidDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalBookingAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "adjustedProductTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "promiseDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "packedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isHistoricalOnly": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "grandTotalAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isContracted": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "canBillNow": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "adjustedTotalProductAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "orderDiscount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "internalBusinessUnit": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "salesChannel": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "orderStartDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cancelDateType": {
+          "type": "string"
+        },
+        "isReductionOrder": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesOrderSystemStatus": {
+          "type": "string"
+        },
+        "isSuspended": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "billToPhoneNumber": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "purchaseOrderDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "soldToCustomer": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "billingDayOfTheMonth": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cancelDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shipToContact": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "taxRate": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "developerStatusCode": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

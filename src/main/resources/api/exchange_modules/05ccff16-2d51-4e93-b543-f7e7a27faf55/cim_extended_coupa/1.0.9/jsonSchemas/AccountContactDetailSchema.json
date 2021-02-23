@@ -1,0 +1,1845 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/AccountContactDetail",
+  "definitions": {
+    "AccountContactDetail": {
+      "type": "object",
+      "example": {
+        "individual": [
+          "exercitation irure Ut",
+          "non"
+        ],
+        "id": "proident deserunt culpa",
+        "account": [
+          "tempor nulla",
+          "sint ut pariatur adipisicing"
+        ],
+        "assistantPhone": "ipsum commodo dolore culpa",
+        "mailingAddressDetail": {
+          "contactPointType": [
+            {
+              "id": "in in",
+              "name": "consectetur sed tempor in dolore",
+              "optInPriority": 48206396
+            },
+            {
+              "id": "est Excepteur proident",
+              "name": "do Duis irure cupidatat elit",
+              "optInPriority": 956827
+            }
+          ],
+          "id": "ea in sint eu non",
+          "forBusinessUse": true,
+          "party": [
+            "minim laborum tempor pariatur",
+            "cillum"
+          ],
+          "forPersonalUse": false,
+          "activeFromDate": "1979-11-22",
+          "addressLine2": "dolore cillum aute culpa do",
+          "geoAccuracy": 70030633,
+          "cityName": "occaecat",
+          "primaryFlag": false,
+          "geoLongitude": 9674535,
+          "activeToDate": "1998-12-18",
+          "addressLine3": "quis consequat incididunt fugiat irure",
+          "profileFirstCreatedDate": "10:10:22",
+          "bestTimeToContactEndTime": "01:17:40",
+          "addressLine4": "culpa qui",
+          "partyRole": [
+            "in ad commodo occaecat",
+            "laborum labore ea enim"
+          ],
+          "profileOccurrenceCount": -92022412,
+          "geoLatitude": 93098821,
+          "isUsedForBilling": true,
+          "stateProvinceName": "ad cillum aute officia ut",
+          "postalCodeText": "anim mollit ad",
+          "bestTimeToContactStartTime": "09:45:12",
+          "countryName": "Excepteur",
+          "contactPhone": [
+            "Ut tempor Excepteur ex",
+            "labore ut officia est"
+          ],
+          "addressLine1": "eu nostrud culpa",
+          "isUsedForShipping": false,
+          "profileLastUpdatedDate": "17:25:26"
+        },
+        "homePhone": [
+          "id officia consectetur cupidatat",
+          "minim cupidatat ex"
+        ],
+        "contactEmail": [
+          "in velit enim",
+          "mollit"
+        ],
+        "individualDetail": {
+          "partyType": "laboris Ut dolore",
+          "personName": "ut adipisicing",
+          "id": "ea",
+          "influencerRating": 23465517,
+          "highestEducationLevel": "dolor",
+          "majorCitationCount": 68079464,
+          "noMergeReason": "aliquip incididunt",
+          "isHighRiskOccupation": false,
+          "mainLifeStyleType": "Excepteur consequat pariatur",
+          "personWeightUnitOfMeasure": "in laboris consequat ex",
+          "sendIndividualData": false,
+          "orderingName": "dolor in anim nulla in",
+          "yearlyIncome": 16011917,
+          "surgeriesLast5YearsCount": -34775022,
+          "residenceCaptureMethod": "sunt et Lorem mollit nisi",
+          "residenceCountryName": "deserunt proident ea Duis veniam",
+          "primaryAccount": [
+            "cupidatat aute est",
+            "commodo ex amet aute"
+          ],
+          "personLifeStage": "nostrud",
+          "personHeightUnitOfMeasure": "labore",
+          "overAgeNumber": 71432023,
+          "consumerCreditScore": -14035893,
+          "minorCitationCount": -91247860,
+          "doNotProcessReason": "qui in enim Ut",
+          "personWeight": 36497910,
+          "salutation": "dolor et enim Ut amet",
+          "deathPlace": "dolor in nisi mollit enim",
+          "isGoodDriver": true,
+          "isHighRiskHobby": true,
+          "isAlcoholConsumer": false,
+          "hasDrugAbuseHistory": false,
+          "mothersMaidenName": "officia amet ex",
+          "shouldForget": false,
+          "globalParty": "in incididunt",
+          "isTobaccoConsume": false,
+          "doNotTrackUpdateDate": "1993-10-12",
+          "religion": "cupidatat dolor eu ea non",
+          "doForgetMeFromUpdateDate": "1944-09-23",
+          "occupation": "voluptate sint adipisicing eiusmod aliquip",
+          "ethnicity": "culpa est",
+          "gender": "enim",
+          "mainDisabilityType": "do voluptate dolore non Duis",
+          "isGoodStudent": true,
+          "birthPlace": "pariatur laborum dolore",
+          "officialName": "Ut sed",
+          "taxBracketRange": "consequat in esse exercitation",
+          "mainLifeAttitudeType": "in",
+          "maritalStatus": "est exercitation",
+          "webSiteURL": "reprehenderit veniam eiusmod",
+          "isDrugConsumer": false,
+          "doNotProcessFromUpdateDate": "2009-02-15",
+          "secondLastName": "id Duis ea enim",
+          "nameSuffix": "ut",
+          "deathDate": "1967-08-09",
+          "isHomeOwner": false,
+          "lastName": "magna Duis cillum incididunt anim",
+          "netWorth": -1772213,
+          "mainDietaryHabitType": "ullamco reprehenderit enim",
+          "hasAlcoholAbuseHistory": true,
+          "doExtractMyDataUpdateDate": "1961-12-06",
+          "hospitalizationsLast5YearsCount": 31862141,
+          "birthDate": "1956-06-03",
+          "primaryHobby": "minim consectetur quis est",
+          "mainPersonalValueType": "Duis reprehenderit ea",
+          "photoURL": "Duis ea occaecat fugiat",
+          "militaryService": "sunt Lorem in",
+          "personHeight": -97947231,
+          "weddingAnniversaryDate": "2009-03-22",
+          "doNotTrackLocationUpdateDate": "1954-08-13",
+          "employedSinceDate": "2016-05-16",
+          "primaryHousehold": [
+            "id",
+            "eiusmod culpa"
+          ],
+          "occupationType": "fugiat ullamco",
+          "dependentCount": 98061285,
+          "doNotMarketFromUpdateDate": "2009-12-21",
+          "mainPersonalityType": "velit aliqua voluptate cupidatat esse",
+          "preferredName": "sit id Duis est veniam",
+          "mailingName": "velit fugiat adipisicing",
+          "consumerCreditScoreProviderName": "minim Duis aliqua Ut irure",
+          "doNotProfileFromUpdateDate": "1971-01-07",
+          "yearlyIncomeRange": "non officia elit ad labore",
+          "childrenCount": -10714219,
+          "convictionsCount": -12771296,
+          "militaryStatus": "nisi sint",
+          "currentEmployerName": "in do occaecat et",
+          "firstName": "aliquip irure ut",
+          "middleName": "anim est"
+        },
+        "otherContactAddress": [
+          "aute minim reprehenderit",
+          "Ut"
+        ],
+        "indirectRelationAccountContact": [
+          "do in sunt Lorem",
+          "enim do cupidatat Ut"
+        ],
+        "homePhoneDetail": {
+          "contactPointType": [
+            {
+              "id": "aliqua fugiat culpa",
+              "name": "occaecat voluptate nulla amet",
+              "optInPriority": 28526049
+            },
+            {
+              "id": "sunt deserunt laborum enim in",
+              "name": "voluptate veniam esse ipsum ut",
+              "optInPriority": -34492215
+            }
+          ],
+          "formattedNationalPhoneNumber": "dolore incididunt",
+          "id": "ut dolor aliquip exercitation eu",
+          "forBusinessUse": true,
+          "party": [
+            "irure",
+            "exercitation occaecat dolore"
+          ],
+          "forPersonalUse": false,
+          "telephoneNumber": "consectetur Excepteur",
+          "activeFromDate": "1989-03-16",
+          "formattedInternationalPhoneNumber": "esse",
+          "bestTimeToContactStartTime": "12:06:14",
+          "primaryPhoneType": "mollit",
+          "extensionNumber": "amet tempor fugiat nulla sunt",
+          "profileLastUpdatedDate": "22:42:36",
+          "primaryFlag": true,
+          "phoneCountryCode": "do exercitation irure",
+          "bestTimeToContactEndTime": "01:34:58",
+          "profileOccurrenceCount": -37443145,
+          "isSMSCapable": true,
+          "partyRole": [
+            "enim fugiat dolor nisi",
+            "incididunt esse velit occaecat non"
+          ],
+          "formattedE164PhoneNumber": "esse",
+          "activeToDate": "1991-08-18",
+          "shortCode": 48168188,
+          "profileFirstCreatedDate": "12:13:58",
+          "countryName": "esse",
+          "areaCode": "pariatur",
+          "isFaxCapable": true
+        },
+        "mailingAddress": [
+          "irure eiusmod",
+          "magna aliqua adipisicing"
+        ],
+        "contactNote": "mollit",
+        "lastActivityDate": "1958-12-23",
+        "title": "reprehenderit pariatur ex",
+        "contactEmailDetail": {
+          "emailAddress": "consequat mollit amet",
+          "contactPointType": [
+            {
+              "id": "mollit enim",
+              "name": "sunt in ut officia irure",
+              "optInPriority": 63806361
+            },
+            {
+              "id": "elit nisi et in",
+              "name": "sit",
+              "optInPriority": 43335767
+            }
+          ],
+          "id": "magna",
+          "forBusinessUse": false,
+          "party": [
+            "ea",
+            "adipisicing"
+          ],
+          "forPersonalUse": false,
+          "activeFromDate": "1988-08-27",
+          "profileLastUpdatedDate": "21:40:57",
+          "activeToDate": "2009-11-03",
+          "emailLatestBounceReasonText": "nisi eiusmod ullamco in velit",
+          "bestTimeToContactStartTime": "17:01:06",
+          "emailMailBox": "amet occaecat do magna Duis",
+          "partyRole": [
+            "sunt aute amet Lorem minim",
+            "exercitation nisi laborum est mollit"
+          ],
+          "bestTimeToContactEndTime": "20:25:53",
+          "emailLatestBounceDateTime": "2016-09-25",
+          "primaryFlag": true,
+          "profileOccurrenceCount": 73451065,
+          "profileFirstCreatedDate": "05:33:53",
+          "emailDomain": "ullamco"
+        },
+        "mobilePhone": [
+          "dolore",
+          "laborum"
+        ],
+        "businessPhone": [
+          "culpa consequat",
+          "qui Duis mollit adipisicing tempor"
+        ],
+        "faxPhone": [
+          "qui laborum labore ipsum Ut",
+          "ut anim nostrud"
+        ],
+        "assistantName": "amet irure aliqua incididunt officia",
+        "departmentName": "est sunt ad",
+        "reportsToAccountContact": [
+          "Excepteur",
+          "elit fugiat"
+        ]
+      },
+      "additionalProperties": true,
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "mailingAddressDetail": {
+          "type": "object",
+          "example": {
+            "contactPointType": [
+              {
+                "id": "do exercitation dolor ex",
+                "name": "voluptate ex adipisicing",
+                "optInPriority": 15860339
+              }
+            ],
+            "id": "labore mollit occaecat",
+            "forBusinessUse": false,
+            "party": [
+              "ut sunt qui"
+            ],
+            "forPersonalUse": true,
+            "activeFromDate": "1980-03-05",
+            "bestTimeToContactEndTime": "05:38:50",
+            "partyRole": [
+              "sed consequat cillum ad"
+            ],
+            "contactPhone": [
+              "Lorem in"
+            ],
+            "isUsedForBilling": false,
+            "addressLine1": "est aliqua esse ut in",
+            "primaryFlag": false,
+            "addressLine4": "eiusmod",
+            "profileLastUpdatedDate": "12:47:35",
+            "cityName": "eu et adipisicing",
+            "isUsedForShipping": true,
+            "countryName": "do consectetur culpa velit",
+            "addressLine2": "ea sunt esse non",
+            "activeToDate": "2018-08-23",
+            "geoLatitude": -95714017,
+            "addressLine3": "mollit ea sit magna",
+            "profileOccurrenceCount": 35348734,
+            "bestTimeToContactStartTime": "18:42:00",
+            "stateProvinceName": "dolor est dolore",
+            "geoAccuracy": 65056088,
+            "postalCodeText": "consequat ex",
+            "geoLongitude": 88623776,
+            "profileFirstCreatedDate": "19:04:35"
+          },
+          "additionalProperties": true,
+          "required": [
+            "contactPointType",
+            "id",
+            "activeFromDate"
+          ],
+          "properties": {
+            "primaryFlag": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactStartTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileLastUpdatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "partyRole": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "activeFromDate": {
+              "type": "string",
+              "format": "date"
+            },
+            "activeToDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileOccurrenceCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileFirstCreatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactEndTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "party": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "contactPointType": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "optInPriority": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "forBusinessUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "forPersonalUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "isUsedForShipping": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stateProvinceName": {
+              "type": "string"
+            },
+            "addressLine3": {
+              "type": "string"
+            },
+            "countryName": {
+              "type": "string"
+            },
+            "postalCodeText": {
+              "type": "string"
+            },
+            "geoLatitude": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "addressLine2": {
+              "type": "string"
+            },
+            "addressLine4": {
+              "type": "string"
+            },
+            "geoAccuracy": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "contactPhone": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "geoLongitude": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "addressLine1": {
+              "type": "string"
+            },
+            "cityName": {
+              "type": "string"
+            },
+            "isUsedForBilling": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        "contactEmailDetail": {
+          "type": "object",
+          "example": {
+            "emailAddress": "esse ad consectetur",
+            "contactPointType": [
+              {
+                "id": "irure consectetur aute nisi",
+                "name": "nisi cupidatat",
+                "optInPriority": 27763021
+              }
+            ],
+            "id": "et Ut est",
+            "forBusinessUse": true,
+            "party": [
+              "exercitation in ullamco ex dolore"
+            ],
+            "forPersonalUse": false,
+            "activeFromDate": "2018-09-07",
+            "profileLastUpdatedDate": "14:57:58",
+            "emailMailBox": "non officia",
+            "activeToDate": "2000-08-18",
+            "emailLatestBounceDateTime": "2012-08-26",
+            "bestTimeToContactStartTime": "15:36:21",
+            "profileFirstCreatedDate": "06:30:00",
+            "emailDomain": "laboris aute do",
+            "partyRole": [
+              "magna ullamco laborum eu"
+            ],
+            "profileOccurrenceCount": 62639574,
+            "primaryFlag": true,
+            "bestTimeToContactEndTime": "19:34:26",
+            "emailLatestBounceReasonText": "ut"
+          },
+          "additionalProperties": true,
+          "required": [
+            "emailAddress",
+            "contactPointType",
+            "id",
+            "activeFromDate"
+          ],
+          "properties": {
+            "primaryFlag": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactStartTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileLastUpdatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "partyRole": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "activeFromDate": {
+              "type": "string",
+              "format": "date"
+            },
+            "activeToDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileOccurrenceCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileFirstCreatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactEndTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "party": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "contactPointType": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "optInPriority": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "forBusinessUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "forPersonalUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "emailLatestBounceReasonText": {
+              "type": "string"
+            },
+            "emailMailBox": {
+              "type": "string"
+            },
+            "emailDomain": {
+              "type": "string"
+            },
+            "emailAddress": {
+              "type": "string"
+            },
+            "emailLatestBounceDateTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        "homePhoneDetail": {
+          "type": "object",
+          "example": {
+            "contactPointType": [
+              {
+                "id": "do",
+                "name": "commodo qui eu irure exercitation",
+                "optInPriority": -43391706
+              }
+            ],
+            "formattedNationalPhoneNumber": "ex in",
+            "id": "occaecat in Lorem tempor",
+            "forBusinessUse": false,
+            "party": [
+              "ea in est"
+            ],
+            "forPersonalUse": true,
+            "telephoneNumber": "sint velit",
+            "activeFromDate": "1969-05-21",
+            "shortCode": 40287489,
+            "bestTimeToContactEndTime": "18:02:53",
+            "isSMSCapable": true,
+            "partyRole": [
+              "sunt labore commodo veniam et"
+            ],
+            "isFaxCapable": false,
+            "areaCode": "adipisicing consequat",
+            "primaryFlag": true,
+            "formattedInternationalPhoneNumber": "est Excepteur",
+            "phoneCountryCode": "sit nulla pariatur",
+            "countryName": "voluptate",
+            "extensionNumber": "dolore adipisicing consequat",
+            "formattedE164PhoneNumber": "dolore quis occaecat",
+            "activeToDate": "1960-03-19",
+            "bestTimeToContactStartTime": "10:06:39",
+            "profileLastUpdatedDate": "23:18:20",
+            "primaryPhoneType": "consectetur in cillum aliquip commodo",
+            "profileOccurrenceCount": -90807568,
+            "profileFirstCreatedDate": "21:33:06"
+          },
+          "additionalProperties": true,
+          "required": [
+            "contactPointType",
+            "formattedNationalPhoneNumber",
+            "id",
+            "telephoneNumber",
+            "activeFromDate"
+          ],
+          "properties": {
+            "primaryFlag": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactStartTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileLastUpdatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "partyRole": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "activeFromDate": {
+              "type": "string",
+              "format": "date"
+            },
+            "activeToDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileOccurrenceCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileFirstCreatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactEndTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "party": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "contactPointType": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "optInPriority": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "forBusinessUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "forPersonalUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "extensionNumber": {
+              "type": "string"
+            },
+            "phoneCountryCode": {
+              "type": "string"
+            },
+            "countryName": {
+              "type": "string"
+            },
+            "areaCode": {
+              "type": "string"
+            },
+            "isSMSCapable": {
+              "type": "boolean"
+            },
+            "shortCode": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "formattedInternationalPhoneNumber": {
+              "type": "string"
+            },
+            "primaryPhoneType": {
+              "type": "string"
+            },
+            "isFaxCapable": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "formattedE164PhoneNumber": {
+              "type": "string"
+            },
+            "formattedNationalPhoneNumber": {
+              "type": "string"
+            },
+            "telephoneNumber": {
+              "type": "string"
+            }
+          }
+        },
+        "individualDetail": {
+          "type": "object",
+          "example": {
+            "partyType": "eiusmod Ut id",
+            "personName": "anim adipisicing",
+            "id": "reprehenderit dolor",
+            "netWorth": 77131731,
+            "birthDate": "1942-12-02",
+            "dependentCount": null,
+            "isHighRiskHobby": false,
+            "isGoodDriver": true,
+            "webSiteURL": "ex ut consequat sint veniam",
+            "secondLastName": "mollit Lorem reprehenderit ad",
+            "consumerCreditScore": -10552145,
+            "religion": "magna",
+            "doNotMarketFromUpdateDate": "2019-04-11",
+            "isTobaccoConsume": true,
+            "deathDate": "2009-05-08",
+            "globalParty": "aute consectetur ex",
+            "mailingName": "proident laborum eu",
+            "hasDrugAbuseHistory": null,
+            "hasAlcoholAbuseHistory": false,
+            "militaryService": "reprehenderit sed veniam",
+            "yearlyIncome": 85098518,
+            "weddingAnniversaryDate": "1990-07-02",
+            "orderingName": "nisi deserunt cupidatat",
+            "militaryStatus": "nulla veniam aliquip non eiusmod",
+            "personHeight": null,
+            "primaryHousehold": [
+              "voluptate sunt minim"
+            ],
+            "mothersMaidenName": "do eu esse minim et",
+            "minorCitationCount": 44710945,
+            "officialName": "anim deserunt eiusmod proident non",
+            "doNotTrackLocationUpdateDate": null,
+            "isGoodStudent": true,
+            "primaryHobby": "Excepteur sit eiusmod",
+            "mainLifeStyleType": "ut Lorem laborum",
+            "personHeightUnitOfMeasure": "velit",
+            "residenceCaptureMethod": "quis nisi et",
+            "birthPlace": "reprehenderit",
+            "primaryAccount": [
+              "adipisicing aute nostrud"
+            ],
+            "nameSuffix": "ad Ut",
+            "shouldForget": false,
+            "doNotProfileFromUpdateDate": "1963-01-09",
+            "gender": "id",
+            "doForgetMeFromUpdateDate": null,
+            "mainDietaryHabitType": "dolor Duis nisi dolore",
+            "sendIndividualData": null,
+            "firstName": "dolor pariatur magna in exercitation",
+            "mainPersonalValueType": "ex nostrud",
+            "noMergeReason": "labore cillum eu",
+            "hospitalizationsLast5YearsCount": -1601571,
+            "occupation": "Ut elit consequat",
+            "doExtractMyDataUpdateDate": "1961-06-16",
+            "occupationType": "elit in Ut culpa",
+            "lastName": "aute labore",
+            "mainDisabilityType": "sint nulla elit sit",
+            "doNotProcessReason": "exercitation occaecat Lorem laboris",
+            "taxBracketRange": "ex in pariatur non occaecat",
+            "middleName": "anim",
+            "doNotTrackUpdateDate": "1948-02-27",
+            "personWeightUnitOfMeasure": "non in adipisicing",
+            "overAgeNumber": -33978317,
+            "yearlyIncomeRange": "mollit ut exercitation in aute",
+            "influencerRating": 65125139,
+            "isAlcoholConsumer": false,
+            "photoURL": "Excepteur",
+            "personWeight": null,
+            "residenceCountryName": "minim non eiusmod",
+            "consumerCreditScoreProviderName": "sed magna cillum",
+            "currentEmployerName": "Ut",
+            "isHomeOwner": null,
+            "employedSinceDate": null,
+            "mainPersonalityType": "id",
+            "isHighRiskOccupation": true,
+            "majorCitationCount": 87572917,
+            "doNotProcessFromUpdateDate": "2017-02-10",
+            "childrenCount": -55530924,
+            "maritalStatus": "in anim",
+            "convictionsCount": null,
+            "mainLifeAttitudeType": "sed minim officia",
+            "preferredName": "elit Excepteur aliqua amet adipisicing",
+            "surgeriesLast5YearsCount": 43027205,
+            "highestEducationLevel": "fugiat et anim elit do",
+            "isDrugConsumer": false,
+            "salutation": "in",
+            "personLifeStage": "minim",
+            "deathPlace": "labore magna qui",
+            "ethnicity": "sed in quis"
+          },
+          "additionalProperties": true,
+          "required": [
+            "partyType",
+            "personName",
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "hasAlcoholAbuseHistory": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "highestEducationLevel": {
+              "type": "string"
+            },
+            "personHeight": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "mailingName": {
+              "type": "string"
+            },
+            "surgeriesLast5YearsCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "doNotTrackUpdateDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "weddingAnniversaryDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "minorCitationCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "mainDietaryHabitType": {
+              "type": "string"
+            },
+            "personHeightUnitOfMeasure": {
+              "type": "string"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "personName": {
+              "type": "string"
+            },
+            "photoURL": {
+              "type": "string"
+            },
+            "isHighRiskHobby": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "doNotProcessFromUpdateDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "militaryService": {
+              "type": "string"
+            },
+            "maritalStatus": {
+              "type": "string"
+            },
+            "doNotMarketFromUpdateDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "shouldForget": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "mainDisabilityType": {
+              "type": "string"
+            },
+            "consumerCreditScoreProviderName": {
+              "type": "string"
+            },
+            "isTobaccoConsume": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "webSiteURL": {
+              "type": "string"
+            },
+            "secondLastName": {
+              "type": "string"
+            },
+            "primaryHousehold": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "orderingName": {
+              "type": "string"
+            },
+            "hospitalizationsLast5YearsCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "dependentCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "convictionsCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "isGoodDriver": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "primaryHobby": {
+              "type": "string"
+            },
+            "mainPersonalValueType": {
+              "type": "string"
+            },
+            "isAlcoholConsumer": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "taxBracketRange": {
+              "type": "string"
+            },
+            "childrenCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "isGoodStudent": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "mainLifeAttitudeType": {
+              "type": "string"
+            },
+            "netWorth": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "personWeight": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "birthDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "religion": {
+              "type": "string"
+            },
+            "sendIndividualData": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "deathDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "doExtractMyDataUpdateDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "birthPlace": {
+              "type": "string"
+            },
+            "overAgeNumber": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "doForgetMeFromUpdateDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "personWeightUnitOfMeasure": {
+              "type": "string"
+            },
+            "mainLifeStyleType": {
+              "type": "string"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "hasDrugAbuseHistory": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "salutation": {
+              "type": "string"
+            },
+            "mothersMaidenName": {
+              "type": "string"
+            },
+            "doNotTrackLocationUpdateDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "ethnicity": {
+              "type": "string"
+            },
+            "mainPersonalityType": {
+              "type": "string"
+            },
+            "employedSinceDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "officialName": {
+              "type": "string"
+            },
+            "isHighRiskOccupation": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "residenceCaptureMethod": {
+              "type": "string"
+            },
+            "doNotProfileFromUpdateDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "nameSuffix": {
+              "type": "string"
+            },
+            "isDrugConsumer": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "isHomeOwner": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "doNotProcessReason": {
+              "type": "string"
+            },
+            "occupationType": {
+              "type": "string"
+            },
+            "deathPlace": {
+              "type": "string"
+            },
+            "influencerRating": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "militaryStatus": {
+              "type": "string"
+            },
+            "consumerCreditScore": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "yearlyIncome": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "preferredName": {
+              "type": "string"
+            },
+            "personLifeStage": {
+              "type": "string"
+            },
+            "yearlyIncomeRange": {
+              "type": "string"
+            },
+            "majorCitationCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "middleName": {
+              "type": "string"
+            },
+            "residenceCountryName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "occupation": {
+              "type": "string"
+            },
+            "currentEmployerName": {
+              "type": "string"
+            },
+            "partyType": {
+              "type": "string"
+            },
+            "globalParty": {
+              "type": "string"
+            },
+            "noMergeReason": {
+              "type": "string"
+            },
+            "primaryAccount": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "auditDetail": {
+          "description": "Defines standard system audit fields available for most types",
+          "example": {
+            "createdOn": "2021-01-21T21:21:21Z",
+            "createdBy": "0054x000002IpBlAAK",
+            "updatedOn": "2021-01-21T21:21:21Z",
+            "updatedBy": "0054x000002xBGGAA2",
+            "isDeleted": false
+          },
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "createdOn",
+            "createdBy",
+            "updatedOn",
+            "updatedBy",
+            "isDeleted"
+          ],
+          "properties": {
+            "createdOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "updatedOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedBy": {
+              "type": "string"
+            },
+            "isDeleted": {
+              "type": "boolean"
+            }
+          }
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reportsToAccountContact": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mailingAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "account": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "faxPhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "departmentName": {
+          "type": "string"
+        },
+        "businessPhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "contactEmail": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mobilePhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "assistantPhone": {
+          "type": "string"
+        },
+        "indirectRelationAccountContact": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "title": {
+          "type": "string"
+        },
+        "lastActivityDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "contactNote": {
+          "type": "string"
+        },
+        "assistantName": {
+          "type": "string"
+        },
+        "individual": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "otherContactAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "homePhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

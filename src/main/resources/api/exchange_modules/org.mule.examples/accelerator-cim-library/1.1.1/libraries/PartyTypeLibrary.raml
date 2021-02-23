@@ -1,0 +1,550 @@
+#%RAML 1.0 Library
+usage: Types representing a Party, their contact information, and other related attributes
+types:
+  ContactPoint:
+    properties:
+      id:
+        type: string | nil
+      primaryFlag?:
+        type: boolean | nil
+      bestTimeToContactStartTime?:
+        type: time-only | nil
+      profileLastUpdatedDate?:
+        type: time-only | nil
+      # Accelerators: changed to string for PartyRole.id reference
+      partyRole?:
+        items: string
+      activeFromDate:
+        type: date-only
+      activeToDate?:
+        type: date-only | nil
+      profileOccurrenceCount?:
+        type: integer | nil
+      profileFirstCreatedDate?:
+        type: time-only | nil
+      bestTimeToContactEndTime?:
+        type: time-only | nil
+      # Accelerators: changed to string for Party.id reference
+      # Accelerators: made property optional
+      party?:
+        items: string
+      contactPointType:
+        items: ContactPointType
+      # Accelerators: made property optional
+      forBusinessUse?:
+        type: boolean | nil
+      forPersonalUse?:
+        type: boolean | nil
+  ContactPointAddress:
+    type: ContactPoint
+    properties:
+      id:
+        type: string | nil
+      isUsedForShipping?:
+        type: boolean | nil
+      stateProvinceName?:
+        type: string
+      addressLine3?:
+        type: string
+      countryName?:
+        type: string
+      postalCodeText?:
+        type: string
+      geoLatitude?:
+        type: integer | nil
+      addressLine2?:
+        type: string
+      addressLine4?:
+        type: string
+      geoAccuracy?:
+        type: integer | nil
+      # Accelerators: changed to string for ContactPointPhone.id reference
+      contactPhone?:
+        items: string
+      geoLongitude?:
+        type: integer | nil
+      addressLine1?:
+        type: string
+      cityName?:
+        type: string
+      isUsedForBilling?:
+        type: boolean | nil
+  ContactPointApp:
+    type: ContactPoint
+    properties:
+      id:
+        type: string | nil
+      applicationLogin?:
+        type: string
+  ContactPointEmail:
+    type: ContactPoint
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: made property optional
+      emailLatestBounceReasonText?:
+        type: string
+      # Accelerators: made property optional
+      emailMailBox?:
+        type: string
+      # Accelerators: made property optional
+      emailDomain?:
+        type: string
+      emailAddress:
+        type: string
+      emailLatestBounceDateTime?:
+        type: date-only | nil
+  ContactPointLocation:
+    type: ContactPoint
+    properties:
+      id:
+        type: string | nil
+  ContactPointPhone:
+    type: ContactPoint
+    properties:
+      id:
+        type: string | nil
+      extensionNumber?:
+        type: string
+      phoneCountryCode?:
+        type: string
+      countryName?:
+        type: string
+      areaCode?:
+        type: string
+      # Accelerators: made property optional
+      isSMSCapable?:
+        type: boolean
+      shortCode?:
+        type: integer | nil
+      # Accelerators: made property optional
+      formattedInternationalPhoneNumber?:
+        type: string
+      # Accelerators: made property optional
+      primaryPhoneType?:
+        type: string
+      # Accelerators: made property optional
+      isFaxCapable?:
+        type: boolean | nil
+      formattedE164PhoneNumber?:
+        type: string
+      formattedNationalPhoneNumber:
+        type: string
+      telephoneNumber:
+        type: string
+  ContactPointSocial:
+    type: ContactPoint
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: made property optional
+      profilePictureURL?:
+        type: string
+      # Accelerators: made property optional
+      followersCount?:
+        type: integer | nil
+      # Accelerators: made property optional
+      socialHandleName?:
+        type: string
+      # Accelerators: made property optional
+      socialFanStatus?:
+        type: string
+      socialHandle:
+        type: string
+      socialNetworkProvider:
+        type: string
+  ContactPointType:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      # Accelerators: made property optional
+      optInPriority?:
+        type: integer | nil
+  Household:
+    type: Party
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      householdMemberCount?:
+        type: integer | nil
+      householdFormedDate?:
+        type: date-only | nil
+      householdDissolvedDate?:
+        type: date-only | nil
+  Individual:
+    type: Party
+    properties:
+      id:
+        type: string | nil
+      hasAlcoholAbuseHistory?:
+        type: boolean | nil
+      highestEducationLevel?:
+        type: string
+      personHeight?:
+        type: integer | nil
+      mailingName?:
+        type: string
+      surgeriesLast5YearsCount?:
+        type: integer | nil
+      doNotTrackUpdateDate?:
+        type: date-only | nil
+      weddingAnniversaryDate?:
+        type: date-only | nil
+      minorCitationCount?:
+        type: integer | nil
+      mainDietaryHabitType?:
+        type: string
+      personHeightUnitOfMeasure?:
+        type: string
+      firstName?:
+        type: string
+      personName:
+        type: string
+      photoURL?:
+        type: string
+      isHighRiskHobby?:
+        type: boolean | nil
+      doNotProcessFromUpdateDate?:
+        type: date-only | nil
+      militaryService?:
+        type: string
+      maritalStatus?:
+        type: string
+      doNotMarketFromUpdateDate?:
+        type: date-only | nil
+      shouldForget?:
+        type: boolean | nil
+      mainDisabilityType?:
+        type: string
+      consumerCreditScoreProviderName?:
+        type: string
+      isTobaccoConsume?:
+        type: boolean | nil
+      webSiteURL?:
+        type: string
+      secondLastName?:
+        type: string
+      # Accelerators: changed to string for Household.id reference
+      primaryHousehold?:
+        items: string
+      orderingName?:
+        type: string
+      hospitalizationsLast5YearsCount?:
+        type: integer | nil
+      dependentCount?:
+        type: integer | nil
+      convictionsCount?:
+        type: integer | nil
+      isGoodDriver?:
+        type: boolean | nil
+      primaryHobby?:
+        type: string
+      mainPersonalValueType?:
+        type: string
+      isAlcoholConsumer?:
+        type: boolean | nil
+      taxBracketRange?:
+        type: string
+      childrenCount?:
+        type: integer | nil
+      isGoodStudent?:
+        type: boolean | nil
+      mainLifeAttitudeType?:
+        type: string
+      netWorth?:
+        type: integer | nil
+      personWeight?:
+        type: integer | nil
+      birthDate?:
+        type: date-only | nil
+      religion?:
+        type: string
+      sendIndividualData?:
+        type: boolean | nil
+      deathDate?:
+        type: date-only | nil
+      doExtractMyDataUpdateDate?:
+        type: date-only | nil
+      birthPlace?:
+        type: string
+      overAgeNumber?:
+        type: integer | nil
+      doForgetMeFromUpdateDate?:
+        type: date-only | nil
+      personWeightUnitOfMeasure?:
+        type: string
+      mainLifeStyleType?:
+        type: string
+      gender?:
+        type: string
+      hasDrugAbuseHistory?:
+        type: boolean | nil
+      salutation?:
+        type: string
+      mothersMaidenName?:
+        type: string
+      doNotTrackLocationUpdateDate?:
+        type: date-only | nil
+      ethnicity?:
+        type: string
+      mainPersonalityType?:
+        type: string
+      employedSinceDate?:
+        type: date-only | nil
+      officialName?:
+        type: string
+      isHighRiskOccupation?:
+        type: boolean | nil
+      residenceCaptureMethod?:
+        type: string
+      doNotProfileFromUpdateDate?:
+        type: date-only | nil
+      nameSuffix?:
+        type: string
+      isDrugConsumer?:
+        type: boolean | nil
+      isHomeOwner?:
+        type: boolean | nil
+      doNotProcessReason?:
+        type: string
+      occupationType?:
+        type: string
+      deathPlace?:
+        type: string
+      influencerRating?:
+        type: integer | nil
+      militaryStatus?:
+        type: string
+      consumerCreditScore?:
+        type: integer | nil
+      yearlyIncome?:
+        type: integer | nil
+      preferredName?:
+        type: string
+      personLifeStage?:
+        type: string
+      yearlyIncomeRange?:
+        type: string
+      majorCitationCount?:
+        type: integer | nil
+      middleName?:
+        type: string
+      residenceCountryName?:
+        type: string
+      lastName?:
+        type: string
+      occupation?:
+        type: string
+      currentEmployerName?:
+        type: string
+  InternalBusinessUnit:
+    type: Party
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      businessUnitType:
+        type: string
+      # Accelerators: changed to string for InternalBusinessUnit.id reference
+      parentInternalBusinessUnit?:
+        items: string
+  Party:
+    properties:
+      id:
+        type: string | nil
+      partyType:
+        type: string
+      globalParty?:
+        type: string
+      noMergeReason?:
+        type: string
+      # Accelerators: changed to string for Account.id reference
+      primaryAccount?:
+        items: string
+  PartyAdditionalName:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      additionalNameType:
+        type: string
+      # Accelerators: changed to string for Party.id reference
+      # Accelerators: made property optional
+      party?:
+        items: string
+  PartyIdentification:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      expiryDate?:
+        type: date-only | nil
+      partyIdentificationType:
+        type: string
+      verifiedDate?:
+        type: date-only | nil
+      issuedByAuthority?:
+        type: string
+      issuedAtLocation?:
+        type: string
+      issuedDate?:
+        type: date-only | nil
+      # Accelerators: changed to string for PartyRole.id reference
+      partyRole?:
+        items: string
+      identificationNumber:
+        type: string
+      # Accelerators: changed to string for Party.id reference
+      # Accelerators: made property optional
+      party?:
+        items: string
+  PartyRelatedParty:
+    properties:
+      id:
+        type: string | nil
+      relatedFromDate:
+        type: date-only
+      # Accelerators: left as composed because type no longer has composition itself
+      partyRelationshipType:
+        items: PartyRelationshipType
+      # Accelerators: changed to string for Party.id reference
+      # Accelerators: made property optional
+      relatedParty?:
+        items: string
+      # Accelerators: made property optional
+      relatedToDate?:
+        type: date-only | nil
+      # Accelerators: changed to string for Party.id reference
+      # Accelerators: made property optional
+      party?:
+        items: string
+  PartyRelationshipType:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: made property optional
+      isBidirectional?:
+        type: boolean | nil
+      # Accelerators: changed to string for PartyRole.id reference
+      partyRole:
+        type: string
+      # Accelerators: changed to string for PartyRole.id reference
+      relatedPartyRole:
+        type: string
+  PartyWebAddress:
+    type: ContactPoint
+    properties:
+      id:
+        type: string | nil
+      webSiteURL:
+        type: string
+      # Accelerators: changed to string for Party.id reference
+      # Accelerators: made property optional
+      party?:
+        items: string
+  PersonEducation:
+    properties:
+      id:
+        type: string | nil
+      educationLevel:
+        type: string
+      educationName:
+        type: string
+      # Accelerators: made property optional
+      graduationDate?:
+        type: date-only | nil
+      # Accelerators: changed to string for Individual.id reference
+      # Accelerators: made property optional
+      individual?:
+        items: string
+      institutionName:
+        type: string
+  PersonEmployment:
+    properties:
+      id:
+        type: string | nil
+      employmentStatus:
+        type: string
+      # Accelerators: made property optional
+      positionText?:
+        type: string
+      # Accelerators: changed to string for ContactPointAddress.id reference
+      employerContactPointAddress?:
+        items: string
+      employerAddressLine3?:
+        type: string
+      # Accelerators: made property optional
+      endDate?:
+        type: date-only | nil
+      # Accelerators: made property optional
+      startDate?:
+        type: date-only | nil
+      occupationText:
+        type: string
+      employerName:
+        type: string
+      employerAddressLine4?:
+        type: string
+      # Accelerators: made property optional
+      employerAddressLine1?:
+        type: string
+      # Accelerators: made property optional
+      annualIncome?:
+        type: integer | nil
+      employerCityName?:
+        type: string
+      # Accelerators: changed to string for Individual.id reference
+      # Accelerators: made property optional
+      individual?:
+        items: string
+      employerAddressLine2?:
+        type: string
+      employerPostalCodeText?:
+        type: string
+      # Accelerators: made property optional
+      employerPhoneNumber?:
+        type: string
+  PersonLanguage:
+    properties:
+      id:
+        type: string | nil
+      spokenProficiencyLevel?:
+        type: string
+      # Accelerators: changed to string for Individual.id reference
+      # Accelerators: made property optional
+      individual?:
+        items: string
+      writtenProficiencyLevel?:
+        type: string
+  PersonLifeEvent:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: changed to string for Individual.id reference
+      # Accelerators: made property optional
+      individual?:
+        items: string
+      personLifeEventDateTime:
+        type: time-only
+      personLifeEventType:
+        type: string
+  UncategorizedParty:
+    type: Party
+    properties:
+      id:
+        type: string | nil
+      creationReason?:
+        type: string
+      uncategorizedPartyLabel:
+        type: string
+      originalSourceRecord?:
+        type: string
+      originalSourceSystem?:
+        type: string

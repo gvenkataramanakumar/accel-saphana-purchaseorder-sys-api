@@ -1,0 +1,57 @@
+#%RAML 1.0 Library
+usage: This library provides extended types for the Party group
+uses:
+  CIM: ../exchange_modules/org.mule.examples/accelerator-cim-library/1.1.1/accelerator-cim-library.raml
+types:
+  ContactPointDetail:
+    type: CIM.ContactPoint
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ContactPointAddressDetail:
+    type: CIM.ContactPointAddress
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ContactPointAppDetail:
+    type: CIM.ContactPointApp
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ContactPointEmailDetail:
+    type: CIM.ContactPointEmail
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ContactPointLocationDetail:
+    type: CIM.ContactPointLocation
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ContactPointPhoneDetail:
+    type: CIM.ContactPointPhone
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ContactPointSocialDetail:
+    type: CIM.ContactPointSocial
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  HouseholdDetail:
+    type: CIM.Household
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  IndividualDetail:
+    type: CIM.Individual
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  InternalBusinessUnitDetail:
+    type: CIM.InternalBusinessUnit
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  PartyDetail:
+    type: CIM.Party
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  PartyIdentificationDetail:
+    type: CIM.PartyIdentification
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  UncategorizedPartyDetail:
+    type: CIM.UncategorizedParty
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml

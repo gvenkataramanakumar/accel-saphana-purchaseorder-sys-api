@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/SalesOrderPaymentSummary",
+  "definitions": {
+    "SalesOrderPaymentSummary": {
+      "type": "object",
+      "example": {
+        "id": "Ut do voluptate",
+        "name": "anim est Excepteur consectetur ad",
+        "salesOrder": [
+          "in Lorem nostrud voluptate"
+        ],
+        "paymentMethod": [
+          "culpa occaecat ad"
+        ],
+        "capturedAmount": 2229238,
+        "unappliedAmount": -42009971,
+        "availableToApplyBalanceAmount": -55792911,
+        "authorizationReversalAmount": -96114164,
+        "appliedAmount": 55720377,
+        "paymentAmount": 77152058,
+        "authorizationAmount": -44582936
+      },
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "authorizationReversalAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "authorizationAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unappliedAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesOrder": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentMethod": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "appliedAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "availableToApplyBalanceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "capturedAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

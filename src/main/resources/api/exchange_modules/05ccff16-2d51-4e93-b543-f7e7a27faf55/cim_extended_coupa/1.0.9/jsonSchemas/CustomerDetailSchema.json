@@ -1,0 +1,192 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/CustomerDetail",
+  "definitions": {
+    "CustomerDetail": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "customerStatus"
+      ],
+      "properties": {
+        "auditDetail": {
+          "description": "Defines standard system audit fields available for most types",
+          "example": {
+            "createdOn": "2021-01-21T21:21:21Z",
+            "createdBy": "0054x000002IpBlAAK",
+            "updatedOn": "2021-01-21T21:21:21Z",
+            "updatedBy": "0054x000002xBGGAA2",
+            "isDeleted": false
+          },
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "createdOn",
+            "createdBy",
+            "updatedOn",
+            "updatedBy",
+            "isDeleted"
+          ],
+          "properties": {
+            "createdOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "updatedOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedBy": {
+              "type": "string"
+            },
+            "isDeleted": {
+              "type": "boolean"
+            }
+          }
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "customerStatus": {
+          "type": "string"
+        },
+        "prospectRating": {
+          "type": "string"
+        },
+        "netPromoterScore": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "customerSatisfactionScore": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "marketingEmailResponseRate": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalContractedAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalProfitContributionAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "customerNumber": {
+          "type": "string"
+        },
+        "churnScore": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "originatingCustomerSource": {
+          "type": "string"
+        },
+        "totalLifeTimeValue": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalBookingsAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "last24MonthsNewRevenueAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "last12MonthsNewRevenueAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "last12MonthsSupportCallCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "party": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

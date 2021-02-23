@@ -1,0 +1,380 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Account",
+  "definitions": {
+    "Account": {
+      "type": "object",
+      "example": {
+        "id": "irure anim adipisicing ut laboris",
+        "name": "laborum in laboris eiusmod consectetur",
+        "useAsSalesAccount": false,
+        "useAsServiceAccount": false,
+        "useAsBillingAccount": false,
+        "useAsShippingAccount": false,
+        "number": "ut",
+        "faxPhone": [
+          "fugiat ut"
+        ],
+        "billContactAddress": [
+          "commodo incididunt minim eu"
+        ],
+        "orderDeliveryMethod": [
+          "enim pariatur"
+        ],
+        "assignTerritoryFlag": true,
+        "thirtyDayBalanceAmount": -9906188,
+        "parentAccount": [
+          "velit voluptate"
+        ],
+        "autoPaymentAmount": 95613884,
+        "salesPhone": [
+          "qui velit aliquip culpa"
+        ],
+        "autoPayEnabledFlag": false,
+        "billDeliveryMethod": "eu nisi commodo aliqua",
+        "sLAExpirationDate": "1941-08-29",
+        "accountType": "ad nulla tempor eu eiusmod",
+        "ninetyDayBalanceAmount": -85008701,
+        "autoPaymentMethod": [
+          "labore Duis nisi mollit in"
+        ],
+        "shippingPhoneid": [
+          "do sunt exercitation est ex"
+        ],
+        "party": [
+          "minim"
+        ],
+        "billFrequency": [
+          {
+            "id": "id",
+            "name": "aute dolor do magna Duis",
+            "billingFrequencyName": "irure dolore"
+          }
+        ],
+        "paymentTerm": "in ut ipsum reprehenderit consequat",
+        "shippingEmail": [
+          "dolor culpa nisi"
+        ],
+        "shippingContact": [
+          "ullamco sunt cillum enim dolore"
+        ],
+        "description": "dolor eiusmod aliqua anim",
+        "generalLedgerAccount": "laborum",
+        "defaultFreightTerms": "sit proident elit Ut nulla",
+        "sixtyDayBalanceAmount": 41031562,
+        "primarySalesContactPoint": [
+          "enim sint veniam"
+        ],
+        "lastActivityDate": "1972-07-06",
+        "partyRole": [
+          "sunt"
+        ],
+        "holdStatusReason": "cupidatat ipsum",
+        "balanceAmountLimit": 36178619,
+        "sLAType": "ipsum dolore ex",
+        "balanceAmount": -50978469,
+        "shippingAddress": [
+          "enim in proident"
+        ]
+      },
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "id",
+        "number"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "billDeliveryMethod": {
+          "type": "string"
+        },
+        "billContactAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "useAsSalesAccount": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "assignTerritoryFlag": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "billFrequency": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name",
+              "billingFrequencyName"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "billingFrequencyName": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "autoPayEnabledFlag": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "autoPaymentAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "useAsServiceAccount": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "useAsBillingAccount": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "partyRole": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "faxPhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string"
+        },
+        "salesPhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sLAExpirationDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "autoPaymentMethod": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "balanceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "holdStatusReason": {
+          "type": "string"
+        },
+        "generalLedgerAccount": {
+          "type": "string"
+        },
+        "thirtyDayBalanceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sixtyDayBalanceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "useAsShippingAccount": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shippingAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "party": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "parentAccount": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sLAType": {
+          "type": "string"
+        },
+        "shippingContact": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "balanceAmountLimit": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shippingPhoneid": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "shippingEmail": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "lastActivityDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "orderDeliveryMethod": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "primarySalesContactPoint": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "number": {
+          "type": "string"
+        },
+        "ninetyDayBalanceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentTerm": {
+          "type": "string"
+        },
+        "defaultFreightTerms": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

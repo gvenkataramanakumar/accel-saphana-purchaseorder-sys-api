@@ -1,0 +1,218 @@
+#%RAML 1.0 Library
+usage: Types representing defined roles a Party may assume
+types:
+  Competitor:
+    type: PartyRole
+    properties:
+      id:
+        type: string | nil
+      competitorStrengths?:
+        type: string
+      competitorFromDate:
+        type: date-only
+      socialMediaPostRate?:
+        type: integer | nil
+      competitorThreats?:
+        type: string
+      currentRatio?:
+        type: integer | nil
+      cashFlowGrowth?:
+        type: integer | nil
+      competitorObjectives?:
+        type: string
+      netProfitMargin?:
+        type: integer | nil
+      competitorWeaknesses?:
+        type: string
+      pressMentionsRate?:
+        type: integer | nil
+      assetTurnoverRatio?:
+        type: integer | nil
+      competitorToDate?:
+        type: date-only | nil
+      competitorLeverageOpportunities?:
+        type: string
+      assetReturnRatio?:
+        type: integer | nil
+      ptoENumber?:
+        type: integer | nil
+      adKeywords?:
+        type: string
+      adReachRate?:
+        type: integer | nil
+  Customer:
+    type: PartyRole
+    properties:
+      id:
+        type: string | nil
+      customerStatus:
+        type: string
+      prospectRating?:
+        type: string
+      netPromoterScore?:
+        type: integer | nil
+      customerSatisfactionScore?:
+        type: integer | nil
+      marketingEmailResponseRate?:
+        type: integer | nil
+      totalContractedAmount?:
+        type: integer | nil
+      totalProfitContributionAmount?:
+        type: integer | nil
+      customerNumber?:
+        type: string
+      churnScore?:
+        type: integer | nil
+      originatingCustomerSource?:
+        type: string
+      totalLifeTimeValue?:
+        type: integer | nil
+      totalBookingsAmount?:
+        type: integer | nil
+      last24MonthsNewRevenueAmount?:
+        type: integer | nil
+      last12MonthsNewRevenueAmount?:
+        type: integer | nil
+      last12MonthsSupportCallCount?:
+        type: integer | nil
+  CustomerStatusHistory:
+    properties:
+      id:
+        type: string | nil
+      startDateTime:
+        type: time-only
+      # Accelerators: changed to string for PartyRole.id reference
+      # Accelerators: made property optional
+      partyRole?:
+        items: string
+      partyRoleStatus:
+        type: string
+      # Accelerators: made property optional
+      endDateTIme?:
+        type: time-only | nil
+  PartyRole:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: changed to string for Party.id reference
+      # Accelerators: made property optional
+      party?:
+        items: string
+  Seller:
+    type: PartyRole
+    properties:
+      id:
+        type: string | nil
+      communityParticipationCount?:
+        type: integer | nil
+      demonstrationsGivenCount?:
+        type: integer | nil
+      eventParticipationCount?:
+        type: integer | nil
+      customerSatisfactionScore?:
+        type: integer | nil
+      trainingCertificationCount?:
+        type: integer | nil
+      opportunityInvolvementCount?:
+        type: integer | nil
+      marketingDevelopmentAmount?:
+        type: integer | nil
+      sellerType?:
+        type: string
+      documentationDownloadCount?:
+        type: integer | nil
+      activeFromDate:
+        type: date-only
+      activeToDate?:
+        type: date-only | nil
+      trialParticipationCount?:
+        type: integer | nil
+      creditRating?:
+        type: integer | nil
+      satisfactionScore?:
+        type: integer | nil
+      salesAmount?:
+        type: integer | nil
+      opportunityWinRate?:
+        type: integer | nil
+      productReturnRate?:
+        type: integer | nil
+      leadGenerationCount?:
+        type: integer | nil
+      inventoryValueAmount?:
+        type: integer | nil
+      majorPostSaleSupportNeeded?:
+        type: boolean | nil
+      trainingParticipationCount?:
+        type: integer | nil
+      newCustomerAcquisitionCount?:
+        type: integer | nil
+      successStoryCount?:
+        type: integer | nil
+      systemLoginCount?:
+        type: integer | nil
+      jointBusinessPlanExist?:
+        type: boolean | nil
+      averageConvertedLeadAmount?:
+        type: integer | nil
+      estimatedPartnerGrossMargin?:
+        type: integer | nil
+  Supplier:
+    type: PartyRole
+    properties:
+      id:
+        type: string | nil
+      satisfactionEthicsRank?:
+        type: integer | nil
+      contractInvoiceAccuracyRate?:
+        type: integer | nil
+      satisfactionWeightPercent?:
+        type: integer | nil
+      contractOnTimeDeliveryRate?:
+        type: integer | nil
+      activeFromDate:
+        type: date-only
+      activeToDate?:
+        type: date-only | nil
+      competitiveWarrantyRank?:
+        type: integer | nil
+      competitiveMarketingRank?:
+        type: integer | nil
+      contractDeliveryCorrectnessRate?:
+        type: integer | nil
+      competitiveWeightScore?:
+        type: integer | nil
+      contractSLAIssueRate?:
+        type: integer | nil
+      competitiveWeightPercent?:
+        type: integer | nil
+      supplierScore?:
+        type: integer | nil
+      competitiveProductPriceRank?:
+        type: integer | nil
+      contractWeightPercent?:
+        type: integer | nil
+      supplierSpend?:
+        type: integer | nil
+      satisfactionTechnicalSupportRank?:
+        type: integer | nil
+      contractWeightScore?:
+        type: integer | nil
+      satisfactionCustomerServiceRank?:
+        type: integer | nil
+      satisfactionWeightScore?:
+        type: integer | nil
+      contractSourcingCycleDays?:
+        type: integer | nil
+      supplierType?:
+        type: string
+      isCarrier?:
+        type: boolean | nil
+      contractProductReturnRate?:
+        type: integer | nil
+      competitiveCostAvoidanceRank?:
+        type: integer | nil
+      contractProductQualityRate?:
+        type: integer | nil
+      contractBudgetCostRate?:
+        type: integer | nil

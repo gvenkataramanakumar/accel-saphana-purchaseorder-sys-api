@@ -1,0 +1,83 @@
+#%RAML 1.0 Library
+usage: This library provides common datatypes for Billing Document
+types:
+  BillingDocumentItem:
+    type: object
+    properties:
+      itemNum?:
+        type: string
+        description: Id of the billing document for the item being recorded
+      currency?:
+        type: string
+        description: currency of usage
+        example: USD
+      itemNetValue?:
+        type: number
+        minimum: 0.00
+        multipleOf: 0.01
+        example: 99.99
+        description: Net value of the item
+      itemTaxValue?:
+        type: number
+        minimum: 0.00
+        multipleOf: 0.01
+        example: 99.99
+        description: Tax value of the item
+      itemGrossValue?:
+        type: number
+        minimum: 0.00
+        multipleOf: 0.01
+        example: 99.99
+        description: Gross value of the item
+      organizationDivision?:
+        type: string
+        description: Organization Division for the item
+      salesOffice?:
+        type: string
+        description: Sales Office making the sale
+      material?:
+        type: string
+        description: Material Id or Product Id being billed
+      requestedQuantity?:
+        type: integer
+        minimum: 0
+        example: 99
+        description: Quantity of the item requested
+      baseUnit?:
+        type: string
+        description: Unit of measure of the item
+      orderId?:
+        type: string
+        description: Order Id through which the item was ordered
+  
+  BillingDocument:
+    type: object
+    properties:
+      billingId?:
+        type: string
+        description: Billing number on the system
+      customerId?:
+        type: string
+        description: Account number who is being billed
+      netValue?:
+        type: number
+        minimum: 0.00
+        multipleOf: 0.01
+        example: 99.99
+        description: Net value 
+      taxValue?:
+        type: number
+        multipleOf: 0.01
+        minimum: 0.00
+        example: 99.99
+        description: Tax value 
+      grossValue?:
+        type: number
+        minimum: 0.00
+        multipleOf: 0.01
+        example: 99.99
+        description: Gross value 
+      # Accelerator changed to BillingDocumentItem.Id
+      billingDocumentItems?:
+        type: array
+        items: string

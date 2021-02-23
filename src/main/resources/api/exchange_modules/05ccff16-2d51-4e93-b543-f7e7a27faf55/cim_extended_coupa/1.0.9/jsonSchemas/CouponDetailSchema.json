@@ -1,0 +1,158 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/CouponDetail",
+  "definitions": {
+    "CouponDetail": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "paymentMethodStatus"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "auditDetail": {
+          "description": "Defines standard system audit fields available for most types",
+          "example": {
+            "createdOn": "2021-01-21T21:21:21Z",
+            "createdBy": "0054x000002IpBlAAK",
+            "updatedOn": "2021-01-21T21:21:21Z",
+            "updatedBy": "0054x000002xBGGAA2",
+            "isDeleted": false
+          },
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "createdOn",
+            "createdBy",
+            "updatedOn",
+            "updatedBy",
+            "isDeleted"
+          ],
+          "properties": {
+            "createdOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "updatedOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedBy": {
+              "type": "string"
+            },
+            "isDeleted": {
+              "type": "boolean"
+            }
+          }
+        },
+        "manufacturer": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "primaryScanCodeLabel": {
+          "type": "string"
+        },
+        "isReturnCoupon": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "expirationDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "secondaryScanCodeLabel": {
+          "type": "string"
+        },
+        "scanCode": {
+          "type": "string"
+        },
+        "couponCode": {
+          "type": "string"
+        },
+        "returnCouponReason": {
+          "type": "string"
+        },
+        "discountAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isValid": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "couponStatus": {
+          "type": "string"
+        },
+        "discountPercentage": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "couponCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentMethodType": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentMethodStatus": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

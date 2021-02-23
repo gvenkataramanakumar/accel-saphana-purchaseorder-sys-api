@@ -1,0 +1,244 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/LeadDetail",
+  "definitions": {
+    "LeadDetail": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "leadSource"
+      ],
+      "properties": {
+        "auditDetail": {
+          "description": "Defines standard system audit fields available for most types",
+          "example": {
+            "createdOn": "2021-01-21T21:21:21Z",
+            "createdBy": "0054x000002IpBlAAK",
+            "updatedOn": "2021-01-21T21:21:21Z",
+            "updatedBy": "0054x000002xBGGAA2",
+            "isDeleted": false
+          },
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "createdOn",
+            "createdBy",
+            "updatedOn",
+            "updatedBy",
+            "isDeleted"
+          ],
+          "properties": {
+            "createdOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "updatedOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedBy": {
+              "type": "string"
+            },
+            "isDeleted": {
+              "type": "boolean"
+            }
+          }
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "faxContactPhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "stateProvinceName": {
+          "type": "string"
+        },
+        "leadStatus": {
+          "type": "string"
+        },
+        "photoURL": {
+          "type": "string"
+        },
+        "countryName": {
+          "type": "string"
+        },
+        "partyRole": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "convertedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "contactPointEmail": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "companyName": {
+          "type": "string"
+        },
+        "streetName": {
+          "type": "string"
+        },
+        "leadScore": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "mobileContactPhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "contactAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "geoCodeLatitude": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "leadRating": {
+          "type": "string"
+        },
+        "geoCodeLongitude": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "emailBouncedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "geoCodeAccuracy": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "leadSource": {
+          "type": "string"
+        },
+        "convertedToAccount": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "convertedToAccountContact": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "phoneContactPoint": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "lastActivityDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "annualRevenue": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "emailBouncedReason": {
+          "type": "string"
+        },
+        "website": {
+          "type": "string"
+        },
+        "isConverted": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "partnerAccount": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

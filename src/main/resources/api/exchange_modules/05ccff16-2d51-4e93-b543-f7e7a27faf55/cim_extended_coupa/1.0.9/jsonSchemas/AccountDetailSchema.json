@@ -1,0 +1,4552 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/AccountDetail",
+  "definitions": {
+    "AccountDetail": {
+      "type": "object",
+      "example": {
+        "name": "irure",
+        "id": "Duis dolore sint cillum",
+        "number": "do nisi in laborum",
+        "useAsServiceAccount": false,
+        "useAsShippingAccount": false,
+        "useAsBillingAccount": false,
+        "useAsSalesAccount": false,
+        "billContactAddress": [
+          "qui",
+          "ea labore"
+        ],
+        "accountType": "culpa",
+        "party": [
+          "eu dolore",
+          "laboris"
+        ],
+        "orderDeliveryMethod": [
+          "velit culpa minim",
+          "exercitation eu ex"
+        ],
+        "defaultFreightTerms": "pariatur dolore",
+        "phoneDetail": {
+          "contactPointType": [
+            {
+              "id": "ullamco aliqua aliquip ex cupidatat",
+              "name": "anim irure consectetur est ullamco",
+              "optInPriority": -1065560
+            },
+            {
+              "id": "reprehenderit aliquip",
+              "name": "nisi in mollit Duis",
+              "optInPriority": 53089570
+            }
+          ],
+          "formattedNationalPhoneNumber": "fugiat consequat qui laboris",
+          "id": "mollit elit ea in",
+          "forBusinessUse": true,
+          "party": [
+            "pariatur anim nulla",
+            "dolore enim exercitation in eiusmod"
+          ],
+          "forPersonalUse": true,
+          "telephoneNumber": "cillum",
+          "activeFromDate": "1991-10-16",
+          "profileFirstCreatedDate": "20:47:51",
+          "primaryPhoneType": "culpa Duis Lorem ipsum quis",
+          "activeToDate": "1980-08-25",
+          "countryName": "sit",
+          "profileOccurrenceCount": -99641124,
+          "profileLastUpdatedDate": "00:24:10",
+          "isFaxCapable": true,
+          "shortCode": -46152389,
+          "partyRole": [
+            "sint laboris",
+            "pariatur reprehenderit"
+          ],
+          "bestTimeToContactStartTime": "02:56:45",
+          "isSMSCapable": false,
+          "formattedInternationalPhoneNumber": "qui",
+          "phoneCountryCode": "tempor sunt velit et",
+          "extensionNumber": "aliqua nulla",
+          "formattedE164PhoneNumber": "qui sunt",
+          "areaCode": "amet labore",
+          "bestTimeToContactEndTime": "05:57:11",
+          "primaryFlag": true
+        },
+        "partyRole": [
+          "in",
+          "do enim in"
+        ],
+        "autoPaymentMethod": [
+          "sint culpa",
+          "deserunt ea ad qui laborum"
+        ],
+        "detailShippingAddress": {
+          "contactPointType": [
+            {
+              "id": "do ut dolore sint dolor",
+              "name": "non eiusmod sit consequat quis",
+              "optInPriority": 92285368
+            },
+            {
+              "id": "esse culpa pariatur dolore",
+              "name": "consectetur id in dolor eiusmod",
+              "optInPriority": 30587739
+            }
+          ],
+          "id": "ullamco est velit",
+          "forBusinessUse": false,
+          "party": [
+            "in Duis",
+            "cupidatat"
+          ],
+          "forPersonalUse": false,
+          "activeFromDate": "2016-02-23",
+          "geoLatitude": 53695832,
+          "profileLastUpdatedDate": "03:27:07",
+          "addressLine4": "minim ut et in ut",
+          "isUsedForShipping": false,
+          "addressLine3": "in",
+          "primaryFlag": true,
+          "stateProvinceName": "esse occaecat",
+          "geoLongitude": 91814880,
+          "isUsedForBilling": true,
+          "postalCodeText": "id nostrud",
+          "bestTimeToContactEndTime": "13:55:11",
+          "cityName": "nostrud non laborum",
+          "contactPhone": [
+            "dolore veniam",
+            "magna in dolor consequat"
+          ],
+          "activeToDate": "2016-09-24",
+          "geoAccuracy": 59362263,
+          "addressLine1": "in proident esse",
+          "bestTimeToContactStartTime": "12:13:51",
+          "profileOccurrenceCount": -41167614,
+          "profileFirstCreatedDate": "10:54:35",
+          "countryName": "Ut consequat in in consectetur",
+          "addressLine2": "enim labore amet",
+          "partyRole": [
+            "sed commodo ea Lorem laborum",
+            "pariatur ipsum est laboris occaecat"
+          ]
+        },
+        "parentAccount": [
+          "dolor",
+          "do magna ut officia cupidatat"
+        ],
+        "autoPaymentAmount": -79952298,
+        "shippingEmail": [
+          "voluptate cupidatat nisi mollit id",
+          "ut in dolore ipsum"
+        ],
+        "salesPhone": [
+          "labore est id",
+          "dolore sunt eu"
+        ],
+        "description": "ut sunt occaecat",
+        "billFrequency": [
+          {
+            "id": "ea Ut",
+            "name": "nulla do eiusmod ipsum",
+            "billingFrequencyName": "et culpa elit ullamco fugiat"
+          },
+          {
+            "id": "ut",
+            "name": "adipisicing",
+            "billingFrequencyName": "sed exercitation"
+          }
+        ],
+        "contactPointDetail": {
+          "contactPointType": [
+            {
+              "id": "fugiat tempor dolore",
+              "name": "aliqua sit et",
+              "optInPriority": -96666409
+            },
+            {
+              "id": "Lorem eu esse dolore",
+              "name": "magna ex dolore",
+              "optInPriority": -13964335
+            }
+          ],
+          "id": "eu occaecat",
+          "forBusinessUse": true,
+          "party": [
+            "in in incididunt culpa dolor",
+            "nisi Duis elit reprehenderit"
+          ],
+          "forPersonalUse": false,
+          "activeFromDate": "2009-03-23",
+          "activeToDate": "2018-10-03",
+          "bestTimeToContactEndTime": "17:05:48",
+          "bestTimeToContactStartTime": "05:20:56",
+          "profileLastUpdatedDate": "01:46:40",
+          "primaryFlag": true,
+          "profileFirstCreatedDate": "10:50:26",
+          "profileOccurrenceCount": -80636473,
+          "partyRole": [
+            "sint aliquip dolor",
+            "Excepteur do"
+          ]
+        },
+        "balanceAmount": -36833855,
+        "emailDetail": {
+          "emailAddress": "non dolor",
+          "contactPointType": [
+            {
+              "id": "adipisicing",
+              "name": "elit cupidatat velit et quis",
+              "optInPriority": 36665167
+            },
+            {
+              "id": "ad",
+              "name": "laboris",
+              "optInPriority": 32978220
+            }
+          ],
+          "id": "commodo quis sed officia do",
+          "forBusinessUse": true,
+          "party": [
+            "eiusmod ut laboris",
+            "culpa adipisicing id"
+          ],
+          "forPersonalUse": false,
+          "activeFromDate": "2000-03-21",
+          "emailLatestBounceReasonText": "labore adipisicing dolore fugiat",
+          "profileOccurrenceCount": 90156935,
+          "bestTimeToContactEndTime": "19:23:49",
+          "profileLastUpdatedDate": "18:23:05",
+          "activeToDate": "1981-10-15",
+          "primaryFlag": true,
+          "bestTimeToContactStartTime": "15:50:41",
+          "partyRole": [
+            "culpa",
+            "amet incididunt"
+          ],
+          "emailDomain": "in nostrud cupidatat",
+          "profileFirstCreatedDate": "05:38:03",
+          "emailMailBox": "et consectetur ut",
+          "emailLatestBounceDateTime": "1989-07-01"
+        },
+        "ninetyDayBalanceAmount": 30794664,
+        "sLAType": "amet sint ut dolore laboris",
+        "autoPayEnabledFlag": true,
+        "detailBillingAddress": {
+          "contactPointType": [
+            {
+              "id": "ullamco",
+              "name": "reprehenderit",
+              "optInPriority": 40924392
+            },
+            {
+              "id": "aute in Excepteur proident cupidatat",
+              "name": "occaecat laborum nostrud",
+              "optInPriority": -73696198
+            }
+          ],
+          "id": "amet labore id do magna",
+          "forBusinessUse": true,
+          "party": [
+            "voluptate deserunt elit",
+            "est"
+          ],
+          "forPersonalUse": false,
+          "activeFromDate": "1945-05-30",
+          "cityName": "reprehenderit dolore ipsum deserunt tempor",
+          "primaryFlag": true,
+          "profileFirstCreatedDate": "07:02:01",
+          "countryName": "Ut officia",
+          "contactPhone": [
+            "aute laborum Excepteur",
+            "esse laboris consectetur aliquip deserunt"
+          ],
+          "activeToDate": "1985-10-17",
+          "partyRole": [
+            "ipsum eu adipisicing",
+            "deserunt dolore reprehenderit ex dolor"
+          ],
+          "geoAccuracy": 18214190,
+          "postalCodeText": "non pariatur",
+          "addressLine4": "magna",
+          "addressLine1": "cupidatat in magna",
+          "profileLastUpdatedDate": "13:12:56",
+          "geoLongitude": -50041572,
+          "geoLatitude": 397582,
+          "bestTimeToContactStartTime": "10:22:47",
+          "isUsedForBilling": false,
+          "addressLine3": "exercitation labore dolore",
+          "addressLine2": "labore quis amet dolor nostrud",
+          "profileOccurrenceCount": 14442313,
+          "bestTimeToContactEndTime": "00:43:17",
+          "isUsedForShipping": false,
+          "stateProvinceName": "amet"
+        },
+        "thirtyDayBalanceAmount": -68774879,
+        "shippingContact": [
+          "in consectetur",
+          "ex"
+        ],
+        "lastActivityDate": "1966-08-03",
+        "sLAExpirationDate": "1996-12-03",
+        "billDeliveryMethod": "est Lorem",
+        "shippingPhoneid": [
+          "commodo sint in esse",
+          "et Excepteur do"
+        ],
+        "generalLedgerAccount": "ea mollit",
+        "balanceAmountLimit": -8947206,
+        "faxPhone": [
+          "Excepteur eu",
+          "ea esse"
+        ],
+        "holdStatusReason": "in nulla Excepteur",
+        "primarySalesContactPoint": [
+          "aliqua dolor aliquip do sit",
+          "proident sunt occaecat consequat"
+        ],
+        "assignTerritoryFlag": true,
+        "sixtyDayBalanceAmount": 71283380,
+        "detailContactAddress": {
+          "contactPointType": [
+            {
+              "id": "incididunt",
+              "name": "amet enim ipsum commodo Ut",
+              "optInPriority": -38509791
+            },
+            {
+              "id": "mollit nulla aute",
+              "name": "amet id",
+              "optInPriority": -46103664
+            }
+          ],
+          "id": "enim nisi",
+          "forBusinessUse": false,
+          "party": [
+            "non dolore reprehenderit",
+            "amet"
+          ],
+          "forPersonalUse": true,
+          "activeFromDate": "1987-06-01",
+          "bestTimeToContactStartTime": "15:38:57",
+          "isUsedForShipping": false,
+          "partyRole": [
+            "adipisicing ipsum nostrud",
+            "sed"
+          ],
+          "addressLine2": "qui dolore consequat",
+          "contactPhone": [
+            "occaecat labore",
+            "aute ea Excepteur nulla aliquip"
+          ],
+          "bestTimeToContactEndTime": "04:45:42",
+          "cityName": "irure non qui",
+          "addressLine1": "irure",
+          "addressLine4": "tempor commodo proident sint aute",
+          "countryName": "laborum",
+          "activeToDate": "1948-02-28",
+          "geoAccuracy": 56261418,
+          "stateProvinceName": "ipsum dolor qui Lorem exercitation",
+          "primaryFlag": true,
+          "profileOccurrenceCount": 30536059,
+          "profileLastUpdatedDate": "08:22:41",
+          "postalCodeText": "officia",
+          "geoLatitude": 67568343,
+          "geoLongitude": 5763337,
+          "addressLine3": "Excepteur est ut",
+          "profileFirstCreatedDate": "16:47:06",
+          "isUsedForBilling": false
+        },
+        "paymentTerm": "culpa incididunt non deserunt officia",
+        "shippingAddress": [
+          "magna Excepteur dolore nulla",
+          "amet exercitation"
+        ],
+        "accountContacts": [
+          {
+            "individual": [
+              "Duis elit",
+              "officia velit et"
+            ],
+            "id": "quis ex in nulla amet",
+            "account": [
+              "mollit adipisicing commodo ut Ut",
+              "eiusmod"
+            ],
+            "contactNote": "qui nisi exercitation elit incididunt",
+            "title": "culpa",
+            "contactEmail": [
+              "reprehenderit eiusmod aliqua",
+              "esse incididunt"
+            ],
+            "contactEmailDetail": {
+              "emailAddress": "ipsum Lorem cillum nisi",
+              "contactPointType": [
+                {
+                  "id": "sint non amet consectetur exercitation",
+                  "name": "non in velit",
+                  "optInPriority": -88133253
+                },
+                {
+                  "id": "aliquip Ut laborum",
+                  "name": "eiusmod cillum",
+                  "optInPriority": 86018546
+                }
+              ],
+              "id": "occaecat culpa anim est",
+              "forBusinessUse": true,
+              "party": [
+                "ex minim exercitation mollit",
+                "reprehenderit officia in ullamco est"
+              ],
+              "forPersonalUse": true,
+              "activeFromDate": "1995-06-17",
+              "bestTimeToContactEndTime": "17:53:45",
+              "emailLatestBounceReasonText": "deserunt irure sunt",
+              "bestTimeToContactStartTime": "19:12:07",
+              "profileLastUpdatedDate": "21:33:52",
+              "emailDomain": "cupidatat laborum",
+              "primaryFlag": false,
+              "profileOccurrenceCount": -31269990,
+              "profileFirstCreatedDate": "05:55:36",
+              "activeToDate": "1983-06-03",
+              "emailLatestBounceDateTime": "1965-08-18",
+              "partyRole": [
+                "do ut et",
+                "aliqua Excepteur sint ipsum"
+              ],
+              "emailMailBox": "est nisi"
+            },
+            "reportsToAccountContact": [
+              "dolor Ut sed id irure",
+              "sit nostrud"
+            ],
+            "accountDetail": [
+              {
+                "name": "dolore occaecat sed ad in",
+                "id": "anim",
+                "number": "qui fugiat dolore",
+                "useAsServiceAccount": false,
+                "useAsShippingAccount": false,
+                "useAsBillingAccount": true,
+                "useAsSalesAccount": false,
+                "description": "dolor nostrud",
+                "salesPhone": [
+                  "laborum",
+                  "adipisicing in"
+                ],
+                "orderDeliveryMethod": [
+                  "in consequat dolor",
+                  "elit"
+                ],
+                "generalLedgerAccount": "sunt ea",
+                "thirtyDayBalanceAmount": 98635177,
+                "shippingEmail": [
+                  "adipisicing cillum ad enim",
+                  "dolore qui occaecat"
+                ],
+                "autoPaymentAmount": -93711006,
+                "sixtyDayBalanceAmount": 84202315,
+                "billContactAddress": [
+                  "eiusmod magna et enim",
+                  "sed quis in dolor"
+                ],
+                "assignTerritoryFlag": true,
+                "shippingAddress": [
+                  "consectetur dolor in",
+                  "officia"
+                ],
+                "party": [
+                  "sed fugiat ut tempor ex",
+                  "aute"
+                ],
+                "autoPaymentMethod": [
+                  "Excepteur aute aliquip est do",
+                  "sint"
+                ],
+                "lastActivityDate": "1953-05-29",
+                "balanceAmount": 50470257,
+                "partyRole": [
+                  "ex incididunt non veniam",
+                  "velit nisi incididunt in Excepteur"
+                ],
+                "ninetyDayBalanceAmount": 12895933,
+                "sLAType": "exercitation magna eiusmod laboris",
+                "billFrequency": [
+                  {
+                    "id": "aute",
+                    "name": "ex fugiat",
+                    "billingFrequencyName": "fugiat ut Ut consequat"
+                  },
+                  {
+                    "id": "dolore quis magna",
+                    "name": "ut laboris Ut",
+                    "billingFrequencyName": "reprehenderit"
+                  }
+                ],
+                "accountType": "dolor laboris sunt",
+                "faxPhone": [
+                  "consectetur in do",
+                  "ex aliquip sint voluptate Lorem"
+                ],
+                "billDeliveryMethod": "amet culpa consectetur ut laboris",
+                "autoPayEnabledFlag": true,
+                "shippingPhoneid": [
+                  "ullamco nisi",
+                  "eu voluptate"
+                ],
+                "balanceAmountLimit": -99693257,
+                "parentAccount": [
+                  "veniam ad sint aute",
+                  "non et esse nisi"
+                ],
+                "defaultFreightTerms": "velit minim exercitation reprehenderit",
+                "primarySalesContactPoint": [
+                  "consectetur Ut do reprehenderit",
+                  "in qui et do Ut"
+                ],
+                "sLAExpirationDate": "2014-09-21",
+                "shippingContact": [
+                  "ullamco sint incididunt esse in",
+                  "proident fugiat"
+                ],
+                "holdStatusReason": "proident Duis ea",
+                "paymentTerm": "in commodo dolor elit velit"
+              },
+              {
+                "name": "exercitation ad qui veniam cupidatat",
+                "id": "sunt consequat do sed veniam",
+                "number": "dolor",
+                "useAsServiceAccount": false,
+                "useAsShippingAccount": false,
+                "useAsBillingAccount": false,
+                "useAsSalesAccount": false,
+                "assignTerritoryFlag": false,
+                "sixtyDayBalanceAmount": 62081868,
+                "balanceAmount": 13073952,
+                "sLAExpirationDate": "1974-02-16",
+                "defaultFreightTerms": "irure voluptate",
+                "accountType": "fugiat",
+                "sLAType": "veniam",
+                "ninetyDayBalanceAmount": 44346999,
+                "partyRole": [
+                  "in",
+                  "tempor"
+                ],
+                "party": [
+                  "esse nostrud cillum",
+                  "irure ut nisi"
+                ],
+                "orderDeliveryMethod": [
+                  "ea voluptate eiusmod",
+                  "enim mollit sed exercitation officia"
+                ],
+                "billFrequency": [
+                  {
+                    "id": "voluptate officia nulla",
+                    "name": "nisi ut ea aute in",
+                    "billingFrequencyName": "est id labore sunt"
+                  },
+                  {
+                    "id": "exercitation Ut officia in",
+                    "name": "nostrud est",
+                    "billingFrequencyName": "sit cupidatat commodo"
+                  }
+                ],
+                "primarySalesContactPoint": [
+                  "labore magna ullamco nisi veniam",
+                  "ipsum irure voluptate eu"
+                ],
+                "parentAccount": [
+                  "velit",
+                  "consectetur dolore minim reprehenderit"
+                ],
+                "lastActivityDate": "1956-07-28",
+                "shippingPhoneid": [
+                  "cupidatat elit ex",
+                  "dolor deserunt nisi in"
+                ],
+                "billContactAddress": [
+                  "qui do sint amet",
+                  "tempor non"
+                ],
+                "autoPayEnabledFlag": true,
+                "billDeliveryMethod": "qui quis laboris",
+                "shippingAddress": [
+                  "pariatur deserunt",
+                  "nulla tempor cupidatat"
+                ],
+                "generalLedgerAccount": "commodo do minim enim eu",
+                "shippingContact": [
+                  "adipisicing reprehenderit voluptate",
+                  "in"
+                ],
+                "faxPhone": [
+                  "adipisicing occaecat mollit minim qui",
+                  "qui non Lorem ex"
+                ],
+                "balanceAmountLimit": -68591189,
+                "thirtyDayBalanceAmount": 89802295,
+                "autoPaymentAmount": 43518322,
+                "autoPaymentMethod": [
+                  "non",
+                  "adipisicing aute ut fugiat"
+                ],
+                "holdStatusReason": "exercitation nulla est enim dolor",
+                "paymentTerm": "sed ipsum commodo voluptate velit",
+                "salesPhone": [
+                  "consequat ex laboris in",
+                  "pariatur qui veniam cupidatat"
+                ],
+                "shippingEmail": [
+                  "deserunt velit incididunt eiusmod consectetur",
+                  "sit Duis laborum ipsum"
+                ],
+                "description": "non sit minim"
+              }
+            ],
+            "homePhoneDetail": {
+              "contactPointType": [
+                {
+                  "id": "do",
+                  "name": "officia sit proident",
+                  "optInPriority": -46582346
+                },
+                {
+                  "id": "Excepteur dolore proident",
+                  "name": "do ut quis elit amet",
+                  "optInPriority": -90663157
+                }
+              ],
+              "formattedNationalPhoneNumber": "velit in eiusmod",
+              "id": "Duis",
+              "forBusinessUse": false,
+              "party": [
+                "dolore",
+                "sit officia"
+              ],
+              "forPersonalUse": true,
+              "telephoneNumber": "in exercitation qui anim Lorem",
+              "activeFromDate": "2006-02-07",
+              "isSMSCapable": false,
+              "primaryFlag": false,
+              "areaCode": "quis",
+              "primaryPhoneType": "sed cillum dolore Lorem minim",
+              "profileLastUpdatedDate": "00:54:02",
+              "bestTimeToContactEndTime": "10:48:14",
+              "countryName": "adipisicing reprehenderit",
+              "profileFirstCreatedDate": "10:25:06",
+              "profileOccurrenceCount": 26360705,
+              "bestTimeToContactStartTime": "07:04:17",
+              "formattedInternationalPhoneNumber": "do",
+              "formattedE164PhoneNumber": "ullamco culpa adipisicing sed",
+              "isFaxCapable": true,
+              "partyRole": [
+                "ex non veniam",
+                "ullamco sint nostrud"
+              ],
+              "phoneCountryCode": "occaecat quis",
+              "activeToDate": "2014-11-04",
+              "extensionNumber": "officia exercitation velit sunt esse",
+              "shortCode": -12257026
+            },
+            "assistantPhone": "velit in",
+            "homePhone": [
+              "ullamco sit",
+              "pariatur nulla amet sed ex"
+            ],
+            "otherContactAddress": [
+              "dolor velit commodo id aliquip",
+              "amet dolore"
+            ],
+            "indirectRelationAccountContact": [
+              "ad cupidatat incididunt in amet",
+              "pariatur dolore sunt anim ipsum"
+            ],
+            "mailingAddressDetail": {
+              "contactPointType": [
+                {
+                  "id": "magna",
+                  "name": "ullamco cillum commodo quis nulla",
+                  "optInPriority": 64937394
+                },
+                {
+                  "id": "velit",
+                  "name": "non nostrud elit",
+                  "optInPriority": 47894437
+                }
+              ],
+              "id": "eiusmod",
+              "forBusinessUse": false,
+              "party": [
+                "do est esse Duis",
+                "ea nisi cupidatat pariatur"
+              ],
+              "forPersonalUse": false,
+              "activeFromDate": "1944-07-25",
+              "bestTimeToContactEndTime": "19:44:33",
+              "isUsedForShipping": false,
+              "addressLine4": "laboris",
+              "profileLastUpdatedDate": "08:10:15",
+              "profileOccurrenceCount": 71328124,
+              "postalCodeText": "proident Ut est",
+              "cityName": "minim Ut nisi mollit in",
+              "countryName": "consectetur adipisicing dolor sint Ut",
+              "primaryFlag": false,
+              "geoAccuracy": 86918731,
+              "addressLine2": "Lorem laborum consequat ullamco nostrud",
+              "addressLine3": "aliquip",
+              "activeToDate": "1944-06-24",
+              "addressLine1": "consequat eu",
+              "profileFirstCreatedDate": "18:45:59",
+              "geoLatitude": 54499066,
+              "stateProvinceName": "consectetur",
+              "contactPhone": [
+                "officia qui sint quis",
+                "consequat"
+              ],
+              "partyRole": [
+                "est in",
+                "nulla"
+              ],
+              "isUsedForBilling": false,
+              "geoLongitude": -51934844,
+              "bestTimeToContactStartTime": "06:21:18"
+            },
+            "businessPhone": [
+              "commodo tempor eiusmod esse enim",
+              "Lorem dolor Ut sunt"
+            ],
+            "mailingAddress": [
+              "magna officia exercitation esse tempor",
+              "sit adipisicing"
+            ],
+            "mobilePhone": [
+              "culpa",
+              "irure minim id ea velit"
+            ],
+            "faxPhone": [
+              "nisi exercitation dolore",
+              "proident est anim velit dolore"
+            ],
+            "lastActivityDate": "1957-08-01",
+            "departmentName": "proident consequat",
+            "assistantName": "nostrud Ut"
+          },
+          {
+            "individual": [
+              "aliquip consectetur dolore anim",
+              "laboris sit"
+            ],
+            "id": "dolore dolore ipsum",
+            "account": [
+              "enim ipsum in",
+              "mollit"
+            ],
+            "mailingAddressDetail": {
+              "contactPointType": [
+                {
+                  "id": "amet cillum in",
+                  "name": "sit",
+                  "optInPriority": 18368093
+                },
+                {
+                  "id": "tempor",
+                  "name": "aliquip",
+                  "optInPriority": -78404231
+                }
+              ],
+              "id": "aliquip nulla",
+              "forBusinessUse": true,
+              "party": [
+                "irure",
+                "sit minim fugiat sunt Ut"
+              ],
+              "forPersonalUse": true,
+              "activeFromDate": "2007-06-12",
+              "activeToDate": "1991-02-02",
+              "isUsedForShipping": false,
+              "stateProvinceName": "tempor commodo",
+              "addressLine3": "ut dolor magna",
+              "profileOccurrenceCount": 13394855,
+              "geoLatitude": 98479562,
+              "profileLastUpdatedDate": "05:00:39",
+              "partyRole": [
+                "magna in",
+                "non reprehenderit veniam"
+              ],
+              "addressLine1": "magna amet non Duis",
+              "addressLine2": "culpa sunt anim enim",
+              "countryName": "aliqua",
+              "postalCodeText": "ex Ut tempor sed",
+              "bestTimeToContactEndTime": "07:18:31",
+              "bestTimeToContactStartTime": "17:23:19",
+              "geoAccuracy": -93851929,
+              "geoLongitude": 5976014,
+              "cityName": "aliqua",
+              "contactPhone": [
+                "do ea",
+                "anim nisi est fugiat"
+              ],
+              "isUsedForBilling": true,
+              "primaryFlag": true,
+              "addressLine4": "officia nisi nostrud aliqua voluptate",
+              "profileFirstCreatedDate": "09:18:19"
+            },
+            "reportsToAccountContact": [
+              "cupidatat Lorem velit",
+              "incididunt nisi"
+            ],
+            "departmentName": "esse",
+            "assistantPhone": "consectetur ad",
+            "contactEmailDetail": {
+              "emailAddress": "ullamco mollit laborum",
+              "contactPointType": [
+                {
+                  "id": "laborum cillum minim amet",
+                  "name": "incididunt consectetur sed veniam",
+                  "optInPriority": 59896326
+                },
+                {
+                  "id": "dolor aute exercitation sint dolore",
+                  "name": "in nisi deserunt consectetur cupidatat",
+                  "optInPriority": 83203799
+                }
+              ],
+              "id": "cillum sed commodo sunt",
+              "forBusinessUse": true,
+              "party": [
+                "eiusmod amet",
+                "dolore"
+              ],
+              "forPersonalUse": false,
+              "activeFromDate": "1987-12-09",
+              "bestTimeToContactEndTime": "13:15:32",
+              "profileOccurrenceCount": 533074,
+              "emailMailBox": "non veniam",
+              "emailLatestBounceReasonText": "ullamco qui",
+              "profileLastUpdatedDate": "18:22:50",
+              "primaryFlag": false,
+              "bestTimeToContactStartTime": "11:26:30",
+              "emailDomain": "magna minim nulla aliqua eu",
+              "profileFirstCreatedDate": "01:27:32",
+              "partyRole": [
+                "esse sint cillum dolore",
+                "anim tempor"
+              ],
+              "activeToDate": "2003-12-22",
+              "emailLatestBounceDateTime": "1968-04-19"
+            },
+            "title": "commodo pariatur dolor",
+            "businessPhone": [
+              "consequat",
+              "eiusmod laborum culpa"
+            ],
+            "mailingAddress": [
+              "Excepteur",
+              "deserunt"
+            ],
+            "lastActivityDate": "2007-03-28",
+            "homePhoneDetail": {
+              "contactPointType": [
+                {
+                  "id": "sunt in in quis esse",
+                  "name": "minim non fugiat Ut tempor",
+                  "optInPriority": 47355273
+                },
+                {
+                  "id": "deserunt",
+                  "name": "aliqua ea id",
+                  "optInPriority": 45749570
+                }
+              ],
+              "formattedNationalPhoneNumber": "voluptate",
+              "id": "veniam commodo cupidatat",
+              "forBusinessUse": false,
+              "party": [
+                "sint ex ut",
+                "laboris nulla"
+              ],
+              "forPersonalUse": false,
+              "telephoneNumber": "tempor non commodo Lorem sunt",
+              "activeFromDate": "1961-08-15",
+              "primaryFlag": false,
+              "isFaxCapable": false,
+              "profileFirstCreatedDate": "16:13:51",
+              "bestTimeToContactStartTime": "23:00:26",
+              "profileOccurrenceCount": 59120795,
+              "bestTimeToContactEndTime": "05:12:28",
+              "profileLastUpdatedDate": "08:01:03",
+              "primaryPhoneType": "magna pariatur exercitation laborum",
+              "extensionNumber": "irure commodo in fugiat",
+              "formattedE164PhoneNumber": "nulla incididunt minim",
+              "activeToDate": "2005-12-02",
+              "partyRole": [
+                "reprehenderit enim in sint in",
+                "culpa"
+              ],
+              "areaCode": "ad dolore",
+              "formattedInternationalPhoneNumber": "Lorem aute",
+              "countryName": "mollit amet",
+              "isSMSCapable": true,
+              "phoneCountryCode": "eu",
+              "shortCode": 97170065
+            },
+            "homePhone": [
+              "in minim enim tempor proident",
+              "occaecat"
+            ],
+            "otherContactAddress": [
+              "ullamco",
+              "esse ad amet mollit"
+            ],
+            "contactNote": "ad qui nostrud laborum aliquip",
+            "indirectRelationAccountContact": [
+              "dolor",
+              "amet enim sit"
+            ],
+            "contactEmail": [
+              "anim nostrud id ea",
+              "eiusmod exercitation Excepteur et in"
+            ],
+            "faxPhone": [
+              "aliqua officia dolore pariatur",
+              "laboris"
+            ],
+            "accountDetail": [
+              {
+                "name": "labore adipisicing officia Excepteur",
+                "id": "voluptate",
+                "number": "proident Lorem",
+                "useAsServiceAccount": false,
+                "useAsShippingAccount": false,
+                "useAsBillingAccount": true,
+                "useAsSalesAccount": false,
+                "paymentTerm": "velit proident dolore aute exercitation",
+                "orderDeliveryMethod": [
+                  "eiusmod esse in",
+                  "enim fugiat mollit"
+                ],
+                "autoPaymentMethod": [
+                  "ut do exercitation",
+                  "dolore Excepteur labore"
+                ],
+                "partyRole": [
+                  "consequat dolore quis",
+                  "cupidatat ex in"
+                ],
+                "party": [
+                  "in",
+                  "esse Ut incididunt adipisicing reprehenderit"
+                ],
+                "ninetyDayBalanceAmount": -72930517,
+                "billContactAddress": [
+                  "exercitation esse",
+                  "aliquip amet sed ut"
+                ],
+                "shippingPhoneid": [
+                  "Excepteur nostrud eiusmod Ut",
+                  "veniam ut exercitation consequat"
+                ],
+                "shippingAddress": [
+                  "eu sit adipisicing pariatur",
+                  "nisi"
+                ],
+                "thirtyDayBalanceAmount": -97054689,
+                "autoPayEnabledFlag": true,
+                "generalLedgerAccount": "eiusmod dolor veniam",
+                "billDeliveryMethod": "fugiat cillum dolor Lorem",
+                "accountType": "adipisicing cillum et anim",
+                "billFrequency": [
+                  {
+                    "id": "non ipsum occaecat",
+                    "name": "cupidatat officia nostrud in laboris",
+                    "billingFrequencyName": "consequat ut nostrud exercitation Ut"
+                  },
+                  {
+                    "id": "voluptate cupidatat fugiat occaecat",
+                    "name": "in",
+                    "billingFrequencyName": "Excepteur dolore nisi"
+                  }
+                ],
+                "balanceAmount": 74077185,
+                "holdStatusReason": "consequat aute reprehenderit Lorem",
+                "sixtyDayBalanceAmount": -14554801,
+                "defaultFreightTerms": "voluptate nostrud officia consectetur non",
+                "sLAType": "dolor id dolore",
+                "lastActivityDate": "1947-01-02",
+                "description": "eu amet magna dolore",
+                "autoPaymentAmount": -26288895,
+                "balanceAmountLimit": -26950361,
+                "sLAExpirationDate": "1997-08-06",
+                "salesPhone": [
+                  "ea pariatur dolor tempor",
+                  "cupidatat"
+                ],
+                "shippingEmail": [
+                  "qui et incididunt deserunt dolore",
+                  "proident quis"
+                ],
+                "shippingContact": [
+                  "nostrud voluptate aliquip ut elit",
+                  "qui Duis"
+                ],
+                "faxPhone": [
+                  "aliqua",
+                  "in qui dolor"
+                ],
+                "parentAccount": [
+                  "anim amet minim Duis dolor",
+                  "enim Duis pariatur"
+                ],
+                "primarySalesContactPoint": [
+                  "laborum dolor",
+                  "cillum"
+                ],
+                "assignTerritoryFlag": true
+              },
+              {
+                "name": "nostrud Ut ut culpa",
+                "id": "commodo",
+                "number": "cupidatat in reprehenderit qui",
+                "useAsServiceAccount": false,
+                "useAsShippingAccount": false,
+                "useAsBillingAccount": false,
+                "useAsSalesAccount": false,
+                "autoPaymentAmount": 75447935,
+                "orderDeliveryMethod": [
+                  "fugiat deserunt",
+                  "sunt ad consectetur dolore officia"
+                ],
+                "shippingContact": [
+                  "dolore qui",
+                  "deserunt"
+                ],
+                "balanceAmount": -55324359,
+                "lastActivityDate": "1980-12-31",
+                "primarySalesContactPoint": [
+                  "Ut nulla",
+                  "irure Ut"
+                ],
+                "sLAExpirationDate": "1990-01-23",
+                "balanceAmountLimit": -80126263,
+                "billDeliveryMethod": "exercitation nostrud minim",
+                "autoPayEnabledFlag": true,
+                "parentAccount": [
+                  "sit",
+                  "sunt nulla qui ut"
+                ],
+                "party": [
+                  "magna dolore ut eiusmod sint",
+                  "ut enim officia"
+                ],
+                "ninetyDayBalanceAmount": 10301441,
+                "salesPhone": [
+                  "officia",
+                  "consectetur commodo cillum laboris"
+                ],
+                "billFrequency": [
+                  {
+                    "id": "labore laborum Lorem",
+                    "name": "non",
+                    "billingFrequencyName": "dolore eiusmod elit"
+                  },
+                  {
+                    "id": "sint",
+                    "name": "ipsum occaecat pariatur incididunt laborum",
+                    "billingFrequencyName": "minim"
+                  }
+                ],
+                "billContactAddress": [
+                  "sed Duis",
+                  "consequat adipisicing"
+                ],
+                "thirtyDayBalanceAmount": -20223792,
+                "paymentTerm": "sed est nisi",
+                "shippingEmail": [
+                  "cillum aliquip ea sed",
+                  "Excepteur sit"
+                ],
+                "accountType": "laboris enim tempor labore",
+                "partyRole": [
+                  "nostrud",
+                  "ad"
+                ],
+                "sixtyDayBalanceAmount": -34408487,
+                "shippingAddress": [
+                  "cillum officia est",
+                  "dolore exercitation quis"
+                ],
+                "description": "sunt",
+                "sLAType": "occaecat non",
+                "autoPaymentMethod": [
+                  "culpa quis ea enim ut",
+                  "ut deserunt occaecat Lorem"
+                ],
+                "assignTerritoryFlag": false,
+                "defaultFreightTerms": "labore incididunt ipsum non dolor",
+                "faxPhone": [
+                  "culpa fugiat id nisi",
+                  "consequat incididunt"
+                ],
+                "generalLedgerAccount": "commodo tempor",
+                "holdStatusReason": "dolore consectetur",
+                "shippingPhoneid": [
+                  "aliqua id anim nulla",
+                  "ea sed"
+                ]
+              }
+            ],
+            "mobilePhone": [
+              "nisi",
+              "exercitation officia et"
+            ],
+            "assistantName": "aliquip"
+          }
+        ]
+      },
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "id",
+        "number"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "billingAddressDetail": {
+          "type": "object",
+          "example": {
+            "contactPointType": [
+              {
+                "id": "do exercitation dolor ex",
+                "name": "voluptate ex adipisicing",
+                "optInPriority": 15860339
+              }
+            ],
+            "id": "labore mollit occaecat",
+            "forBusinessUse": false,
+            "party": [
+              "ut sunt qui"
+            ],
+            "forPersonalUse": true,
+            "activeFromDate": "1980-03-05",
+            "bestTimeToContactEndTime": "05:38:50",
+            "partyRole": [
+              "sed consequat cillum ad"
+            ],
+            "contactPhone": [
+              "Lorem in"
+            ],
+            "isUsedForBilling": false,
+            "addressLine1": "est aliqua esse ut in",
+            "primaryFlag": false,
+            "addressLine4": "eiusmod",
+            "profileLastUpdatedDate": "12:47:35",
+            "cityName": "eu et adipisicing",
+            "isUsedForShipping": true,
+            "countryName": "do consectetur culpa velit",
+            "addressLine2": "ea sunt esse non",
+            "activeToDate": "2018-08-23",
+            "geoLatitude": -95714017,
+            "addressLine3": "mollit ea sit magna",
+            "profileOccurrenceCount": 35348734,
+            "bestTimeToContactStartTime": "18:42:00",
+            "stateProvinceName": "dolor est dolore",
+            "geoAccuracy": 65056088,
+            "postalCodeText": "consequat ex",
+            "geoLongitude": 88623776,
+            "profileFirstCreatedDate": "19:04:35"
+          },
+          "additionalProperties": true,
+          "required": [
+            "contactPointType",
+            "id",
+            "activeFromDate"
+          ],
+          "properties": {
+            "primaryFlag": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactStartTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileLastUpdatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "partyRole": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "activeFromDate": {
+              "type": "string",
+              "format": "date"
+            },
+            "activeToDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileOccurrenceCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileFirstCreatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactEndTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "party": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "contactPointType": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "optInPriority": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "forBusinessUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "forPersonalUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "isUsedForShipping": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stateProvinceName": {
+              "type": "string"
+            },
+            "addressLine3": {
+              "type": "string"
+            },
+            "countryName": {
+              "type": "string"
+            },
+            "postalCodeText": {
+              "type": "string"
+            },
+            "geoLatitude": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "addressLine2": {
+              "type": "string"
+            },
+            "addressLine4": {
+              "type": "string"
+            },
+            "geoAccuracy": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "contactPhone": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "geoLongitude": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "addressLine1": {
+              "type": "string"
+            },
+            "cityName": {
+              "type": "string"
+            },
+            "isUsedForBilling": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        "billDeliveryMethod": {
+          "type": "string"
+        },
+        "contactAddressDetail": {
+          "type": "object",
+          "example": {
+            "contactPointType": [
+              {
+                "id": "do exercitation dolor ex",
+                "name": "voluptate ex adipisicing",
+                "optInPriority": 15860339
+              }
+            ],
+            "id": "labore mollit occaecat",
+            "forBusinessUse": false,
+            "party": [
+              "ut sunt qui"
+            ],
+            "forPersonalUse": true,
+            "activeFromDate": "1980-03-05",
+            "bestTimeToContactEndTime": "05:38:50",
+            "partyRole": [
+              "sed consequat cillum ad"
+            ],
+            "contactPhone": [
+              "Lorem in"
+            ],
+            "isUsedForBilling": false,
+            "addressLine1": "est aliqua esse ut in",
+            "primaryFlag": false,
+            "addressLine4": "eiusmod",
+            "profileLastUpdatedDate": "12:47:35",
+            "cityName": "eu et adipisicing",
+            "isUsedForShipping": true,
+            "countryName": "do consectetur culpa velit",
+            "addressLine2": "ea sunt esse non",
+            "activeToDate": "2018-08-23",
+            "geoLatitude": -95714017,
+            "addressLine3": "mollit ea sit magna",
+            "profileOccurrenceCount": 35348734,
+            "bestTimeToContactStartTime": "18:42:00",
+            "stateProvinceName": "dolor est dolore",
+            "geoAccuracy": 65056088,
+            "postalCodeText": "consequat ex",
+            "geoLongitude": 88623776,
+            "profileFirstCreatedDate": "19:04:35"
+          },
+          "additionalProperties": true,
+          "required": [
+            "contactPointType",
+            "id",
+            "activeFromDate"
+          ],
+          "properties": {
+            "primaryFlag": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactStartTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileLastUpdatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "partyRole": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "activeFromDate": {
+              "type": "string",
+              "format": "date"
+            },
+            "activeToDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileOccurrenceCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileFirstCreatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactEndTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "party": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "contactPointType": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "optInPriority": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "forBusinessUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "forPersonalUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "isUsedForShipping": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stateProvinceName": {
+              "type": "string"
+            },
+            "addressLine3": {
+              "type": "string"
+            },
+            "countryName": {
+              "type": "string"
+            },
+            "postalCodeText": {
+              "type": "string"
+            },
+            "geoLatitude": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "addressLine2": {
+              "type": "string"
+            },
+            "addressLine4": {
+              "type": "string"
+            },
+            "geoAccuracy": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "contactPhone": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "geoLongitude": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "addressLine1": {
+              "type": "string"
+            },
+            "cityName": {
+              "type": "string"
+            },
+            "isUsedForBilling": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        "shippingAddressDetail": {
+          "type": "object",
+          "example": {
+            "contactPointType": [
+              {
+                "id": "do exercitation dolor ex",
+                "name": "voluptate ex adipisicing",
+                "optInPriority": 15860339
+              }
+            ],
+            "id": "labore mollit occaecat",
+            "forBusinessUse": false,
+            "party": [
+              "ut sunt qui"
+            ],
+            "forPersonalUse": true,
+            "activeFromDate": "1980-03-05",
+            "bestTimeToContactEndTime": "05:38:50",
+            "partyRole": [
+              "sed consequat cillum ad"
+            ],
+            "contactPhone": [
+              "Lorem in"
+            ],
+            "isUsedForBilling": false,
+            "addressLine1": "est aliqua esse ut in",
+            "primaryFlag": false,
+            "addressLine4": "eiusmod",
+            "profileLastUpdatedDate": "12:47:35",
+            "cityName": "eu et adipisicing",
+            "isUsedForShipping": true,
+            "countryName": "do consectetur culpa velit",
+            "addressLine2": "ea sunt esse non",
+            "activeToDate": "2018-08-23",
+            "geoLatitude": -95714017,
+            "addressLine3": "mollit ea sit magna",
+            "profileOccurrenceCount": 35348734,
+            "bestTimeToContactStartTime": "18:42:00",
+            "stateProvinceName": "dolor est dolore",
+            "geoAccuracy": 65056088,
+            "postalCodeText": "consequat ex",
+            "geoLongitude": 88623776,
+            "profileFirstCreatedDate": "19:04:35"
+          },
+          "additionalProperties": true,
+          "required": [
+            "contactPointType",
+            "id",
+            "activeFromDate"
+          ],
+          "properties": {
+            "primaryFlag": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactStartTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileLastUpdatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "partyRole": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "activeFromDate": {
+              "type": "string",
+              "format": "date"
+            },
+            "activeToDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileOccurrenceCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileFirstCreatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactEndTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "party": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "contactPointType": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "optInPriority": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "forBusinessUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "forPersonalUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "isUsedForShipping": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stateProvinceName": {
+              "type": "string"
+            },
+            "addressLine3": {
+              "type": "string"
+            },
+            "countryName": {
+              "type": "string"
+            },
+            "postalCodeText": {
+              "type": "string"
+            },
+            "geoLatitude": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "addressLine2": {
+              "type": "string"
+            },
+            "addressLine4": {
+              "type": "string"
+            },
+            "geoAccuracy": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "contactPhone": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "geoLongitude": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "addressLine1": {
+              "type": "string"
+            },
+            "cityName": {
+              "type": "string"
+            },
+            "isUsedForBilling": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        "contactPointDetail": {
+          "type": "object",
+          "example": {
+            "id": "sint non",
+            "activeFromDate": "1978-07-15",
+            "party": [
+              "eu incididunt ex"
+            ],
+            "contactPointType": [
+              {
+                "id": "commodo qui pariatur non",
+                "name": "mollit",
+                "optInPriority": -97477713
+              }
+            ],
+            "forBusinessUse": true,
+            "forPersonalUse": false,
+            "profileFirstCreatedDate": "11:40:07",
+            "primaryFlag": false,
+            "bestTimeToContactStartTime": "11:03:59",
+            "profileLastUpdatedDate": "17:30:08",
+            "bestTimeToContactEndTime": "01:18:47",
+            "activeToDate": "1958-10-31",
+            "partyRole": [
+              "sed aliquip"
+            ],
+            "profileOccurrenceCount": -66541391
+          },
+          "additionalProperties": true,
+          "required": [
+            "contactPointType",
+            "id",
+            "activeFromDate"
+          ],
+          "properties": {
+            "id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "primaryFlag": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactStartTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileLastUpdatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "partyRole": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "activeFromDate": {
+              "type": "string",
+              "format": "date"
+            },
+            "activeToDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileOccurrenceCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileFirstCreatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactEndTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "party": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "contactPointType": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "optInPriority": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "forBusinessUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "forPersonalUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        "billContactAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "phoneDetail": {
+          "type": "object",
+          "example": {
+            "contactPointType": [
+              {
+                "id": "do",
+                "name": "commodo qui eu irure exercitation",
+                "optInPriority": -43391706
+              }
+            ],
+            "formattedNationalPhoneNumber": "ex in",
+            "id": "occaecat in Lorem tempor",
+            "forBusinessUse": false,
+            "party": [
+              "ea in est"
+            ],
+            "forPersonalUse": true,
+            "telephoneNumber": "sint velit",
+            "activeFromDate": "1969-05-21",
+            "shortCode": 40287489,
+            "bestTimeToContactEndTime": "18:02:53",
+            "isSMSCapable": true,
+            "partyRole": [
+              "sunt labore commodo veniam et"
+            ],
+            "isFaxCapable": false,
+            "areaCode": "adipisicing consequat",
+            "primaryFlag": true,
+            "formattedInternationalPhoneNumber": "est Excepteur",
+            "phoneCountryCode": "sit nulla pariatur",
+            "countryName": "voluptate",
+            "extensionNumber": "dolore adipisicing consequat",
+            "formattedE164PhoneNumber": "dolore quis occaecat",
+            "activeToDate": "1960-03-19",
+            "bestTimeToContactStartTime": "10:06:39",
+            "profileLastUpdatedDate": "23:18:20",
+            "primaryPhoneType": "consectetur in cillum aliquip commodo",
+            "profileOccurrenceCount": -90807568,
+            "profileFirstCreatedDate": "21:33:06"
+          },
+          "additionalProperties": true,
+          "required": [
+            "contactPointType",
+            "formattedNationalPhoneNumber",
+            "id",
+            "telephoneNumber",
+            "activeFromDate"
+          ],
+          "properties": {
+            "primaryFlag": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactStartTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileLastUpdatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "partyRole": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "activeFromDate": {
+              "type": "string",
+              "format": "date"
+            },
+            "activeToDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileOccurrenceCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileFirstCreatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactEndTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "party": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "contactPointType": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "optInPriority": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "forBusinessUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "forPersonalUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "extensionNumber": {
+              "type": "string"
+            },
+            "phoneCountryCode": {
+              "type": "string"
+            },
+            "countryName": {
+              "type": "string"
+            },
+            "areaCode": {
+              "type": "string"
+            },
+            "isSMSCapable": {
+              "type": "boolean"
+            },
+            "shortCode": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "formattedInternationalPhoneNumber": {
+              "type": "string"
+            },
+            "primaryPhoneType": {
+              "type": "string"
+            },
+            "isFaxCapable": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "formattedE164PhoneNumber": {
+              "type": "string"
+            },
+            "formattedNationalPhoneNumber": {
+              "type": "string"
+            },
+            "telephoneNumber": {
+              "type": "string"
+            }
+          }
+        },
+        "emailDetail": {
+          "type": "object",
+          "example": {
+            "emailAddress": "esse ad consectetur",
+            "contactPointType": [
+              {
+                "id": "irure consectetur aute nisi",
+                "name": "nisi cupidatat",
+                "optInPriority": 27763021
+              }
+            ],
+            "id": "et Ut est",
+            "forBusinessUse": true,
+            "party": [
+              "exercitation in ullamco ex dolore"
+            ],
+            "forPersonalUse": false,
+            "activeFromDate": "2018-09-07",
+            "profileLastUpdatedDate": "14:57:58",
+            "emailMailBox": "non officia",
+            "activeToDate": "2000-08-18",
+            "emailLatestBounceDateTime": "2012-08-26",
+            "bestTimeToContactStartTime": "15:36:21",
+            "profileFirstCreatedDate": "06:30:00",
+            "emailDomain": "laboris aute do",
+            "partyRole": [
+              "magna ullamco laborum eu"
+            ],
+            "profileOccurrenceCount": 62639574,
+            "primaryFlag": true,
+            "bestTimeToContactEndTime": "19:34:26",
+            "emailLatestBounceReasonText": "ut"
+          },
+          "additionalProperties": true,
+          "required": [
+            "emailAddress",
+            "contactPointType",
+            "id",
+            "activeFromDate"
+          ],
+          "properties": {
+            "primaryFlag": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactStartTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileLastUpdatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "partyRole": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "activeFromDate": {
+              "type": "string",
+              "format": "date"
+            },
+            "activeToDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileOccurrenceCount": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "profileFirstCreatedDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bestTimeToContactEndTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "party": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "contactPointType": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "id",
+                  "name"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "optInPriority": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "forBusinessUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "forPersonalUse": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "emailLatestBounceReasonText": {
+              "type": "string"
+            },
+            "emailMailBox": {
+              "type": "string"
+            },
+            "emailDomain": {
+              "type": "string"
+            },
+            "emailAddress": {
+              "type": "string"
+            },
+            "emailLatestBounceDateTime": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        "accountContactsDetail": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "mailingAddressDetail": {
+                "type": "object",
+                "example": {
+                  "contactPointType": [
+                    {
+                      "id": "do exercitation dolor ex",
+                      "name": "voluptate ex adipisicing",
+                      "optInPriority": 15860339
+                    }
+                  ],
+                  "id": "labore mollit occaecat",
+                  "forBusinessUse": false,
+                  "party": [
+                    "ut sunt qui"
+                  ],
+                  "forPersonalUse": true,
+                  "activeFromDate": "1980-03-05",
+                  "bestTimeToContactEndTime": "05:38:50",
+                  "partyRole": [
+                    "sed consequat cillum ad"
+                  ],
+                  "contactPhone": [
+                    "Lorem in"
+                  ],
+                  "isUsedForBilling": false,
+                  "addressLine1": "est aliqua esse ut in",
+                  "primaryFlag": false,
+                  "addressLine4": "eiusmod",
+                  "profileLastUpdatedDate": "12:47:35",
+                  "cityName": "eu et adipisicing",
+                  "isUsedForShipping": true,
+                  "countryName": "do consectetur culpa velit",
+                  "addressLine2": "ea sunt esse non",
+                  "activeToDate": "2018-08-23",
+                  "geoLatitude": -95714017,
+                  "addressLine3": "mollit ea sit magna",
+                  "profileOccurrenceCount": 35348734,
+                  "bestTimeToContactStartTime": "18:42:00",
+                  "stateProvinceName": "dolor est dolore",
+                  "geoAccuracy": 65056088,
+                  "postalCodeText": "consequat ex",
+                  "geoLongitude": 88623776,
+                  "profileFirstCreatedDate": "19:04:35"
+                },
+                "additionalProperties": true,
+                "required": [
+                  "contactPointType",
+                  "id",
+                  "activeFromDate"
+                ],
+                "properties": {
+                  "primaryFlag": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "bestTimeToContactStartTime": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "time"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "profileLastUpdatedDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "time"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "partyRole": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "activeFromDate": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "activeToDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "profileOccurrenceCount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "profileFirstCreatedDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "time"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "bestTimeToContactEndTime": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "time"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "party": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "contactPointType": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": true,
+                      "required": [
+                        "id",
+                        "name"
+                      ],
+                      "properties": {
+                        "id": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "optInPriority": {
+                          "anyOf": [
+                            {
+                              "type": "integer"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "forBusinessUse": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "forPersonalUse": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "isUsedForShipping": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "stateProvinceName": {
+                    "type": "string"
+                  },
+                  "addressLine3": {
+                    "type": "string"
+                  },
+                  "countryName": {
+                    "type": "string"
+                  },
+                  "postalCodeText": {
+                    "type": "string"
+                  },
+                  "geoLatitude": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "addressLine2": {
+                    "type": "string"
+                  },
+                  "addressLine4": {
+                    "type": "string"
+                  },
+                  "geoAccuracy": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "contactPhone": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "geoLongitude": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "addressLine1": {
+                    "type": "string"
+                  },
+                  "cityName": {
+                    "type": "string"
+                  },
+                  "isUsedForBilling": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              },
+              "contactEmailDetail": {
+                "type": "object",
+                "example": {
+                  "emailAddress": "esse ad consectetur",
+                  "contactPointType": [
+                    {
+                      "id": "irure consectetur aute nisi",
+                      "name": "nisi cupidatat",
+                      "optInPriority": 27763021
+                    }
+                  ],
+                  "id": "et Ut est",
+                  "forBusinessUse": true,
+                  "party": [
+                    "exercitation in ullamco ex dolore"
+                  ],
+                  "forPersonalUse": false,
+                  "activeFromDate": "2018-09-07",
+                  "profileLastUpdatedDate": "14:57:58",
+                  "emailMailBox": "non officia",
+                  "activeToDate": "2000-08-18",
+                  "emailLatestBounceDateTime": "2012-08-26",
+                  "bestTimeToContactStartTime": "15:36:21",
+                  "profileFirstCreatedDate": "06:30:00",
+                  "emailDomain": "laboris aute do",
+                  "partyRole": [
+                    "magna ullamco laborum eu"
+                  ],
+                  "profileOccurrenceCount": 62639574,
+                  "primaryFlag": true,
+                  "bestTimeToContactEndTime": "19:34:26",
+                  "emailLatestBounceReasonText": "ut"
+                },
+                "additionalProperties": true,
+                "required": [
+                  "emailAddress",
+                  "contactPointType",
+                  "id",
+                  "activeFromDate"
+                ],
+                "properties": {
+                  "primaryFlag": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "bestTimeToContactStartTime": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "time"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "profileLastUpdatedDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "time"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "partyRole": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "activeFromDate": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "activeToDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "profileOccurrenceCount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "profileFirstCreatedDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "time"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "bestTimeToContactEndTime": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "time"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "party": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "contactPointType": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": true,
+                      "required": [
+                        "id",
+                        "name"
+                      ],
+                      "properties": {
+                        "id": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "optInPriority": {
+                          "anyOf": [
+                            {
+                              "type": "integer"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "forBusinessUse": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "forPersonalUse": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "emailLatestBounceReasonText": {
+                    "type": "string"
+                  },
+                  "emailMailBox": {
+                    "type": "string"
+                  },
+                  "emailDomain": {
+                    "type": "string"
+                  },
+                  "emailAddress": {
+                    "type": "string"
+                  },
+                  "emailLatestBounceDateTime": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              },
+              "homePhoneDetail": {
+                "type": "object",
+                "example": {
+                  "contactPointType": [
+                    {
+                      "id": "do",
+                      "name": "commodo qui eu irure exercitation",
+                      "optInPriority": -43391706
+                    }
+                  ],
+                  "formattedNationalPhoneNumber": "ex in",
+                  "id": "occaecat in Lorem tempor",
+                  "forBusinessUse": false,
+                  "party": [
+                    "ea in est"
+                  ],
+                  "forPersonalUse": true,
+                  "telephoneNumber": "sint velit",
+                  "activeFromDate": "1969-05-21",
+                  "shortCode": 40287489,
+                  "bestTimeToContactEndTime": "18:02:53",
+                  "isSMSCapable": true,
+                  "partyRole": [
+                    "sunt labore commodo veniam et"
+                  ],
+                  "isFaxCapable": false,
+                  "areaCode": "adipisicing consequat",
+                  "primaryFlag": true,
+                  "formattedInternationalPhoneNumber": "est Excepteur",
+                  "phoneCountryCode": "sit nulla pariatur",
+                  "countryName": "voluptate",
+                  "extensionNumber": "dolore adipisicing consequat",
+                  "formattedE164PhoneNumber": "dolore quis occaecat",
+                  "activeToDate": "1960-03-19",
+                  "bestTimeToContactStartTime": "10:06:39",
+                  "profileLastUpdatedDate": "23:18:20",
+                  "primaryPhoneType": "consectetur in cillum aliquip commodo",
+                  "profileOccurrenceCount": -90807568,
+                  "profileFirstCreatedDate": "21:33:06"
+                },
+                "additionalProperties": true,
+                "required": [
+                  "contactPointType",
+                  "formattedNationalPhoneNumber",
+                  "id",
+                  "telephoneNumber",
+                  "activeFromDate"
+                ],
+                "properties": {
+                  "primaryFlag": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "bestTimeToContactStartTime": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "time"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "profileLastUpdatedDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "time"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "partyRole": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "activeFromDate": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "activeToDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "profileOccurrenceCount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "profileFirstCreatedDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "time"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "bestTimeToContactEndTime": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "time"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "party": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "contactPointType": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": true,
+                      "required": [
+                        "id",
+                        "name"
+                      ],
+                      "properties": {
+                        "id": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "optInPriority": {
+                          "anyOf": [
+                            {
+                              "type": "integer"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "forBusinessUse": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "forPersonalUse": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "extensionNumber": {
+                    "type": "string"
+                  },
+                  "phoneCountryCode": {
+                    "type": "string"
+                  },
+                  "countryName": {
+                    "type": "string"
+                  },
+                  "areaCode": {
+                    "type": "string"
+                  },
+                  "isSMSCapable": {
+                    "type": "boolean"
+                  },
+                  "shortCode": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "formattedInternationalPhoneNumber": {
+                    "type": "string"
+                  },
+                  "primaryPhoneType": {
+                    "type": "string"
+                  },
+                  "isFaxCapable": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "formattedE164PhoneNumber": {
+                    "type": "string"
+                  },
+                  "formattedNationalPhoneNumber": {
+                    "type": "string"
+                  },
+                  "telephoneNumber": {
+                    "type": "string"
+                  }
+                }
+              },
+              "individualDetail": {
+                "type": "object",
+                "example": {
+                  "partyType": "eiusmod Ut id",
+                  "personName": "anim adipisicing",
+                  "id": "reprehenderit dolor",
+                  "netWorth": 77131731,
+                  "birthDate": "1942-12-02",
+                  "dependentCount": null,
+                  "isHighRiskHobby": false,
+                  "isGoodDriver": true,
+                  "webSiteURL": "ex ut consequat sint veniam",
+                  "secondLastName": "mollit Lorem reprehenderit ad",
+                  "consumerCreditScore": -10552145,
+                  "religion": "magna",
+                  "doNotMarketFromUpdateDate": "2019-04-11",
+                  "isTobaccoConsume": true,
+                  "deathDate": "2009-05-08",
+                  "globalParty": "aute consectetur ex",
+                  "mailingName": "proident laborum eu",
+                  "hasDrugAbuseHistory": null,
+                  "hasAlcoholAbuseHistory": false,
+                  "militaryService": "reprehenderit sed veniam",
+                  "yearlyIncome": 85098518,
+                  "weddingAnniversaryDate": "1990-07-02",
+                  "orderingName": "nisi deserunt cupidatat",
+                  "militaryStatus": "nulla veniam aliquip non eiusmod",
+                  "personHeight": null,
+                  "primaryHousehold": [
+                    "voluptate sunt minim"
+                  ],
+                  "mothersMaidenName": "do eu esse minim et",
+                  "minorCitationCount": 44710945,
+                  "officialName": "anim deserunt eiusmod proident non",
+                  "doNotTrackLocationUpdateDate": null,
+                  "isGoodStudent": true,
+                  "primaryHobby": "Excepteur sit eiusmod",
+                  "mainLifeStyleType": "ut Lorem laborum",
+                  "personHeightUnitOfMeasure": "velit",
+                  "residenceCaptureMethod": "quis nisi et",
+                  "birthPlace": "reprehenderit",
+                  "primaryAccount": [
+                    "adipisicing aute nostrud"
+                  ],
+                  "nameSuffix": "ad Ut",
+                  "shouldForget": false,
+                  "doNotProfileFromUpdateDate": "1963-01-09",
+                  "gender": "id",
+                  "doForgetMeFromUpdateDate": null,
+                  "mainDietaryHabitType": "dolor Duis nisi dolore",
+                  "sendIndividualData": null,
+                  "firstName": "dolor pariatur magna in exercitation",
+                  "mainPersonalValueType": "ex nostrud",
+                  "noMergeReason": "labore cillum eu",
+                  "hospitalizationsLast5YearsCount": -1601571,
+                  "occupation": "Ut elit consequat",
+                  "doExtractMyDataUpdateDate": "1961-06-16",
+                  "occupationType": "elit in Ut culpa",
+                  "lastName": "aute labore",
+                  "mainDisabilityType": "sint nulla elit sit",
+                  "doNotProcessReason": "exercitation occaecat Lorem laboris",
+                  "taxBracketRange": "ex in pariatur non occaecat",
+                  "middleName": "anim",
+                  "doNotTrackUpdateDate": "1948-02-27",
+                  "personWeightUnitOfMeasure": "non in adipisicing",
+                  "overAgeNumber": -33978317,
+                  "yearlyIncomeRange": "mollit ut exercitation in aute",
+                  "influencerRating": 65125139,
+                  "isAlcoholConsumer": false,
+                  "photoURL": "Excepteur",
+                  "personWeight": null,
+                  "residenceCountryName": "minim non eiusmod",
+                  "consumerCreditScoreProviderName": "sed magna cillum",
+                  "currentEmployerName": "Ut",
+                  "isHomeOwner": null,
+                  "employedSinceDate": null,
+                  "mainPersonalityType": "id",
+                  "isHighRiskOccupation": true,
+                  "majorCitationCount": 87572917,
+                  "doNotProcessFromUpdateDate": "2017-02-10",
+                  "childrenCount": -55530924,
+                  "maritalStatus": "in anim",
+                  "convictionsCount": null,
+                  "mainLifeAttitudeType": "sed minim officia",
+                  "preferredName": "elit Excepteur aliqua amet adipisicing",
+                  "surgeriesLast5YearsCount": 43027205,
+                  "highestEducationLevel": "fugiat et anim elit do",
+                  "isDrugConsumer": false,
+                  "salutation": "in",
+                  "personLifeStage": "minim",
+                  "deathPlace": "labore magna qui",
+                  "ethnicity": "sed in quis"
+                },
+                "additionalProperties": true,
+                "required": [
+                  "partyType",
+                  "personName",
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "hasAlcoholAbuseHistory": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "highestEducationLevel": {
+                    "type": "string"
+                  },
+                  "personHeight": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "mailingName": {
+                    "type": "string"
+                  },
+                  "surgeriesLast5YearsCount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "doNotTrackUpdateDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "weddingAnniversaryDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "minorCitationCount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "mainDietaryHabitType": {
+                    "type": "string"
+                  },
+                  "personHeightUnitOfMeasure": {
+                    "type": "string"
+                  },
+                  "firstName": {
+                    "type": "string"
+                  },
+                  "personName": {
+                    "type": "string"
+                  },
+                  "photoURL": {
+                    "type": "string"
+                  },
+                  "isHighRiskHobby": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "doNotProcessFromUpdateDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "militaryService": {
+                    "type": "string"
+                  },
+                  "maritalStatus": {
+                    "type": "string"
+                  },
+                  "doNotMarketFromUpdateDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "shouldForget": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "mainDisabilityType": {
+                    "type": "string"
+                  },
+                  "consumerCreditScoreProviderName": {
+                    "type": "string"
+                  },
+                  "isTobaccoConsume": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "webSiteURL": {
+                    "type": "string"
+                  },
+                  "secondLastName": {
+                    "type": "string"
+                  },
+                  "primaryHousehold": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "orderingName": {
+                    "type": "string"
+                  },
+                  "hospitalizationsLast5YearsCount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "dependentCount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "convictionsCount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "isGoodDriver": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "primaryHobby": {
+                    "type": "string"
+                  },
+                  "mainPersonalValueType": {
+                    "type": "string"
+                  },
+                  "isAlcoholConsumer": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "taxBracketRange": {
+                    "type": "string"
+                  },
+                  "childrenCount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "isGoodStudent": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "mainLifeAttitudeType": {
+                    "type": "string"
+                  },
+                  "netWorth": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "personWeight": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "birthDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "religion": {
+                    "type": "string"
+                  },
+                  "sendIndividualData": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "deathDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "doExtractMyDataUpdateDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "birthPlace": {
+                    "type": "string"
+                  },
+                  "overAgeNumber": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "doForgetMeFromUpdateDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "personWeightUnitOfMeasure": {
+                    "type": "string"
+                  },
+                  "mainLifeStyleType": {
+                    "type": "string"
+                  },
+                  "gender": {
+                    "type": "string"
+                  },
+                  "hasDrugAbuseHistory": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "salutation": {
+                    "type": "string"
+                  },
+                  "mothersMaidenName": {
+                    "type": "string"
+                  },
+                  "doNotTrackLocationUpdateDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "ethnicity": {
+                    "type": "string"
+                  },
+                  "mainPersonalityType": {
+                    "type": "string"
+                  },
+                  "employedSinceDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "officialName": {
+                    "type": "string"
+                  },
+                  "isHighRiskOccupation": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "residenceCaptureMethod": {
+                    "type": "string"
+                  },
+                  "doNotProfileFromUpdateDate": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "nameSuffix": {
+                    "type": "string"
+                  },
+                  "isDrugConsumer": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "isHomeOwner": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "doNotProcessReason": {
+                    "type": "string"
+                  },
+                  "occupationType": {
+                    "type": "string"
+                  },
+                  "deathPlace": {
+                    "type": "string"
+                  },
+                  "influencerRating": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "militaryStatus": {
+                    "type": "string"
+                  },
+                  "consumerCreditScore": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "yearlyIncome": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "preferredName": {
+                    "type": "string"
+                  },
+                  "personLifeStage": {
+                    "type": "string"
+                  },
+                  "yearlyIncomeRange": {
+                    "type": "string"
+                  },
+                  "majorCitationCount": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "middleName": {
+                    "type": "string"
+                  },
+                  "residenceCountryName": {
+                    "type": "string"
+                  },
+                  "lastName": {
+                    "type": "string"
+                  },
+                  "occupation": {
+                    "type": "string"
+                  },
+                  "currentEmployerName": {
+                    "type": "string"
+                  },
+                  "partyType": {
+                    "type": "string"
+                  },
+                  "globalParty": {
+                    "type": "string"
+                  },
+                  "noMergeReason": {
+                    "type": "string"
+                  },
+                  "primaryAccount": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "auditDetail": {
+                "description": "Defines standard system audit fields available for most types",
+                "example": {
+                  "createdOn": "2021-01-21T21:21:21Z",
+                  "createdBy": "0054x000002IpBlAAK",
+                  "updatedOn": "2021-01-21T21:21:21Z",
+                  "updatedBy": "0054x000002xBGGAA2",
+                  "isDeleted": false
+                },
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                  "createdOn",
+                  "createdBy",
+                  "updatedOn",
+                  "updatedBy",
+                  "isDeleted"
+                ],
+                "properties": {
+                  "createdOn": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "createdBy": {
+                    "type": "string"
+                  },
+                  "updatedOn": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "updatedBy": {
+                    "type": "string"
+                  },
+                  "isDeleted": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "reportsToAccountContact": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "mailingAddress": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "account": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "faxPhone": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "departmentName": {
+                "type": "string"
+              },
+              "businessPhone": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "contactEmail": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "mobilePhone": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "assistantPhone": {
+                "type": "string"
+              },
+              "indirectRelationAccountContact": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "title": {
+                "type": "string"
+              },
+              "lastActivityDate": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "contactNote": {
+                "type": "string"
+              },
+              "assistantName": {
+                "type": "string"
+              },
+              "individual": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "otherContactAddress": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "homePhone": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "auditDetail": {
+          "description": "Defines standard system audit fields available for most types",
+          "example": {
+            "createdOn": "2021-01-21T21:21:21Z",
+            "createdBy": "0054x000002IpBlAAK",
+            "updatedOn": "2021-01-21T21:21:21Z",
+            "updatedBy": "0054x000002xBGGAA2",
+            "isDeleted": false
+          },
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "createdOn",
+            "createdBy",
+            "updatedOn",
+            "updatedBy",
+            "isDeleted"
+          ],
+          "properties": {
+            "createdOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "updatedOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedBy": {
+              "type": "string"
+            },
+            "isDeleted": {
+              "type": "boolean"
+            }
+          }
+        },
+        "useAsSalesAccount": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "assignTerritoryFlag": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "billFrequency": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name",
+              "billingFrequencyName"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "billingFrequencyName": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "autoPayEnabledFlag": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "autoPaymentAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "useAsServiceAccount": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "useAsBillingAccount": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "partyRole": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "faxPhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string"
+        },
+        "salesPhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sLAExpirationDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "autoPaymentMethod": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "balanceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "holdStatusReason": {
+          "type": "string"
+        },
+        "generalLedgerAccount": {
+          "type": "string"
+        },
+        "thirtyDayBalanceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sixtyDayBalanceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "useAsShippingAccount": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shippingAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "party": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "parentAccount": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sLAType": {
+          "type": "string"
+        },
+        "shippingContact": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "balanceAmountLimit": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shippingPhoneid": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "shippingEmail": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "lastActivityDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "orderDeliveryMethod": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "primarySalesContactPoint": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "number": {
+          "type": "string"
+        },
+        "ninetyDayBalanceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentTerm": {
+          "type": "string"
+        },
+        "defaultFreightTerms": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

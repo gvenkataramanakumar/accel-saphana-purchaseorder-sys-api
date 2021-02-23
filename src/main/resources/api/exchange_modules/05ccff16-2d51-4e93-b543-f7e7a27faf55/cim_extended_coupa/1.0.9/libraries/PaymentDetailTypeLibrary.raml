@@ -1,0 +1,51 @@
+#%RAML 1.0 Library
+usage: This library provides extended types for the Payment group
+uses:
+  CIM: ../exchange_modules/org.mule.examples/accelerator-cim-library/1.1.1/accelerator-cim-library.raml
+types:
+  CapturePaymentDetail:
+    type: CIM.CapturePayment
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  PaymentDetail:
+    type: CIM.Payment
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+      currency?: string
+      paymentDate?: datetime
+  PaymentAuthorizationDetail:
+    type: CIM.PaymentAuthorization
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  PaymentAuthorizationReversalDetail:
+    type: CIM.PaymentAuthorizationReversal
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  PaymentGatewayDetail:
+    type: CIM.PaymentGateway
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  PaymentGatewayProviderDetail:
+    type: CIM.PaymentGatewayProvider
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  PaymentGroupDetail:
+    type: CIM.PaymentGroup
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  PaymentPolicyDetail:
+    type: CIM.PaymentPolicy
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  PaymentTreatmentDetail:
+    type: CIM.PaymentTreatment
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  PaymentTreatmentMethodDetail:
+    type: CIM.PaymentTreatmentMethod
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  RefundPaymentDetail:
+    type: CIM.RefundPayment
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml

@@ -1,0 +1,211 @@
+#%RAML 1.0 Library
+usage: A platform-agnostic data model that simplifies integration and accelerates innovation
+uses:
+  AccountTypes: libraries/AccountTypeLibrary.raml
+  PartyTypes: libraries/PartyTypeLibrary.raml
+  PartyRoleTypes: libraries/PartyRoleTypeLibrary.raml
+  PaymentTypes: libraries/PaymentTypeLibrary.raml
+  PaymentMethodTypes: libraries/PaymentMethodTypeLibrary.raml
+  ProductTypes: libraries/ProductTypeLibrary.raml
+  SalesOrderTypes: libraries/SalesOrderTypeLibrary.raml
+  ShipmentTypes: libraries/ShipmentTypeLibrary.raml
+
+types:
+  # Exported AccountTypes
+  Account:
+    type: AccountTypes.Account
+    example: !include ./examples/AccountExample.json
+  AccountContact:
+    type: AccountTypes.AccountContact
+    example: !include ./examples/AccountContactExample.json
+  AccountContactRole:
+    type: AccountTypes.AccountContactRole
+    example: !include ./examples/AccountContactRoleExample.json
+  AccountPartner:
+    type: AccountTypes.AccountPartner
+    example: !include ./examples/AccountPartnerExample.json
+  Lead:
+    type: AccountTypes.Lead
+    example: !include ./examples/LeadExample.json
+  
+  # Exported PartyTypes
+  ContactPoint:
+    type: PartyTypes.ContactPoint
+    example: !include ./examples/ContactPointExample.json
+  ContactPointAddress:
+    type: PartyTypes.ContactPointAddress
+    example: !include ./examples/ContactPointAddressExample.json
+  ContactPointApp:
+    type: PartyTypes.ContactPointApp
+    example: !include ./examples/ContactPointAppExample.json
+  ContactPointEmail:
+    type: PartyTypes.ContactPointEmail
+    example: !include ./examples/ContactPointEmailExample.json
+  ContactPointLocation:
+    type: PartyTypes.ContactPointLocation
+    example: !include ./examples/ContactPointLocationExample.json
+  ContactPointPhone:
+    type: PartyTypes.ContactPointPhone
+    example: !include ./examples/ContactPointPhoneExample.json
+  ContactPointSocial:
+    type: PartyTypes.ContactPointSocial
+    example: !include ./examples/ContactPointSocialExample.json
+  Household:
+    type: PartyTypes.Household
+    example: !include ./examples/HouseholdExample.json
+  Individual:
+    type: PartyTypes.Individual
+    example: !include ./examples/IndividualExample.json
+  InternalBusinessUnit:
+    type: PartyTypes.InternalBusinessUnit
+    example: !include ./examples/InternalBusinessUnitExample.json
+  Party:
+    type: PartyTypes.Party
+    example: !include ./examples/PartyExample.json
+  PartyIdentification:
+    type: PartyTypes.PartyIdentification
+    example: !include ./examples/PartyIdentificationExample.json
+  UncategorizedParty:
+    type: PartyTypes.UncategorizedParty
+    example: !include ./examples/UncategorizedPartyExample.json
+  
+  # Exported PartyRoleTypes
+  Competitor:
+    type: PartyRoleTypes.Competitor
+    example: !include ./examples/CompetitorExample.json
+  Customer:
+    type: PartyRoleTypes.Customer
+    example: !include ./examples/CustomerExample.json
+  PartyRole:
+    type: PartyRoleTypes.PartyRole
+    example: !include ./examples/PartyRoleExample.json
+  Seller:
+    type: PartyRoleTypes.Seller
+    example: !include ./examples/SellerExample.json
+  Supplier:
+    type: PartyRoleTypes.Supplier
+    example: !include ./examples/SupplierExample.json
+  
+  # Exported PaymentTypes
+  CapturePayment:
+    type: PaymentTypes.CapturePayment
+    example: !include ./examples/CapturePaymentExample.json
+  Payment:
+    type: PaymentTypes.Payment
+    example: !include ./examples/PaymentExample.json
+  PaymentAuthorization:
+    type: PaymentTypes.PaymentAuthorization
+    example: !include ./examples/PaymentAuthorizationExample.json
+  PaymentAuthorizationReversal:
+    type: PaymentTypes.PaymentAuthorizationReversal
+    example: !include ./examples/PaymentAuthorizationReversalExample.json
+  PaymentGateway:
+    type: PaymentTypes.PaymentGateway
+    example: !include ./examples/PaymentGatewayExample.json
+  PaymentGatewayProvider:
+    type: PaymentTypes.PaymentGatewayProvider
+    example: !include ./examples/PaymentGatewayProviderExample.json
+  PaymentGroup:
+    type: PaymentTypes.PaymentGroup
+    example: !include ./examples/PaymentGroupExample.json
+  PaymentPolicy:
+    type: PaymentTypes.PaymentPolicy
+    example: !include ./examples/PaymentPolicyExample.json
+  PaymentTreatment:
+    type: PaymentTypes.PaymentTreatment
+    example: !include ./examples/PaymentTreatmentExample.json
+  PaymentTreatmentMethod:
+    type: PaymentTypes.PaymentTreatmentMethod
+    example: !include ./examples/PaymentTreatmentMethodExample.json
+  RefundPayment:
+    type: PaymentTypes.RefundPayment
+    example: !include ./examples/RefundPaymentExample.json
+  
+  # Exported PaymentMethodTypes
+  Coupon:
+    type: PaymentMethodTypes.Coupon
+    example: !include ./examples/CouponExample.json
+  CreditTender:
+    type: PaymentMethodTypes.CreditTender
+    example: !include ./examples/CreditTenderExample.json
+  PaymentCard:
+    type: PaymentMethodTypes.PaymentCard
+    example: !include ./examples/PaymentCardExample.json
+  PaymentMethod:
+    type: PaymentMethodTypes.PaymentMethod
+    example: !include ./examples/PaymentMethodExample.json
+  PaymentMethodType:
+    type: PaymentMethodTypes.PaymentMethodType
+    example: !include ./examples/PaymentMethodTypeExample.json
+  
+  # Exported ProductTypes
+  Brand:
+    type: ProductTypes.Brand
+    example: !include ./examples/BrandExample.json
+  BundleProduct:
+    type: ProductTypes.BundleProduct
+    example: !include ./examples/BundleProductExample.json
+  GoodsProduct:
+    type: ProductTypes.GoodsProduct
+    example: !include ./examples/GoodsProductExample.json
+  PriceBookEntry:
+    type: ProductTypes.PriceBookEntry
+    example: !include ./examples/PriceBookEntryExample.json
+  Product:
+    type: ProductTypes.Product
+    example: !include ./examples/ProductExample.json
+  ProductCatalog:
+    type: ProductTypes.ProductCatalog
+    example: !include ./examples/ProductCatalogExample.json
+  ProductCategory:
+    type: ProductTypes.ProductCategory
+    example: !include ./examples/ProductCategoryExample.json
+  ProductImage:
+    type: ProductTypes.ProductImage
+    example: !include ./examples/ProductImageExample.json
+  ProductTranslation:
+    type: ProductTypes.ProductTranslation
+    example: !include ./examples/ProductTranslationExample.json
+  ServiceProduct:
+    type: ProductTypes.ServiceProduct
+    example: !include ./examples/ServiceProductExample.json
+  
+  # Exported SalesOrderTypes
+  SalesChannel:
+    type: SalesOrderTypes.SalesChannel
+    example: !include ./examples/SalesChannelExample.json
+  SalesOrder:
+    type: SalesOrderTypes.SalesOrder
+    example: !include ./examples/SalesOrderExample.json
+  SalesOrderDeliveryGroup:
+    type: SalesOrderTypes.SalesOrderDeliveryGroup
+    example: !include ./examples/SalesOrderDeliveryGroupExample.json
+  SalesOrderPaymentSummary:
+    type: SalesOrderTypes.SalesOrderPaymentSummary
+    example: !include ./examples/SalesOrderPaymentSummaryExample.json
+  SalesOrderProduct:
+    type: SalesOrderTypes.SalesOrderProduct
+    example: !include ./examples/SalesOrderProductExample.json
+  SalesOrderProductTax:
+    type: SalesOrderTypes.SalesOrderProductTax
+    example: !include ./examples/SalesOrderProductTaxExample.json
+  SalesOrderTax:
+    type: SalesOrderTypes.SalesOrderTax
+    example: !include ./examples/SalesOrderTaxExample.json
+  
+  # Exported ShipmentTypes
+  Shipment:
+    type: ShipmentTypes.Shipment
+    example: !include ./examples/ShipmentExample.json
+  ShipmentDocument:
+    type: ShipmentTypes.ShipmentDocument
+    example: !include ./examples/ShipmentDocumentExample.json
+  ShipmentPackage:
+    type: ShipmentTypes.ShipmentPackage
+    example: !include ./examples/ShipmentPackageExample.json
+  ShipmentProduct:
+    type: ShipmentTypes.ShipmentProduct
+    example: !include ./examples/ShipmentProductExample.json
+  ShippingMethod:
+    type: ShipmentTypes.ShippingMethod
+    example: !include ./examples/ShippingMethodExample.json

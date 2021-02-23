@@ -1,0 +1,264 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/ContactPointPhone",
+  "definitions": {
+    "ContactPointPhone": {
+      "type": "object",
+      "example": {
+        "contactPointType": [
+          {
+            "id": "do",
+            "name": "commodo qui eu irure exercitation",
+            "optInPriority": -43391706
+          }
+        ],
+        "formattedNationalPhoneNumber": "ex in",
+        "id": "occaecat in Lorem tempor",
+        "forBusinessUse": false,
+        "party": [
+          "ea in est"
+        ],
+        "forPersonalUse": true,
+        "telephoneNumber": "sint velit",
+        "activeFromDate": "1969-05-21",
+        "shortCode": 40287489,
+        "bestTimeToContactEndTime": "18:02:53",
+        "isSMSCapable": true,
+        "partyRole": [
+          "sunt labore commodo veniam et"
+        ],
+        "isFaxCapable": false,
+        "areaCode": "adipisicing consequat",
+        "primaryFlag": true,
+        "formattedInternationalPhoneNumber": "est Excepteur",
+        "phoneCountryCode": "sit nulla pariatur",
+        "countryName": "voluptate",
+        "extensionNumber": "dolore adipisicing consequat",
+        "formattedE164PhoneNumber": "dolore quis occaecat",
+        "activeToDate": "1960-03-19",
+        "bestTimeToContactStartTime": "10:06:39",
+        "profileLastUpdatedDate": "23:18:20",
+        "primaryPhoneType": "consectetur in cillum aliquip commodo",
+        "profileOccurrenceCount": -90807568,
+        "profileFirstCreatedDate": "21:33:06"
+      },
+      "additionalProperties": true,
+      "required": [
+        "contactPointType",
+        "formattedNationalPhoneNumber",
+        "id",
+        "telephoneNumber",
+        "activeFromDate"
+      ],
+      "properties": {
+        "primaryFlag": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bestTimeToContactStartTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "profileLastUpdatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "partyRole": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "activeFromDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "activeToDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "profileOccurrenceCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "profileFirstCreatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bestTimeToContactEndTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "party": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "contactPointType": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "optInPriority": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "forBusinessUse": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "forPersonalUse": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "extensionNumber": {
+          "type": "string"
+        },
+        "phoneCountryCode": {
+          "type": "string"
+        },
+        "countryName": {
+          "type": "string"
+        },
+        "areaCode": {
+          "type": "string"
+        },
+        "isSMSCapable": {
+          "type": "boolean"
+        },
+        "shortCode": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "formattedInternationalPhoneNumber": {
+          "type": "string"
+        },
+        "primaryPhoneType": {
+          "type": "string"
+        },
+        "isFaxCapable": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "formattedE164PhoneNumber": {
+          "type": "string"
+        },
+        "formattedNationalPhoneNumber": {
+          "type": "string"
+        },
+        "telephoneNumber": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

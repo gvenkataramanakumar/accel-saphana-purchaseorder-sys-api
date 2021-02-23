@@ -1,0 +1,165 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/ProductCategoryDetail",
+  "definitions": {
+    "ProductCategoryDetail": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "id",
+        "activeFromDate"
+      ],
+      "properties": {
+        "productCatalogDetail": {
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "name",
+            "id",
+            "activeFromDate"
+          ],
+          "properties": {
+            "auditDetail": {
+              "description": "Defines standard system audit fields available for most types",
+              "example": {
+                "createdOn": "2021-01-21T21:21:21Z",
+                "createdBy": "0054x000002IpBlAAK",
+                "updatedOn": "2021-01-21T21:21:21Z",
+                "updatedBy": "0054x000002xBGGAA2",
+                "isDeleted": false
+              },
+              "type": "object",
+              "additionalProperties": true,
+              "required": [
+                "createdOn",
+                "createdBy",
+                "updatedOn",
+                "updatedBy",
+                "isDeleted"
+              ],
+              "properties": {
+                "createdOn": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "createdBy": {
+                  "type": "string"
+                },
+                "updatedOn": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "updatedBy": {
+                  "type": "string"
+                },
+                "isDeleted": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "name": {
+              "type": "string"
+            },
+            "activeToDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "activeFromDate": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "auditDetail": {
+          "description": "Defines standard system audit fields available for most types",
+          "example": {
+            "createdOn": "2021-01-21T21:21:21Z",
+            "createdBy": "0054x000002IpBlAAK",
+            "updatedOn": "2021-01-21T21:21:21Z",
+            "updatedBy": "0054x000002xBGGAA2",
+            "isDeleted": false
+          },
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "createdOn",
+            "createdBy",
+            "updatedOn",
+            "updatedBy",
+            "isDeleted"
+          ],
+          "properties": {
+            "createdOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "updatedOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedBy": {
+              "type": "string"
+            },
+            "isDeleted": {
+              "type": "boolean"
+            }
+          }
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "productCatalog": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "activeFromDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "activeToDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "parentCategory": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

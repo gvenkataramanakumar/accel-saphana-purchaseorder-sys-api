@@ -1,0 +1,22 @@
+#%RAML 1.0 DataType
+properties:
+  id?:
+    type: string | nil
+  lastModificationDateTime?:
+    type: time-only | nil
+  nativelId?:
+    type: string | nil
+  purchaseOrderNumber?:
+    type: string | nil
+  purchaseOrderDate?:
+    type: date-only | nil
+  supplierId?:
+    type: string | nil
+  orderLine?:
+    items: !include PurchaseOrderItemType.raml
+      
+  purchasingOrganization?:
+    type: string | nil
+
+example: !include ../examples/PurchaseOrderExample.json
+  

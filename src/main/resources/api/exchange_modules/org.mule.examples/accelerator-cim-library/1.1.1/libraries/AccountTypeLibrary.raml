@@ -1,0 +1,255 @@
+#%RAML 1.0 Library
+usage: Types representing an Account a Party has with an organization
+types:
+  Account:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      billDeliveryMethod?:
+        type: string
+      # Accelerators: changed to string for ContactPointAddress.id reference
+      billContactAddress?:
+        items: string
+      # Accelerators: made property optional
+      useAsSalesAccount?:
+        type: boolean | nil
+      assignTerritoryFlag?:
+        type: boolean | nil
+      billFrequency?:
+        items: BillingFrequency
+      autoPayEnabledFlag?:
+        type: boolean | nil
+      autoPaymentAmount?:
+        type: integer | nil
+      # Accelerators: made property optional
+      useAsServiceAccount?:
+        type: boolean | nil
+      # Accelerators: made property optional
+      useAsBillingAccount?:
+        type: boolean | nil
+      # Accelerators: changed to string for PartyRole.id reference
+      partyRole?:
+        items: string
+      # Accelerators: changed to string for ContactPointPhone.id reference
+      faxPhone?:
+        items: string
+      description?:
+        type: string
+      # Accelerators: changed to string for ContactPointPhone.id reference
+      salesPhone?:
+        items: string
+      sLAExpirationDate?:
+        type: date-only | nil
+      accountType?:
+        type: string
+      # Accelerators: changed to string for PaymentMethod.id reference
+      autoPaymentMethod?:
+        items: string
+      balanceAmount?:
+        type: integer | nil
+      holdStatusReason?:
+        type: string
+      generalLedgerAccount?:
+        type: string
+      thirtyDayBalanceAmount?:
+        type: integer | nil
+      sixtyDayBalanceAmount?:
+        type: integer | nil
+      # Accelerators: made property optional
+      useAsShippingAccount?:
+        type: boolean | nil
+      # Accelerators: changed to string for ContactPointAddress.id reference
+      shippingAddress?:
+        items: string
+      # Accelerators: changed to string for Party.id reference
+      party?:
+        items: string
+      # Accelerators: changed to string for Account.id reference
+      parentAccount?:
+        items: string
+      sLAType?:
+        type: string
+      # Accelerators: changed to string for AccountContact.id reference
+      shippingContact?:
+        items: string
+      balanceAmountLimit?:
+        type: integer | nil
+      # Accelerators: changed to string for ContactPointPhone.id reference
+      shippingPhoneid?:
+        items: string
+      # Accelerators: changed to string for ContactPointEmail.id reference
+      shippingEmail?:
+        items: string
+      lastActivityDate?:
+        type: date-only | nil
+      # Accelerators: changed to string for OrderDeliveryMethod.id reference
+      orderDeliveryMethod?:
+        items: string
+      # Accelerators: changed to string for ContactPoint.id reference
+      primarySalesContactPoint?:
+        items: string
+      number:
+        type: string
+      ninetyDayBalanceAmount?:
+        type: integer | nil
+      # Accelerators: made property optional
+      paymentTerm?:
+        type: string
+      defaultFreightTerms?:
+        type: string
+  AccountContact:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: changed to string for AccountContact.id reference
+      reportsToAccountContact?:
+        items: string
+      # Accelerators: changed to string for ContactPointAddress.id reference
+      mailingAddress?:
+        items: string
+      # Accelerators: changed to string for Account.id reference
+      account?:
+        items: string
+      # Accelerators: changed to string for ContactPointPhone.id reference
+      faxPhone?:
+        items: string
+      departmentName?:
+        type: string
+      # Accelerators: changed to string for ContactPointPhone.id reference
+      businessPhone?:
+        items: string
+      # Accelerators: changed to string for ContactPointEmail.id reference
+      contactEmail?:
+        items: string
+      # Accelerators: changed to string for ContactPointPhone.id reference
+      mobilePhone?:
+        items: string
+      assistantPhone?:
+        type: string
+      # Accelerators: changed to string for AccountContact.id reference
+      indirectRelationAccountContact?:
+        items: string
+      title?:
+        type: string
+      lastActivityDate?:
+        type: date-only | nil
+      contactNote?:
+        type: string
+      assistantName?:
+        type: string
+      # Accelerators: changed to string for Individual.id reference
+      individual?:
+        items: string
+      # Accelerators: changed to string for ContactPointAddress.id reference
+      otherContactAddress?:
+        items: string
+      # Accelerators: changed to string for ContactPointPhone.id reference
+      homePhone?:
+        items: string
+  AccountContactRole:
+    properties:
+      id:
+        type: string | nil
+      accountContactRoleType?:
+        type: string
+      activeFromDate?:
+        type: date-only | nil
+      activeToDate?:
+        type: date-only | nil
+      # Accelerators: changed to string for AccountContact.id reference
+      accountContact?:
+        items: string
+  AccountPartner:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: changed to string for Account.id reference
+      # Accelerators: made property optional
+      account?:
+        items: string
+      # Accelerators: changed to string for Account.id reference
+      # Accelerators: made property optional
+      partnerAccount?:
+        items: string
+  BillingFrequency:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      billingFrequencyName:
+        type: string
+  Lead:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: changed to string for ContactPointPhone.id reference
+      faxContactPhone?:
+        items: string
+      stateProvinceName?:
+        type: string
+      leadStatus?:
+        type: string
+      photoURL?:
+        type: string
+      countryName?:
+        type: string
+      # Accelerators: changed to string for PartyRole.id reference
+      # Accelerators: made property optional
+      partyRole?:
+        items: string
+      convertedDate?:
+        type: date-only | nil
+      description?:
+        type: string
+      # Accelerators: changed to string for ContactPointEmail.id reference
+      contactPointEmail?:
+        items: string
+      companyName?:
+        type: string
+      streetName?:
+        type: string
+      leadScore?:
+        type: integer | nil
+      # Accelerators: changed to string for ContactPointPhone.id reference
+      mobileContactPhone?:
+        items: string
+      # Accelerators: changed to string for ContactPointAddress.id reference
+      contactAddress?:
+        items: string
+      geoCodeLatitude?:
+        type: integer | nil
+      leadRating?:
+        type: string
+      geoCodeLongitude?:
+        type: integer | nil
+      emailBouncedDate?:
+        type: time-only | nil
+      geoCodeAccuracy?:
+        type: integer | nil
+      leadSource:
+        type: string
+      # Accelerators: changed to string for Account.id reference
+      convertedToAccount?:
+        items: string
+      # Accelerators: changed to string for AccountContact.id reference
+      convertedToAccountContact?:
+        items: string
+      # Accelerators: changed to string for ContactPointPhone.id reference
+      phoneContactPoint?:
+        items: string
+      lastActivityDate?:
+        type: date-only | nil
+      annualRevenue?:
+        type: integer | nil
+      emailBouncedReason?:
+        type: string
+      website?:
+        type: string
+      isConverted?:
+        type: boolean | nil
+      # Accelerators: changed to string for Account.id reference
+      partnerAccount?:
+        items: string

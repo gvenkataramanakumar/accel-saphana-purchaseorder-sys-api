@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/SalesOrderProductTaxDetail",
+  "definitions": {
+    "SalesOrderProductTaxDetail": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "id",
+        "taxAmount",
+        "taxRatePercent",
+        "description"
+      ],
+      "properties": {
+        "auditDetail": {
+          "description": "Defines standard system audit fields available for most types",
+          "example": {
+            "createdOn": "2021-01-21T21:21:21Z",
+            "createdBy": "0054x000002IpBlAAK",
+            "updatedOn": "2021-01-21T21:21:21Z",
+            "updatedBy": "0054x000002xBGGAA2",
+            "isDeleted": false
+          },
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "createdOn",
+            "createdBy",
+            "updatedOn",
+            "updatedBy",
+            "isDeleted"
+          ],
+          "properties": {
+            "createdOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "updatedOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedBy": {
+              "type": "string"
+            },
+            "isDeleted": {
+              "type": "boolean"
+            }
+          }
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "originalSalesOrderProductTax": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "taxEffectiveDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesOrderProduct": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "taxAmount": {
+          "type": "integer"
+        },
+        "salesOrderTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "taxAddressCityName": {
+          "type": "string"
+        },
+        "taxErrorMessageText": {
+          "type": "string"
+        },
+        "taxAddressStreet1Text": {
+          "type": "string"
+        },
+        "taxRatePercent": {
+          "type": "integer"
+        },
+        "taxAddressStreet2Text": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

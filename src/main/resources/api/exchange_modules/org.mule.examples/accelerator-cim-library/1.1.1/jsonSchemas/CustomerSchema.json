@@ -1,0 +1,175 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Customer",
+  "definitions": {
+    "Customer": {
+      "type": "object",
+      "example": {
+        "id": "aliquip officia",
+        "party": [
+          "dolore"
+        ],
+        "customerStatus": "incididunt occaecat",
+        "totalBookingsAmount": 91491896,
+        "last24MonthsNewRevenueAmount": 61264345,
+        "totalProfitContributionAmount": 12391501,
+        "last12MonthsNewRevenueAmount": -31610254,
+        "marketingEmailResponseRate": 85670363,
+        "totalLifeTimeValue": -58109573,
+        "prospectRating": "laborum nisi",
+        "last12MonthsSupportCallCount": 38256718,
+        "customerNumber": "in ea sunt enim magna",
+        "totalContractedAmount": null,
+        "churnScore": 51572326,
+        "originatingCustomerSource": "tempor",
+        "netPromoterScore": -82773897,
+        "customerSatisfactionScore": -70401477
+      },
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "customerStatus"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "customerStatus": {
+          "type": "string"
+        },
+        "prospectRating": {
+          "type": "string"
+        },
+        "netPromoterScore": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "customerSatisfactionScore": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "marketingEmailResponseRate": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalContractedAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalProfitContributionAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "customerNumber": {
+          "type": "string"
+        },
+        "churnScore": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "originatingCustomerSource": {
+          "type": "string"
+        },
+        "totalLifeTimeValue": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalBookingsAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "last24MonthsNewRevenueAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "last12MonthsNewRevenueAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "last12MonthsSupportCallCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "party": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

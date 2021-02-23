@@ -1,0 +1,323 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Seller",
+  "definitions": {
+    "Seller": {
+      "type": "object",
+      "example": {
+        "id": "Ut est",
+        "party": [
+          "sunt"
+        ],
+        "activeFromDate": "1953-02-07",
+        "inventoryValueAmount": 84552401,
+        "trainingParticipationCount": -78933926,
+        "creditRating": 5503521,
+        "opportunityInvolvementCount": 34779416,
+        "communityParticipationCount": 9660734,
+        "satisfactionScore": -57553101,
+        "productReturnRate": -38186730,
+        "activeToDate": "2016-07-21",
+        "newCustomerAcquisitionCount": 49067187,
+        "trialParticipationCount": 33773733,
+        "sellerType": "nulla officia dolore aliquip",
+        "marketingDevelopmentAmount": -15362064,
+        "successStoryCount": 27622871,
+        "documentationDownloadCount": -37120699,
+        "demonstrationsGivenCount": 6417167,
+        "estimatedPartnerGrossMargin": -14725854,
+        "customerSatisfactionScore": -95829468,
+        "salesAmount": -67472146,
+        "leadGenerationCount": -17720959,
+        "eventParticipationCount": 79900027,
+        "systemLoginCount": 54615981,
+        "jointBusinessPlanExist": false,
+        "majorPostSaleSupportNeeded": false,
+        "trainingCertificationCount": -59841230,
+        "opportunityWinRate": -74527674,
+        "averageConvertedLeadAmount": 4828576
+      },
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "activeFromDate"
+      ],
+      "properties": {
+        "party": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "communityParticipationCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "demonstrationsGivenCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "eventParticipationCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "customerSatisfactionScore": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "trainingCertificationCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "opportunityInvolvementCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "marketingDevelopmentAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sellerType": {
+          "type": "string"
+        },
+        "documentationDownloadCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "activeFromDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "activeToDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "trialParticipationCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "creditRating": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "satisfactionScore": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "opportunityWinRate": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "productReturnRate": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "leadGenerationCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "inventoryValueAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "majorPostSaleSupportNeeded": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "trainingParticipationCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "newCustomerAcquisitionCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "successStoryCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "systemLoginCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "jointBusinessPlanExist": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "averageConvertedLeadAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "estimatedPartnerGrossMargin": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

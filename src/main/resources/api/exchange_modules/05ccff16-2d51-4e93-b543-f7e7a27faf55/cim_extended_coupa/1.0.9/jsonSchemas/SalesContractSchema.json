@@ -1,0 +1,126 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/SalesContract",
+  "definitions": {
+    "SalesContract": {
+      "type": "object",
+      "example": {
+        "salesDocApprovalStatus": "eu culpa ipsum incididunt",
+        "salesContractType": "dolore esse id",
+        "salesContractDate": "2012-04-15",
+        "salesContractValidityStartDate": "2002-09-18",
+        "id": "officia voluptate exercitation minim",
+        "salesContractItems": [
+          "non irure velit incididunt"
+        ],
+        "salesOrder": "Excepteur incididunt nostrud Ut",
+        "totalNetAmount": 97918600.96328998,
+        "salesContractValidityEndDate": "2019-07-14",
+        "transactionCurrency": "elit",
+        "salesOrganization": "veniam pariatur incididunt dolor laborum",
+        "createdByUser": "ad quis fugiat ea veniam",
+        "creationDate": "2012-06-10",
+        "customer": "sit"
+      },
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Saled Contract Identifier"
+        },
+        "creationDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Creation Date"
+        },
+        "salesContractType": {
+          "type": "string",
+          "description": "salesContractType"
+        },
+        "createdByUser": {
+          "type": "string",
+          "description": "Created by user"
+        },
+        "customer": {
+          "type": "string",
+          "description": "Sold to Customer"
+        },
+        "salesOrder": {
+          "type": "string",
+          "description": "Associated sales order id"
+        },
+        "totalNetAmount": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "example": 99.99,
+          "description": "Net value"
+        },
+        "transactionCurrency": {
+          "type": "string",
+          "description": "Currency of the transaction",
+          "example": "USD"
+        },
+        "salesContractValidityStartDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesContractValidityEndDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesContractDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesOrganization": {
+          "type": "string",
+          "description": "Sales organization"
+        },
+        "salesDocApprovalStatus": {
+          "type": "string",
+          "description": "Approval status of the sales contract"
+        },
+        "salesContractItems": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

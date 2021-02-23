@@ -1,0 +1,229 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/ContactPointEmail",
+  "definitions": {
+    "ContactPointEmail": {
+      "type": "object",
+      "example": {
+        "emailAddress": "esse ad consectetur",
+        "contactPointType": [
+          {
+            "id": "irure consectetur aute nisi",
+            "name": "nisi cupidatat",
+            "optInPriority": 27763021
+          }
+        ],
+        "id": "et Ut est",
+        "forBusinessUse": true,
+        "party": [
+          "exercitation in ullamco ex dolore"
+        ],
+        "forPersonalUse": false,
+        "activeFromDate": "2018-09-07",
+        "profileLastUpdatedDate": "14:57:58",
+        "emailMailBox": "non officia",
+        "activeToDate": "2000-08-18",
+        "emailLatestBounceDateTime": "2012-08-26",
+        "bestTimeToContactStartTime": "15:36:21",
+        "profileFirstCreatedDate": "06:30:00",
+        "emailDomain": "laboris aute do",
+        "partyRole": [
+          "magna ullamco laborum eu"
+        ],
+        "profileOccurrenceCount": 62639574,
+        "primaryFlag": true,
+        "bestTimeToContactEndTime": "19:34:26",
+        "emailLatestBounceReasonText": "ut"
+      },
+      "additionalProperties": true,
+      "required": [
+        "emailAddress",
+        "contactPointType",
+        "id",
+        "activeFromDate"
+      ],
+      "properties": {
+        "primaryFlag": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bestTimeToContactStartTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "profileLastUpdatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "partyRole": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "activeFromDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "activeToDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "profileOccurrenceCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "profileFirstCreatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bestTimeToContactEndTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "party": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "contactPointType": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "optInPriority": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "forBusinessUse": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "forPersonalUse": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "emailLatestBounceReasonText": {
+          "type": "string"
+        },
+        "emailMailBox": {
+          "type": "string"
+        },
+        "emailDomain": {
+          "type": "string"
+        },
+        "emailAddress": {
+          "type": "string"
+        },
+        "emailLatestBounceDateTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

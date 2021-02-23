@@ -1,0 +1,36 @@
+#%RAML 1.0 Library
+usage: This library provides extended types for the Account group
+uses:
+  CIM: ../exchange_modules/org.mule.examples/accelerator-cim-library/1.1.1/accelerator-cim-library.raml
+types:
+  AccountDetail:
+    type: CIM.Account
+    properties:
+      billingAddressDetail?: CIM.ContactPointAddress
+      contactAddressDetail?: CIM.ContactPointAddress
+      shippingAddressDetail?: CIM.ContactPointAddress
+      contactPointDetail?: CIM.ContactPoint
+      phoneDetail?: CIM.ContactPointPhone
+      emailDetail?: CIM.ContactPointEmail
+      accountContactsDetail?: AccountContactDetail[]
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  AccountContactDetail:
+    type: CIM.AccountContact
+    properties:
+      mailingAddressDetail?: CIM.ContactPointAddress
+      contactEmailDetail?: CIM.ContactPointEmail
+      homePhoneDetail?: CIM.ContactPointPhone
+      individualDetail?: CIM.Individual
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  AccountContactRoleDetail:
+    type: CIM.AccountContactRole
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  AccountPartnerDetail:
+    type: CIM.AccountPartner
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  LeadDetail:
+    type: CIM.Lead
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml

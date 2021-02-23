@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentGateway",
+  "definitions": {
+    "PaymentGateway": {
+      "type": "object",
+      "example": {
+        "id": "id1",
+        "name": "aliquip mollit pariatur voluptate",
+        "paymentGatewayStatus": "incididunt cillum",
+        "paymentGatewayProvider": [
+          "Lorem cupidatat"
+        ],
+        "systemCredential": "officia ea sed nostrud do",
+        "paymentGatewayCommentText": "ullamco"
+      },
+      "additionalProperties": true,
+      "required": [
+        "paymentGatewayStatus",
+        "name",
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "paymentGatewayStatus": {
+          "type": "string"
+        },
+        "paymentGatewayCommentText": {
+          "type": "string"
+        },
+        "paymentGatewayProvider": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "systemCredential": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

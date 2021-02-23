@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Brand",
+  "definitions": {
+    "Brand": {
+      "type": "object",
+      "example": {
+        "id": "dolore",
+        "name": "consectetur proident",
+        "brandGrade": "non magna amet Excepteur"
+      },
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "brandGrade": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

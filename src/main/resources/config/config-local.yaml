@@ -1,0 +1,51 @@
+api:
+  autodiscoveryID: ""
+  
+accelerator:
+  logger: "com.mulesoft.accelerator.saphana"
+
+http:
+  host: "0.0.0.0"
+  port: "8081"
+  
+https:
+  host: "0.0.0.0"
+  port: "8082"    
+  
+  
+until:
+  successful:
+    maxretries: "3"
+    timebetween: "3000"
+  
+sap:
+  hana:
+    url: "https://my304163.s4hana.ondemand.com"
+    user: "CUSERSAPACC"
+    password: "H)USmYXlAclGxu8VNfxnbZCgACTgbvzntvspySeC"
+    getPurchaseOrderList:
+      service: "API_PURCHASEORDER_PROCESS_SRV"
+      entityType: "A_PurchaseOrder"
+    getPurchaseOrderById:
+      service: "API_PURCHASEORDER_PROCESS_SRV"
+      entityType: "A_PurchaseOrder"
+    createPurchaseOrder:
+      service: "API_PURCHASEORDER_PROCESS_SRV"
+      entityType: "A_PurchaseOrder"
+    updatePurchaseOrder:
+      service: "API_PURCHASEORDER_PROCESS_SRV"
+      entityType: "A_PurchaseOrder"  
+    
+reconnection:
+  frequency: "3000"
+  attempts: "3"
+
+paginagtion:
+  offset: "10"
+  limit: "10" 
+  
+keystore:
+  path: "accelerator-keystore.jks"    
+  alias: "solutionsteam"
+  keyPassword: "mulesoft"
+  password: "mulesoft"

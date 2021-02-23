@@ -1,0 +1,25 @@
+#%RAML 1.0 Library
+usage: This library provides extended types for the Shipment group
+uses:
+  CIM: ../exchange_modules/org.mule.examples/accelerator-cim-library/1.1.1/accelerator-cim-library.raml
+types:
+  ShipmentDetail:
+    type: CIM.Shipment
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ShipmentDocumentDetail:
+    type: CIM.ShipmentDocument
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ShipmentPackageDetail:
+    type: CIM.ShipmentPackage
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ShipmentProductDetail:
+    type: CIM.ShipmentProduct
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ShippingMethodDetail:
+    type: CIM.ShippingMethod
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml

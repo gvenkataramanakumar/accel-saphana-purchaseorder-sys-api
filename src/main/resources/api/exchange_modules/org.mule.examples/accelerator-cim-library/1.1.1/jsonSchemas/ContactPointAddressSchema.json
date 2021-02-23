@@ -1,0 +1,296 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/ContactPointAddress",
+  "definitions": {
+    "ContactPointAddress": {
+      "type": "object",
+      "example": {
+        "contactPointType": [
+          {
+            "id": "do exercitation dolor ex",
+            "name": "voluptate ex adipisicing",
+            "optInPriority": 15860339
+          }
+        ],
+        "id": "labore mollit occaecat",
+        "forBusinessUse": false,
+        "party": [
+          "ut sunt qui"
+        ],
+        "forPersonalUse": true,
+        "activeFromDate": "1980-03-05",
+        "bestTimeToContactEndTime": "05:38:50",
+        "partyRole": [
+          "sed consequat cillum ad"
+        ],
+        "contactPhone": [
+          "Lorem in"
+        ],
+        "isUsedForBilling": false,
+        "addressLine1": "est aliqua esse ut in",
+        "primaryFlag": false,
+        "addressLine4": "eiusmod",
+        "profileLastUpdatedDate": "12:47:35",
+        "cityName": "eu et adipisicing",
+        "isUsedForShipping": true,
+        "countryName": "do consectetur culpa velit",
+        "addressLine2": "ea sunt esse non",
+        "activeToDate": "2018-08-23",
+        "geoLatitude": -95714017,
+        "addressLine3": "mollit ea sit magna",
+        "profileOccurrenceCount": 35348734,
+        "bestTimeToContactStartTime": "18:42:00",
+        "stateProvinceName": "dolor est dolore",
+        "geoAccuracy": 65056088,
+        "postalCodeText": "consequat ex",
+        "geoLongitude": 88623776,
+        "profileFirstCreatedDate": "19:04:35"
+      },
+      "additionalProperties": true,
+      "required": [
+        "contactPointType",
+        "id",
+        "activeFromDate"
+      ],
+      "properties": {
+        "primaryFlag": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bestTimeToContactStartTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "profileLastUpdatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "partyRole": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "activeFromDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "activeToDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "profileOccurrenceCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "profileFirstCreatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bestTimeToContactEndTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "party": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "contactPointType": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "optInPriority": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "forBusinessUse": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "forPersonalUse": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "isUsedForShipping": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "stateProvinceName": {
+          "type": "string"
+        },
+        "addressLine3": {
+          "type": "string"
+        },
+        "countryName": {
+          "type": "string"
+        },
+        "postalCodeText": {
+          "type": "string"
+        },
+        "geoLatitude": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "addressLine2": {
+          "type": "string"
+        },
+        "addressLine4": {
+          "type": "string"
+        },
+        "geoAccuracy": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "contactPhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "geoLongitude": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "addressLine1": {
+          "type": "string"
+        },
+        "cityName": {
+          "type": "string"
+        },
+        "isUsedForBilling": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

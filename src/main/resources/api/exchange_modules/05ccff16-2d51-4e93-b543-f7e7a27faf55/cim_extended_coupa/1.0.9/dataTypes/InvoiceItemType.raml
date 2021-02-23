@@ -1,0 +1,31 @@
+#%RAML 1.0 DataType
+description: Information about invoice items
+properties:
+  id?:
+    description: ID of the object in the source system
+    type: string
+    example: "ID1244356"
+  description?:
+    description: Invoice item description
+    type: string
+    example: "Lenovo thinkpad"
+  purchaseOrderId?:
+    description: Purchase order id
+    type: string
+    example: "33545454"
+  purchaseOrderItemId?:
+    description: Purchase order item id
+    type: string
+    example: "4343"
+  quantity?: 
+    description:  Item quantity
+    type: number
+    example: 4
+  unit?: 
+    description:  Item unit
+    type: string
+    example: "PC"
+  total?: 
+    description:  Item total
+    type: number
+    example: 3101.23

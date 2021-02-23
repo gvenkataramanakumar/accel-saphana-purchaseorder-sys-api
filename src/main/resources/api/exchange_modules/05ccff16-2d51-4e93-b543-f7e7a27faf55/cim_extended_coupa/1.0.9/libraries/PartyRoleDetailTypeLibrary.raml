@@ -1,0 +1,25 @@
+#%RAML 1.0 Library
+usage: This library provides extended types for the PartyRole group
+uses:
+  CIM: ../exchange_modules/org.mule.examples/accelerator-cim-library/1.1.1/accelerator-cim-library.raml
+types:
+  CompetitorDetail:
+    type: CIM.Competitor
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  CustomerDetail:
+    type: CIM.Customer
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  PartyRoleDetail:
+    type: CIM.PartyRole
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  SellerDetail:
+    type: CIM.Seller
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  SupplierDetail:
+    type: CIM.Supplier
+    properties: 
+     supplierDetail?: !include ../dataTypes/SupplierDetailsType.raml

@@ -1,0 +1,30 @@
+#%RAML 1.0 DataType
+properties:
+  auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  nativeId?:
+    type: string | nil
+  name?: 
+    type: string | nil
+  LastModificationDateTime?: 
+    type: datetime | nil
+  status?: 
+    type: string | nil  
+  commodity?:
+    type: string | nil
+  poMethod?:
+    type: string | nil
+  poEmail?:
+    type: string | nil
+  paymentMethod?:
+    type: string | nil
+  buyerHold?:
+    type: string | nil
+  paymentTerms?:
+    type: string | nil
+  shippingTerms?:
+    type: string | nil
+  primaryContact:
+    type: !include ./SupplierPrimaryContactType.raml  
+  primaryAddress:
+    type: !include ./SupplierPrimaryAddressType.raml  
+  

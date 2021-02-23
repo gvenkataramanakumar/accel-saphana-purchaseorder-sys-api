@@ -1,0 +1,279 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Payment",
+  "definitions": {
+    "Payment": {
+      "type": "object",
+      "example": {
+        "id": "labore",
+        "paymentStatus": "irure ipsum elit ut velit",
+        "authorizationProcessingMode": "adipisicing proident consequat Lorem nulla",
+        "salesOrderPaymentSummary": [
+          "incididunt"
+        ],
+        "latestGatewayResultCode": [
+          {
+            "id": null,
+            "name": "ad fugiat",
+            "description": "enim qui"
+          }
+        ],
+        "commentText": "velit ex labore dolore ea",
+        "paymentNumber": "id",
+        "paymentGroup": [
+          "et minim ullamco sed"
+        ],
+        "paymentAmount": -66055326,
+        "latestGatewayInternalResult": "et sint pariatur",
+        "latestGatewayReferenceNumber": "cupidatat dolor anim aliquip",
+        "paymentMethod": [
+          "ullamco aliquip ut"
+        ],
+        "latestGatewayDate": "1945-09-21",
+        "balanceAmount": -42888315,
+        "paymentType": "amet",
+        "paymentGateway": [
+          "do Lorem dolore labore"
+        ],
+        "paymentEffectiveDate": "1953-11-11",
+        "paymentTreatment": [
+          "Ut"
+        ],
+        "externalCreatedDate": "2014-01-21",
+        "internalBusinessUnit": [
+          "pariatur reprehenderit cupidatat"
+        ],
+        "paymentCancellationDate": "1961-07-27",
+        "totalAppliedAmount": 49369478,
+        "netAppliedAmount": -19548645,
+        "totalUnappliedAmount": -94894103,
+        "latestGatewayInternalReferenceNumber": "id aliqua enim",
+        "customerPhoneNumber": "occaecat pariatur",
+        "iPAddress": "laboris ipsum",
+        "account": [
+          "sit velit dolore ut"
+        ],
+        "latestPaymentGatewayMessageText": "velit minim",
+        "customerEmailAddress": "in occaecat officia veniam commodo",
+        "name": "aute labore in veniam",
+        "macAddress": "aute"
+      },
+      "additionalProperties": true,
+      "required": [
+        "paymentStatus",
+        "paymentEffectiveDate",
+        "id",
+        "paymentType",
+        "authorizationProcessingMode",
+        "paymentNumber",
+        "paymentAmount"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "paymentStatus": {
+          "type": "string"
+        },
+        "authorizationProcessingMode": {
+          "type": "string"
+        },
+        "account": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "salesOrderPaymentSummary": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "latestGatewayResultCode": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "iPAddress": {
+          "type": "string"
+        },
+        "commentText": {
+          "type": "string"
+        },
+        "paymentNumber": {
+          "type": "string"
+        },
+        "paymentGroup": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentAmount": {
+          "type": "integer"
+        },
+        "latestGatewayInternalResult": {
+          "type": "string"
+        },
+        "customerEmailAddress": {
+          "type": "string"
+        },
+        "latestGatewayReferenceNumber": {
+          "type": "string"
+        },
+        "paymentMethod": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "latestGatewayDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "balanceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentType": {
+          "type": "string"
+        },
+        "paymentGateway": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "customerPhoneNumber": {
+          "type": "string"
+        },
+        "latestPaymentGatewayMessageText": {
+          "type": "string"
+        },
+        "paymentEffectiveDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "paymentTreatment": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "externalCreatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "internalBusinessUnit": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentCancellationDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "macAddress": {
+          "type": "string"
+        },
+        "totalAppliedAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "netAppliedAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalUnappliedAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "latestGatewayInternalReferenceNumber": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

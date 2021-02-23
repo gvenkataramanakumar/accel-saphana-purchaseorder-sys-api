@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/SalesOrderProductTax",
+  "definitions": {
+    "SalesOrderProductTax": {
+      "type": "object",
+      "example": {
+        "name": "dolor laboris eu incididunt do",
+        "id": "reprehenderit esse",
+        "taxAmount": -14152487,
+        "salesOrderProduct": [
+          "sunt"
+        ],
+        "taxRatePercent": 22748222,
+        "description": "esse in Excepteur ea fugiat",
+        "taxAddressCityName": "cillum exercitation",
+        "taxErrorMessageText": "id esse",
+        "taxAddressStreet1Text": "in sunt aliquip qui cillum",
+        "taxAddressStreet2Text": "deserunt exercitation ea eiusmod aliquip",
+        "originalSalesOrderProductTax": [
+          "minim anim elit proident"
+        ],
+        "taxEffectiveDate": "1972-01-18",
+        "salesOrderTaxAmount": 72899908
+      },
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "id",
+        "taxAmount",
+        "taxRatePercent",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "originalSalesOrderProductTax": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "taxEffectiveDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesOrderProduct": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "taxAmount": {
+          "type": "integer"
+        },
+        "salesOrderTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "taxAddressCityName": {
+          "type": "string"
+        },
+        "taxErrorMessageText": {
+          "type": "string"
+        },
+        "taxAddressStreet1Text": {
+          "type": "string"
+        },
+        "taxRatePercent": {
+          "type": "integer"
+        },
+        "taxAddressStreet2Text": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

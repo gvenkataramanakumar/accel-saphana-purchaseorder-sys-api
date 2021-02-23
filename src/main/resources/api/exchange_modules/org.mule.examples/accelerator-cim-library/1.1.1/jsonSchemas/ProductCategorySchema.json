@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/ProductCategory",
+  "definitions": {
+    "ProductCategory": {
+      "type": "object",
+      "example": {
+        "id": "laborum",
+        "name": "deserunt id sit mollit",
+        "productCatalog": [
+          "tempor commodo aliqua et reprehenderit",
+          "ex laboris amet"
+        ],
+        "activeFromDate": "1974-03-08",
+        "activeToDate": "1975-03-08",
+        "parentCategory": [
+          "Duis",
+          "cillum ea"
+        ]
+      },
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "id",
+        "activeFromDate"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "productCatalog": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "activeFromDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "activeToDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "parentCategory": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentGatewayProvider",
+  "definitions": {
+    "PaymentGatewayProvider": {
+      "type": "object",
+      "example": {
+        "id": "nisi deserunt dolor in",
+        "apexAdapterClassName": "et",
+        "paymentGatewayProviderName": "fugiat Duis anim adipisicing",
+        "developerName": "sit",
+        "namespacePrefixText": "officia eu non magna",
+        "paymentGatewayProviderCommentText": "test"
+      },
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "paymentGatewayProviderName"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "apexAdapterClassName": {
+          "type": "string"
+        },
+        "paymentGatewayProviderCommentText": {
+          "type": "string"
+        },
+        "paymentGatewayProviderName": {
+          "type": "string"
+        },
+        "developerName": {
+          "type": "string"
+        },
+        "namespacePrefixText": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

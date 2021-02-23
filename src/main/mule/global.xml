@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:coupa="http://www.mulesoft.org/schema/mule/coupa"
+	xmlns:api-gateway="http://www.mulesoft.org/schema/mule/api-gateway"
+	xmlns:tls="http://www.mulesoft.org/schema/mule/tls"
+	xmlns:s4hana="http://www.mulesoft.org/schema/mule/s4hana"
+	xmlns:sap="http://www.mulesoft.org/schema/mule/sap"
+	xmlns:apikit="http://www.mulesoft.org/schema/mule/mule-apikit"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:validation="http://www.mulesoft.org/schema/mule/validation"
+	xmlns:salesforce="http://www.mulesoft.org/schema/mule/salesforce"
+	xmlns:secure-properties="http://www.mulesoft.org/schema/mule/secure-properties"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/mule/api-gateway/current/mule-api-gateway.xsd 
+http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/current/mule-tls.xsd 
+http://www.mulesoft.org/schema/mule/validation http://www.mulesoft.org/schema/mule/validation/current/mule-validation.xsd 
+http://www.mulesoft.org/schema/mule/mule-apikit http://www.mulesoft.org/schema/mule/mule-apikit/current/mule-apikit.xsd 
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd 
+http://www.mulesoft.org/schema/mule/validation 
+http://www.mulesoft.org/schema/mule/validation/current/mule-validation.xsd 
+http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mule/salesforce/current/mule-salesforce.xsd
+http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/schema/mule/secure-properties/current/mule-secure-properties.xsd
+http://www.mulesoft.org/schema/mule/core 
+http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/sap http://www.mulesoft.org/schema/mule/sap/current/mule-sap.xsd
+http://www.mulesoft.org/schema/mule/s4hana http://www.mulesoft.org/schema/mule/s4hana/current/mule-s4hana.xsd
+http://www.mulesoft.org/schema/mule/coupa http://www.mulesoft.org/schema/mule/coupa/current/mule-coupa.xsd">
+	<http:listener-config
+		name="accel-saphana-purchaseorders-sys-api-httpListenerConfig">
+		<http:listener-connection
+			host="${https.host}" port="${https.port}" protocol="HTTPS"
+			tlsContext="TLS_Context" />
+	</http:listener-config>
+	<apikit:config
+		name="accel-saphana-purchaseorders-sys-api-config"
+		api="accel-saphana-purchaseorders-sys-api.raml"
+		outboundHeadersMapName="outboundHeaders"
+		httpStatusVarName="httpStatus" disableValidations="true" />
+	<global-property doc:name="Global Property Mule Env"
+		doc:id="77a79b98-cd29-4e24-9c6f-faaf8627539d" name="mule.env"
+		value="local" />
+	<secure-properties:config
+		name="Secure_Properties_Config" doc:name="Secure Properties Config"
+		doc:id="b6101908-2bbc-468c-8c04-6a322a6d6cb1"
+		file="config/config-secured-${mule.env}.yaml" key="${mule.key}">
+		<secure-properties:encrypt
+			algorithm="Blowfish" />
+	</secure-properties:config>
+	<configuration-properties
+		doc:name="Configuration properties env file"
+		doc:id="1b340b31-8df6-4d04-9765-1892841ea9c0"
+		file="config/config-${mule.env}.yaml" />
+	<global-property doc:name="Global Property Mule Key"
+		doc:id="18315e6b-206c-4397-94d1-8d51d99c812c" name="mule.key"
+		value="mulesoft" />
+	<tls:context name="TLS_Context" doc:name="TLS Context"
+		doc:id="7cf00b28-033f-4590-9d60-eef3ea41b24f">
+		<tls:key-store type="jks" path="${keystore.path}"
+			alias="${keystore.alias}" keyPassword="${keystore.keyPassword}"
+			password="${keystore.password}" />
+	</tls:context>
+	<configuration-properties
+		doc:name="Configuration properties"
+		doc:id="672bb31a-fa22-4905-842d-68a24f4058a3"
+		file="config/common.yaml" />
+	<!-- <api-gateway:autodiscovery apiId="${api.autodiscoveryID}" ignoreBasePath="true" 
+		doc:name="API Autodiscovery" doc:id="1531c1b7-a516-436a-8abe-6567fdfdb6aa" 
+		flowRef="accelerator-billingdocuments-sys-api-main" /> -->
+	<s4hana:config name="SAP_S_4HANA_Config"
+		doc:name="SAP S 4HANA Config"
+		doc:id="6f054bad-bb4d-4d9e-9502-58796e468fb5">
+		<s4hana:basic-authentication-connection
+			baseUrl="${sap.hana.url}" username="${sap.hana.user}"
+			password="${sap.hana.password}">
+			<reconnection>
+				<reconnect frequency="${reconnection.frequency}"
+					count="${reconnection.attempts}" />
+			</reconnection>
+		</s4hana:basic-authentication-connection>
+	</s4hana:config>
+</mule>

@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/AccountContactRole",
+  "definitions": {
+    "AccountContactRole": {
+      "type": "object",
+      "example": {
+        "id": "labore in",
+        "accountContactRoleType": "consequat ex",
+        "activeFromDate": "2020-01-29",
+        "activeToDate": "2020-02-28",
+        "accountContact": [
+          "esqalore"
+        ]
+      },
+      "additionalProperties": true,
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "accountContactRoleType": {
+          "type": "string"
+        },
+        "activeFromDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "activeToDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "accountContact": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

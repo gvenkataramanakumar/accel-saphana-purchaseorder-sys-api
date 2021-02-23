@@ -1,0 +1,33 @@
+#%RAML 1.0 DataType
+  description: Goods receipt item
+  properties:
+    id?:
+      type: string 
+      description: Item identifier
+    description?: 
+      type: string
+      description: Item description  
+    purchaseOrderId:
+      type: string
+      description: Purchase order identifier
+    purchaseOrderItemId: 
+      type: string
+      description: Purchase order item identifier
+    plant?:
+      type: string 
+      description: Plant
+    storageLocation:
+      type: string 
+      description: Storage location
+    quantity:
+      type: integer 
+      description: Quantity
+    unit?:
+      type: string 
+      description: Unit
+    commodity?:
+      type: string
+      description: Material
+    completelyDelivered?:
+      type: boolean
+      description: Completely delivered

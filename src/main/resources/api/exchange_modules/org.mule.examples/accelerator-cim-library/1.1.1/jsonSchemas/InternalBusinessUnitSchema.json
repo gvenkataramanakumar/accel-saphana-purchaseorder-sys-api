@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/InternalBusinessUnit",
+  "definitions": {
+    "InternalBusinessUnit": {
+      "type": "object",
+      "example": {
+        "partyType": "voluptate amet",
+        "name": "in ullamco sed do amet",
+        "id": "id1",
+        "businessUnitType": "consectetur",
+        "parentInternalBusinessUnit": [
+          "aliquip officia non consectetur dolore"
+        ],
+        "primaryAccount": [
+          "fugiat sint labore Excepteur"
+        ],
+        "noMergeReason": "ut cillum",
+        "globalParty": "velit commodo voluptate"
+      },
+      "additionalProperties": true,
+      "required": [
+        "partyType",
+        "name",
+        "id",
+        "businessUnitType"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "businessUnitType": {
+          "type": "string"
+        },
+        "parentInternalBusinessUnit": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "partyType": {
+          "type": "string"
+        },
+        "globalParty": {
+          "type": "string"
+        },
+        "noMergeReason": {
+          "type": "string"
+        },
+        "primaryAccount": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

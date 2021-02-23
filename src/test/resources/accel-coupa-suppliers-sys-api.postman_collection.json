@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "50119b5b-bc94-4c74-99e2-f6ce99b9fa67",
+		"name": "accel-coupa-suppliers-sys-api",
+		"description": "accel-coupa-suppliers-sys-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Suppliers List",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{coupa-host}}/api/suppliers",
+					"protocol": "https",
+					"host": [
+						"{{coupa-host}}"
+					],
+					"path": [
+						"api",
+						"suppliers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Suppliers by Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nativeId\": \"\",\n  \"id\": \"1\",\n  \"activeFromDate\": \"1941-05-02\",\n  \"lastModificationDateTime\": \"2020-01-08T06:09:47-08:00\",\n  \"name\": \"Dell_1 (USA)\",\n  \"status\": \"active\",\n  \"commodity\": \"Laptops\",\n  \"primaryContact\": {\n    \"email\": \"upgrade+dellus@coupa.com\",\n    \"nameGiven\": \"Frank\",\n    \"nameFamily\": \"Corta\"\n  },\n  \"primaryAddress\": {\n    \"street1\": \"2 West Hillsdale\",\n    \"street2\": \"\",\n    \"city\": \"Las Vegas\",\n    \"state\": \"NV\",\n    \"postalCode\": \"23902\",\n    \"countryCode\": \"US\"\n  },\n  \"paymentMethod\": \"invoice\",\n  \"paymentTerms\": \"2/10 Net 30\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{coupa-host}}/api/suppliers/1",
+					"protocol": "https",
+					"host": [
+						"{{coupa-host}}"
+					],
+					"path": [
+						"api",
+						"suppliers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Supplier by Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{coupa-host}}/api/suppliers/1",
+					"protocol": "https",
+					"host": [
+						"{{coupa-host}}"
+					],
+					"path": [
+						"api",
+						"suppliers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ping-Health Check",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{coupa-host}}/api/ping",
+					"protocol": "https",
+					"host": [
+						"{{coupa-host}}"
+					],
+					"path": [
+						"api",
+						"ping"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

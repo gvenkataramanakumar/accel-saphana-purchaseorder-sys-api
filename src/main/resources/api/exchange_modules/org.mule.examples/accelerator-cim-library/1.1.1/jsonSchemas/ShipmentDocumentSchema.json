@@ -1,0 +1,156 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/ShipmentDocument",
+  "definitions": {
+    "ShipmentDocument": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "shipment",
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shipment": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "shipmentDate"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "giftMessageText": {
+                "type": "string"
+              },
+              "shipmentNumber": {
+                "type": "string"
+              },
+              "shipmentStatus": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "required": [
+                    "id",
+                    "name",
+                    "description"
+                  ],
+                  "properties": {
+                    "id": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "salesOrder": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "isGift": {
+                "anyOf": [
+                  {
+                    "type": "boolean"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "actualDeliveryDateTime": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "time"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "specialInstructionsText": {
+                "type": "string"
+              },
+              "carrierTrackingNumber": {
+                "type": "string"
+              },
+              "shipToAddress": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "estimatedDeliveryDateTime": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "time"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "salesOrderDeliveryGroup": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "scheduledDeliveryDateTime": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "time"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "shipmentDate": {
+                "type": "string",
+                "format": "date"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

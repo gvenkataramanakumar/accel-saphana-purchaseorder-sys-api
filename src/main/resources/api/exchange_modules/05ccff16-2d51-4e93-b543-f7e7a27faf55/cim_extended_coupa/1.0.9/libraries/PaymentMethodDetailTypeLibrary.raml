@@ -1,0 +1,25 @@
+#%RAML 1.0 Library
+usage: This library provides extended types for the PaymentMethod group
+uses:
+  CIM: ../exchange_modules/org.mule.examples/accelerator-cim-library/1.1.1/accelerator-cim-library.raml
+types:
+  CouponDetail:
+    type: CIM.Coupon
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  CreditTenderDetail:
+    type: CIM.CreditTender
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  PaymentCardDetail:
+    type: CIM.PaymentCard
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  PaymentMethodDetail:
+    type: CIM.PaymentMethod
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  PaymentMethodTypeDetail:
+    type: CIM.PaymentMethodType
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml

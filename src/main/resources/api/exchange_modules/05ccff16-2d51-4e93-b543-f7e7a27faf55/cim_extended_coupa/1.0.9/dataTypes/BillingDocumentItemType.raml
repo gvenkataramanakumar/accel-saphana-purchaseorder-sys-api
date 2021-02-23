@@ -1,0 +1,48 @@
+#%RAML 1.0 DataType
+description: Defines a line item in a billing document
+properties:
+  itemNum?:
+    type: string
+    description: Id of the billing document for the item being recorded
+  currency?:
+    type: string
+    description: currency of usage
+    example: USD
+  itemNetValue?:
+    type: number
+    minimum: 0.00
+    multipleOf: 0.01
+    example: 99.99
+    description: Net value of the item
+  itemTaxValue?:
+    type: number
+    minimum: 0.00
+    multipleOf: 0.01
+    example: 99.99
+    description: Tax value of the item
+  itemGrossValue?:
+    type: number
+    minimum: 0.00
+    multipleOf: 0.01
+    example: 99.99
+    description: Gross value of the item
+  organizationDivision?:
+    type: string
+    description: Organization Division for the item
+  salesOffice?:
+    type: string
+    description: Sales Office making the sale
+  material?:
+    type: string
+    description: Material Id or Product Id being billed
+  requestedQuantity?:
+    type: integer
+    minimum: 0
+    example: 99
+    description: Quantity of the item requested
+  baseUnit?:
+    type: string
+    description: Unit of measure of the item
+  orderId?:
+    type: string
+    description: Order Id through which the item was ordered

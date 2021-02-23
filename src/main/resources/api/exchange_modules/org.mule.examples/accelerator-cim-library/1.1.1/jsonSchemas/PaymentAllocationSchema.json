@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentAllocation",
+  "definitions": {
+    "PaymentAllocation": {
+      "type": "object",
+      "example": {
+        "id": "culpa nulla voluptate dolore do",
+        "externalCreatedDate": "1981-01-14",
+        "relatedPaymentAllocation": [
+          "enim",
+          "sed deserunt veniam ad tempor"
+        ],
+        "paymentAllocationName": "name1"
+      },
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "externalCreatedDate"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "externalCreatedDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "relatedPaymentAllocation": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentAllocationName": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

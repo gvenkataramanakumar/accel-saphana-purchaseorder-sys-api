@@ -1,0 +1,48 @@
+#%RAML 1.0 DataType
+description: Defines a sales order contract
+properties:
+  id?:
+    type: string
+    description: Saled Contract Identifier
+  creationDate?:
+    type: date-only | nil
+    description: Creation Date
+  salesContractType?:
+    type: string
+    description: salesContractType
+  createdByUser?:
+    type: string
+    description: Created by user
+  # Accelerators: changed to string for Account.id reference
+  customer?:
+    type: string
+    description: Sold to Customer
+  # Accelerators: changed to string for SalesOrder.id reference
+  salesOrder?:
+    type: string
+    description: Associated sales order id
+  totalNetAmount?:
+    type: number | nil
+    example: 99.99  
+    description: Net value
+  transactionCurrency?:
+    type: string
+    description: Currency of the transaction
+    example: USD
+  salesContractValidityStartDate?:
+    type: date-only | nil
+  salesContractValidityEndDate?:
+    type: date-only | nil
+  salesContractDate?:
+    type: date-only | nil
+  salesOrganization?:
+    type: string
+    description: Sales organization
+  salesDocApprovalStatus?:
+    type: string
+    description: Approval status of the sales contract
+  # Accelerators: changed to string for SalesContractItem.id
+  salesContractItems?:
+    type: array
+    items: string
+    #items: string | !include ../dataTypes/SalesContractItemType.raml

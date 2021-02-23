@@ -1,0 +1,8 @@
+#%RAML 1.0 Trait
+usage: Apply this trait to the /health endpoint of System APIs
+responses:
+  200:
+    description: Report on the status of this API, including connectivity to back-end resources (where appropriate)
+    body:
+      application/json:
+        type: !include ../dataTypes/HealthResponseType.raml

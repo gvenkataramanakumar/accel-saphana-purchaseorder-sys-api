@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Party",
+  "definitions": {
+    "Party": {
+      "type": "object",
+      "example": {
+        "id": "id1",
+        "partyType": "commodo eu ea consequat",
+        "noMergeReason": "Lorem pariatur ex proident quis",
+        "primaryAccount": [
+          "ex",
+          "ex esse sit"
+        ],
+        "globalParty": "ipsum cupidatat dolor"
+      },
+      "additionalProperties": true,
+      "required": [
+        "partyType",
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "partyType": {
+          "type": "string"
+        },
+        "globalParty": {
+          "type": "string"
+        },
+        "noMergeReason": {
+          "type": "string"
+        },
+        "primaryAccount": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

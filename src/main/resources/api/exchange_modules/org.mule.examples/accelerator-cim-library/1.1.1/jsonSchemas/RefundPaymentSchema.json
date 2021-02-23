@@ -1,0 +1,225 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/RefundPayment",
+  "definitions": {
+    "RefundPayment": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "paymentStatus",
+        "paymentEffectiveDate",
+        "paymentType",
+        "id",
+        "authorizationProcessingMode",
+        "paymentNumber",
+        "paymentAmount"
+      ],
+      "properties": {
+        "paymentStatus": {
+          "type": "string"
+        },
+        "authorizationProcessingMode": {
+          "type": "string"
+        },
+        "account": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "salesOrderPaymentSummary": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "latestGatewayResultCode": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "iPAddress": {
+          "type": "string"
+        },
+        "commentText": {
+          "type": "string"
+        },
+        "paymentNumber": {
+          "type": "string"
+        },
+        "paymentGroup": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentAmount": {
+          "type": "integer"
+        },
+        "latestGatewayInternalResult": {
+          "type": "string"
+        },
+        "customerEmailAddress": {
+          "type": "string"
+        },
+        "latestGatewayReferenceNumber": {
+          "type": "string"
+        },
+        "paymentMethod": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "latestGatewayDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "balanceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentType": {
+          "type": "string"
+        },
+        "paymentGateway": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "customerPhoneNumber": {
+          "type": "string"
+        },
+        "latestPaymentGatewayMessageText": {
+          "type": "string"
+        },
+        "paymentEffectiveDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "paymentTreatment": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "internalBusinessUnit": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentCancellationDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "macAddress": {
+          "type": "string"
+        },
+        "totalAppliedAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "netAppliedAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalUnappliedAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "latestGatewayInternalReferenceNumber": {
+          "type": "string"
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "externalCreatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

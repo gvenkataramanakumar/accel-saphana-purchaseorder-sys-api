@@ -1,0 +1,47 @@
+#%RAML 1.0 Library
+usage: This library provides extended types for the SalesOrder group
+uses:
+  CIM: ../exchange_modules/org.mule.examples/accelerator-cim-library/1.1.1/accelerator-cim-library.raml
+types:
+  BillingDocumentDetail:
+    type: !include ../dataTypes/BillingDocumentType.raml
+    properties:
+      billingDocumentItemsDetail?:
+        type: array
+        items: !include ../dataTypes/BillingDocumentItemType.raml
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  SalesChannelDetail:
+    type: CIM.SalesChannel
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  SalesContractDetail:
+    type: !include ../dataTypes/SalesContractType.raml
+    properties:
+      salesContractItemsDetail?:
+        type: array
+        items: !include ../dataTypes/SalesContractItemType.raml
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  SalesOrderDetail:
+    type: CIM.SalesOrder
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  SalesOrderDeliveryGroupDetail:
+    type: CIM.SalesOrderDeliveryGroup
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  SalesOrderPaymentSummaryDetail:
+    type: CIM.SalesOrderPaymentSummary
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  SalesOrderProductDetail:
+    type: CIM.SalesOrderProduct
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  SalesOrderProductTaxDetail:
+    type: CIM.SalesOrderProductTax
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  SalesOrderTaxDetail:
+    type: CIM.SalesOrderTax
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml

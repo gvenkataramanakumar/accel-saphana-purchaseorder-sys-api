@@ -1,0 +1,59 @@
+#%RAML 1.0 Library
+usage: This library provides extended types for the Product group
+uses:
+  CIM: ../exchange_modules/org.mule.examples/accelerator-cim-library/1.1.1/accelerator-cim-library.raml
+types:
+  BrandDetail:
+    type: CIM.Brand
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  BundleProductDetail:
+    type: CIM.BundleProduct
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  GoodsProductDetail:
+    type: CIM.GoodsProduct
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  PriceBookEntryDetail:
+    type: CIM.PriceBookEntry
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ProductAvailabilityDetail:
+    type: !include ../dataTypes/ProductAvailabilityType.raml
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ProductDetail:
+    type: CIM.Product
+    properties:
+      productCategoryDetail?:
+        items: ProductCategoryDetail
+        description: Primary product category reference
+      productImageDetail?: 
+        items: ProductImageDetail
+        description: Primary product image reference
+      priceBookEntriesDetail?:
+        items: PriceBookEntryDetail
+        description: Primary product price book entries
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ProductCatalogDetail:
+    type: CIM.ProductCatalog
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ProductCategoryDetail:
+    type: CIM.ProductCategory
+    properties:
+      productCatalogDetail?: ProductCatalogDetail
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ProductImageDetail:
+    type: CIM.ProductImage
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ProductTranslationDetail:
+    type: CIM.ProductTranslation
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml
+  ServiceProductDetail:
+    type: CIM.ServiceProduct
+    properties:
+      auditDetail?: !include ../dataTypes/AuditDetailType.raml

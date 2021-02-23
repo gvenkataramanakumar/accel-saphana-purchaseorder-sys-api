@@ -1,0 +1,43 @@
+#%RAML 1.0 DataType
+description: Defines a line item in a sales order contract
+properties:
+  id?:
+    type: string
+    description: Id of the sales contract for the item being recorded
+  salesContractItemText?:
+    type: string
+    description: salesContractItemText of the item
+  salesContractSignedDate?:
+    type: date-only | nil
+    description: SignedDate of the item
+  itemGrossWeight?:
+    type: number | nil
+    example: 99.999
+  itemNetWeight:
+    type: number | nil
+    example: 99.999
+  itemWeightUnit?:
+    type: string
+    description: Weight unit of the item
+  pricingDate?:
+    type: date-only | nil
+    description: Pricing date for the item
+  # Accelerators: changed to string for Product.id reference
+  product?:
+    type: string
+    description: material making of the item
+  productGroup?:
+    type: string
+    description: material group of the item
+  # Accelerators: changed to string for PriceBookEntry.id reference
+  productPricingGroup?:
+    type: string
+    description: material pricing group of the item
+  requestedQuantity?:
+    type: integer
+    minimum: 0
+    example: 99
+    description: Quantity of the item requested
+  customerPaymentTerms?:
+    type: string
+    description: Customer's payment term of the item

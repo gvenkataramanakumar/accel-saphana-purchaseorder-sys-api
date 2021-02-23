@@ -1,0 +1,543 @@
+#%RAML 1.0 Library
+usage: Types representing payment interactions and processing
+types:
+  CapturePayment:
+    type: Payment
+    properties:
+      id:
+        type: string | nil
+      name?:
+        type: string
+      capturePaymentType:
+        type: string
+      handlingFeeAmount?:
+        type: integer | nil
+      # Accelerators: changed to string for PaymentAuthorization.id reference
+      # Accelerators: made property optional
+      paymentAuthorization?:
+        items: string
+      isFinalCapture?:
+        type: boolean | nil
+  Payment:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: made optional due to weaker constraints in child types
+      name?:
+        type: string
+      paymentStatus:
+        type: string
+      authorizationProcessingMode:
+        type: string
+      # Accelerators: changed to string for Account.id reference
+      account?:
+        items: string
+      # Accelerators: changed to string for SalesOrderPaymentSummary.id reference
+      # Accelerators: made property optional
+      salesOrderPaymentSummary?:
+        items: string
+      # Accelerators: made property optional
+      latestGatewayResultCode?:
+        items: PaymentGatewayResultCode
+      iPAddress?:
+        type: string
+      # Accelerators: made property optional
+      commentText?:
+        type: string
+      paymentNumber:
+        type: string
+      # Accelerators: changed to string for PaymentGroup.id reference
+      # Accelerators: made property optional
+      paymentGroup?:
+        items: string
+      paymentAmount:
+        type: integer
+      # Accelerators: made property optional
+      latestGatewayInternalResult?:
+        type: string
+      customerEmailAddress?:
+        type: string
+      # Accelerators: made property optional
+      latestGatewayReferenceNumber?:
+        type: string
+      # Accelerators: changed to string for PaymentMethod.id reference
+      # Accelerators: made property optional
+      paymentMethod?:
+        items: string
+      # Accelerators: made property optional
+      latestGatewayDate?:
+        type: date-only | nil
+      # Accelerators: made property optional
+      balanceAmount?:
+        type: integer | nil
+      paymentType:
+        type: string
+      # Accelerators: changed to string for PaymentGateway.id reference
+      # Accelerators: made property optional
+      paymentGateway?:
+        items: string
+      customerPhoneNumber?:
+        type: string
+      latestPaymentGatewayMessageText?:
+        type: string
+      paymentEffectiveDate:
+        type: date-only
+      # Accelerators: changed to string for PaymentTreatment.id reference
+      # Accelerators: made property optional
+      paymentTreatment?:
+        items: string
+      # Accelerators: made property optional
+      externalCreatedDate?:
+        type: date-only | nil
+      # Accelerators: changed to string for Party.id reference
+      # Accelerators: made property optional
+      internalBusinessUnit?:
+        items: string
+      # Accelerators: made property optional
+      paymentCancellationDate?:
+        type: date-only | nil
+      macAddress?:
+        type: string
+      # Accelerators: made property optional
+      totalAppliedAmount?:
+        type: integer | nil
+      # Accelerators: made property optional
+      netAppliedAmount?:
+        type: integer | nil
+      # Accelerators: made property optional
+      totalUnappliedAmount?:
+        type: integer | nil
+      # Accelerators: made property optional
+      latestGatewayInternalReferenceNumber?:
+        type: string
+  PaymentAllocation:
+    properties:
+      id:
+        type: string | nil
+      externalCreatedDate:
+        type: date-only
+      # Accelerators: changed to string for PaymentAllocation.id reference
+      # Accelerators: made property optional
+      relatedPaymentAllocation?:
+        items: string
+      paymentAllocationName?:
+        type: string
+  PaymentApplication:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: made optional due to weaker constraints in child types
+      name?:
+        type: string
+      effectiveDate:
+        type: date-only
+      paymentApplicationType:
+        type: string
+      commentText?:
+        type: string
+      hasBeenUnapplied?:
+        type: boolean | nil
+      # Accelerators: changed to string for Payment.id reference
+      # Accelerators: made property optional
+      payment?:
+        items: string
+      appliedAmount:
+        type: integer
+      # Accelerators: made property optional
+      paymentBalanceAmount?:
+        type: integer | nil
+      appliedDate:
+        type: date-only
+      # Accelerators: made property optional
+      externalCreatedDate?:
+        type: date-only | nil
+      # Accelerators: made property optional
+      unappliedDate?:
+        type: date-only | nil
+  PaymentAuthorization:
+    properties:
+      id:
+        type: string | nil
+      paymentGatewayReferenceNumber:
+        type: string
+      # Accelerators: changed to string for SalesOrderPaymentSummary.id reference
+      # Accelerators: made property optional
+      salesOrderPaymentSummary?:
+        items: string
+      iPAddress?:
+        type: string
+      totalPaymentCaptureAmount:
+        type: integer
+      paymentAuthorizationProcessingMode:
+        type: string
+      authorizationAmount:
+        type: integer
+      expirationDate:
+        type: date-only
+      # Accelerators: changed to string for PaymentGroup.id reference
+      # Accelerators: made property optional
+      paymentGroup?:
+        items: string
+      # Accelerators: made property optional
+      paymentGatewayInternalReferenceNumber?:
+        type: string
+      # Accelerators: made property optional
+      gatewayReferenceDetailsText?:
+        type: string
+      # Accelerators: made property optional
+      totalAuthorizationReversalAmount?:
+        type: integer | nil
+      # Accelerators: changed to string for PaymentGateway.id reference
+      # Accelerators: made property optional
+      paymentGateway?:
+        items: string
+      paymentGatewayResult:
+        items: PaymentGatewayResultCode
+      paymentAuthorizationCommentText?:
+        type: string
+      # Accelerators: made property optional
+      externalCreatedDate?:
+        type: date-only | nil
+      paymentAuthorizationNumber:
+        type: string
+      requestDate:
+        type: time-only
+      # Accelerators: made property optional
+      availableBalanceAmount?:
+        type: integer | nil
+      # Accelerators: changed to string for PaymentMethod.id reference
+      # Accelerators: made property optional
+      paymentMethodID?:
+        items: string
+      gatewayResultCodeDescription?:
+        type: string
+      macAddress?:
+        type: string
+      gatewayAuthorizationCode:
+        type: string
+      paymentGatewayDate:
+        type: time-only
+      paymentAuthorizationStatus:
+        type: string
+  PaymentAuthorizationReversal:
+    properties:
+      id:
+        type: string | nil
+      paymentGatewayReferenceNumber:
+        type: string
+      authorizationReversalAmount:
+        type: integer
+      # Accelerators: changed to string for Payment.id reference
+      capturePayment?:
+        items: string
+      customerAuthorizationReversalPhone?:
+        type: string
+      iPAddress?:
+        type: string
+      paymentAuthorizationReversalStatus:
+        type: string
+      paymentAuthorizationProcessingMode:
+        type: string
+      # Accelerators: made property optional
+      paymentGatewayInternalReferenceNumber?:
+        type: string
+      paymentAuthorizationReversalName?:
+        type: string
+      paymentGatewayResult:
+        items: PaymentGatewayResultCode
+      # Accelerators: changed to string for PaymentAuthorization.id reference
+      # Accelerators: made property optional
+      paymentAuthorization?:
+        items: string
+      # Accelerators: made property optional
+      externalCreatedDate?:
+        type: date-only | nil
+      requestDate:
+        type: time-only
+      paymentAuthorizationReversalCommentText?:
+        type: string
+      macAddress?:
+        type: string
+      customerAuthorizationReversalEmail?:
+        type: string
+      paymentGatewayDate:
+        type: time-only
+  PaymentCreditMemoAllocation:
+    type: PaymentAllocation
+    properties:
+      id:
+        type: string | nil
+      name?:
+        type: string
+      appliedAmount:
+        type: integer
+  PaymentCreditMemoApplication:
+    type: PaymentApplication
+    properties:
+      id:
+        type: string | nil
+      name?:
+        type: string
+  PaymentGateway:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      paymentGatewayStatus:
+        type: string
+      paymentGatewayCommentText?:
+        type: string
+      # Accelerators: changed to string for PaymentGatewayProvider.id reference
+      # Accelerators: made property optional
+      paymentGatewayProvider?:
+        items: string
+      systemCredential?:
+        type: string
+  PaymentGatewayAuthorizationLog:
+    type: PaymentGatewayInteractionLog
+    properties:
+      id:
+        type: string | nil
+      name?:
+        type: string
+      # Accelerators: changed to string for PaymentAuthorization.id reference
+      # Accelerators: made property optional
+      paymentAuthorization?:
+        items: string
+  PaymentGatewayAuthReversalLog:
+    type: PaymentGatewayInteractionLog
+    properties:
+      id:
+        type: string | nil
+      name?:
+        type: string
+      # Accelerators: changed to string for PaymentAuthorizationReversal.id reference
+      paymentAuthorizationReversal?:
+        items: string
+  PaymentGatewayInteractionLog:
+    properties:
+      id:
+        type: string | nil
+      paymentGatewayInteractionType:
+        items: PaymentGatewayInteractionType
+      # Accelerators: made property optional
+      paymentGatewayReferenceNumber?:
+        type: string
+      paymentGatewayMessageText?:
+        type: string
+      # Accelerators: made property optional
+      paymentGatewayAuthorizationCode?:
+        type: string
+      # Accelerators: made property optional
+      internalResultCode?:
+        type: string
+      # Accelerators: made property optional
+      paymentGatewayAVSCode?:
+        type: string
+      internalReferenceNumber:
+        type: string
+      paymentGatewayResult:
+        items: PaymentGatewayResultCode
+      paymentGatewayInteractionLogName:
+        type: string
+      paymentGatewayInteractionStatus:
+        type: string
+      paymentGatewayDate:
+        type: date-only
+  PaymentGatewayInteractionType:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      description:
+        type: string
+  PaymentGatewayPaymentLog:
+    type: PaymentGatewayInteractionLog
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: changed to string for Payment.id reference
+      # Accelerators: made property optional
+      payment?:
+        items: string
+      name?:
+        type: string
+  PaymentGatewayProvider:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: made property optional
+      apexAdapterClassName?:
+        type: string
+      paymentGatewayProviderCommentText?:
+        type: string
+      paymentGatewayProviderName:
+        type: string
+      # Accelerators: made property optional
+      developerName?:
+        type: string
+      # Accelerators: made property optional
+      namespacePrefixText?:
+        type: string
+  PaymentGatewayResultCode:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      description:
+        type: string
+  PaymentGroup:
+    properties:
+      id:
+        type: string | nil
+      totalReversalAmount:
+        type: integer
+      totalAuthorizationAmount:
+        type: integer
+      totalPaymentAmount:
+        type: integer
+      paymentGroupNumber:
+        type: string
+  PaymentInvoiceAllocation:
+    type: PaymentAllocation
+    properties:
+      id:
+        type: string | nil
+      paymentInvoiceAllocationName?:
+        type: string
+      appliedAmount:
+        type: integer
+      invoiceBalanceAmount:
+        type: integer
+      # Accelerators: changed to string for PaymentInvoiceApplication.id reference
+      paymentInvoiceApplication?:
+        items: string
+  PaymentInvoiceApplication:
+    type: PaymentApplication
+    properties:
+      id:
+        type: string | nil
+      paymentInvoiceApplicationName?:
+        type: string
+      invoiceBalanceAmount:
+        type: integer
+      paymentInvoiceApplicationType?:
+        type: string
+  PaymentPolicy:
+    properties:
+      id:
+        type: string | nil
+      name:
+        type: string
+      description:
+        type: string
+      # Accelerators: made property optional
+      paymentPolicyTreatmentSelection?:
+        type: string
+      paymentPolicyStatus:
+        type: string
+  PaymentTreatment:
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: changed to string for PaymentTreatmentMethod.id reference
+      # Accelerators: made property optional
+      paymentTreatmentMethod?:
+        items: string
+      paymentApplicationLevel?:
+        type: string
+      shouldAutoInvoice?:
+        type: boolean | nil
+      paymentTreatmentStatus:
+        type: string
+      # Accelerators: changed to string for PaymentPolicy.id reference
+      # Accelerators: made property optional
+      paymentPolicy?:
+        items: string
+      paymentTreatmentName?:
+        type: string
+  PaymentTreatmentMethod:
+    properties:
+      id:
+        type: string | nil
+      paymentTreatmentMethodName:
+        type: string
+      paymentTreatmentMethodCode:
+        type: string
+      paymentTreatmentMethodDescription:
+        type: string
+  RefundAllocation:
+    properties:
+      id:
+        type: string | nil
+      effectiveDate:
+        type: date-only
+      # Accelerators: changed to string for RefundAllocation.id reference
+      # Accelerators: made property optional
+      relatedRefundAllocation?:
+        items: string
+      hasBeenUnapplied?:
+        type: boolean | nil
+      refundAllocationType:
+        type: string
+      # Accelerators: changed to string for Payment.id reference
+      # Accelerators: made property optional
+      refundPayment?:
+        items: string
+      allocatedAmount:
+        type: integer
+      # Accelerators: made property optional
+      refundBalanceAmount?:
+        type: integer | nil
+      refundAllocationName?:
+        type: string
+      appliedDate:
+        type: date-only
+      # Accelerators: made property optional
+      externalCreatedDate?:
+        type: date-only | nil
+      # Accelerators: made property optional
+      unappliedDate?:
+        type: date-only | nil
+  RefundCreditMemoAllocation:
+    type: RefundAllocation
+    properties:
+      id:
+        type: string | nil
+      name?:
+        type: string
+  RefundPayment:
+    type: Payment
+    properties:
+      id:
+        type: string | nil
+      name?:
+        type: string
+      # Accelerators: made property optional
+      externalCreatedDate?:
+        type: date-only | nil
+  RefundPaymentAllocation:
+    type: RefundAllocation
+    properties:
+      id:
+        type: string | nil
+      # Accelerators: changed to string for CapturePayment.id reference
+      # Accelerators: made property optional
+      capturePayment?:
+        items: string
+      # Accelerators: made property optional
+      refundAllocationCommentsDate?:
+        type: date-only | nil
+      # Accelerators: made property optional
+      paymentBalanceAmount?:
+        type: integer | nil
+      refundAllocationCommentText?:
+        type: string
+      # Accelerators: made property optional
+      creditMemoBalanceAmount?:
+        type: integer | nil
+      refundPaymentAllocationName?:
+        type: string

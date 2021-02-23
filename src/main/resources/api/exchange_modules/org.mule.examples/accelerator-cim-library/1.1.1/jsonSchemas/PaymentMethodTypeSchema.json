@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentMethodType",
+  "definitions": {
+    "PaymentMethodType": {
+      "type": "object",
+      "example": {
+        "id": "id1",
+        "name": "ullamco id aliqua ut irure",
+        "useMinimumAgeYear": 1990,
+        "typeRequiredIdentification": "sunt quis",
+        "maxPerPeriodAmount": 34738144,
+        "maxPerPeriodTransactionCount": 2534513,
+        "typeDescription": "fugiat id",
+        "mediaType": "in dolor ex pariatur",
+        "maxTransactionAmount": 90531446
+      },
+      "additionalProperties": true,
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "typeDescription": {
+          "type": "string"
+        },
+        "mediaType": {
+          "type": "string"
+        },
+        "maxPerPeriodAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "typeRequiredIdentification": {
+          "type": "string"
+        },
+        "useMinimumAgeYear": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "maxTransactionAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "maxPerPeriodTransactionCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

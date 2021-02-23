@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Shipment",
+  "definitions": {
+    "Shipment": {
+      "type": "object",
+      "example": {
+        "id": "commodo esse exercitation consequat sit",
+        "shipmentDate": "2015-06-10",
+        "shipmentStatus": [
+          {
+            "id": "dolore do ipsum",
+            "name": "exercitation aliquip cupidatat sunt",
+            "description": "aliquip cupidatat ipsum consectetur"
+          }
+        ],
+        "salesOrderDeliveryGroup": [
+          "ut esse aliqua"
+        ],
+        "isGift": true,
+        "specialInstructionsText": "quis",
+        "actualDeliveryDateTime": "07:47:07",
+        "scheduledDeliveryDateTime": "16:07:18",
+        "carrierTrackingNumber": "laboris",
+        "salesOrder": [
+          "nostrud"
+        ],
+        "estimatedDeliveryDateTime": "15:24:40",
+        "giftMessageText": "sed eu aute",
+        "shipmentNumber": "ullamco sint elit",
+        "shipToAddress": [
+          "laboris adipisicing ex occaecat quis"
+        ]
+      },
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "shipmentDate"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "giftMessageText": {
+          "type": "string"
+        },
+        "shipmentNumber": {
+          "type": "string"
+        },
+        "shipmentStatus": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "salesOrder": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "isGift": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "actualDeliveryDateTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "specialInstructionsText": {
+          "type": "string"
+        },
+        "carrierTrackingNumber": {
+          "type": "string"
+        },
+        "shipToAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "estimatedDeliveryDateTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesOrderDeliveryGroup": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "scheduledDeliveryDateTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shipmentDate": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  }
+}

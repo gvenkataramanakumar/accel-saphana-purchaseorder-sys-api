@@ -1,0 +1,94 @@
+#%RAML 1.0 Library
+usage: This library defines additional SalesOrder types
+types:
+  SalesContractItem:
+    type: object
+    properties:
+      id?:
+        type: string
+        description: Id of the sales contract for the item being recorded
+      salesContractItemText?:
+        type: string
+        description: salesContractItemText of the item
+      salesContractSignedDate?:
+        type: date-only | nil
+        description: SignedDate of the item
+      itemGrossWeight?:
+        type: number | nil
+        example: 99.999
+      itemNetWeight:
+        type: number | nil
+        example: 99.999
+      itemWeightUnit?:
+        type: string
+        description: Weight unit of the item
+      pricingDate?:
+        type: date-only | nil
+        description: Pricing date for the item
+      # Accelerators: changed to string for Product.id reference
+      product?:
+        type: string
+        description: material making of the item
+      productGroup?:
+        type: string
+        description: material group of the item
+      # Accelerators: changed to string for PriceBookEntry.id reference
+      productPricingGroup?:
+        type: string
+        description: material pricing group of the item
+      requestedQuantity?:
+        type: integer
+        minimum: 0
+        example: 99
+        description: Quantity of the item requested
+      customerPaymentTerms?:
+        type: string
+        description: Customer's payment term of the item
+  
+  SalesContract:
+    type: object
+    properties:
+      id?:
+        type: string
+        description: Saled Contract Identifier
+      creationDate?:
+        type: date-only | nil
+        description: Creation Date
+      salesContractType?:
+        type: string
+        description: salesContractType
+      createdByUser?:
+        type: string
+        description: Created by user
+      # Accelerators: changed to string for Account.id reference
+      customer?:
+        type: string
+        description: Sold to Customer
+      # Accelerators: changed to string for SalesOrder.id reference
+      salesOrder?:
+        type: string
+        description: Associated sales order id
+      totalNetAmount?:
+        type: number | nil
+        example: 99.99  
+        description: Net value
+      transactionCurrency?:
+        type: string
+        description: Currency of the transaction
+        example: USD
+      salesContractValidityStartDate?:
+        type: date-only | nil
+      salesContractValidityEndDate?:
+        type: date-only | nil
+      salesContractDate?:
+        type: date-only | nil
+      salesOrganization?:
+        type: string
+        description: Sales organization
+      salesDocApprovalStatus?:
+        type: string
+        description: Approval status of the sales contract
+      # Accelerators: changed to string for SalesContractItem.id
+      salesContractItems?:
+        type: array
+        items: string

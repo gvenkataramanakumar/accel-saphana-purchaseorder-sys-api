@@ -1,0 +1,93 @@
+#%RAML 1.0
+title: Accelerator Purchase Orders System API
+description: SAP HANA System API for working with Purchase Orders
+version: v1
+
+uses:
+  lib: /exchange_modules/org.mule.examples/accelerator-global-resources/2.0.2/accelerator-global-resources.raml
+  cim_extended : /exchange_modules/05ccff16-2d51-4e93-b543-f7e7a27faf55/cim_extended_coupa/1.0.9/accelerator-cim-extended-library.raml
+
+types:   
+  MessageResponse: 
+    properties: 
+      message: string
+      identifier?: string  
+
+/ping:
+  displayName: Ping
+  get:
+    is: [ lib.PingResponse ]
+    description: Get the current health status of this API 
+
+/purchaseOrders:
+  displayName: Orders
+  description: Details about Orders
+  
+  get:
+    is: [lib.ErrorResponses, lib.Trackable, lib.Pageable]
+    displayName: Get Purchase Orders
+    description: Lists the Purchase Orders
+    queryParameters:
+      exported:
+          description: Exported status
+          required: false
+      lastModificationDate: 
+          description: Limits returned purchase orders to these, which have newer last modifiaction date than specified
+          required: false
+      nativeId:
+          description: External identifier
+          required: false    
+    responses:
+      200:
+        body:
+          application/json:
+            type: array
+            items: cim_extended.PurchaseOrder
+  post:
+    is: [lib.ErrorResponses, lib.Trackable]
+    displayName: Create purchase order
+    description: Create a new purchaseorder
+    body:
+      application/json:
+          type: array
+          items: cim_extended.PurchaseOrder
+    responses:
+      201:
+        body:
+          application/json: 
+            type: lib.BasicResponse        
+              
+  /{orderId}:
+    displayName: Purchase Order by Order Id
+    get:
+      is: [lib.ErrorResponses, lib.Trackable]
+      displayName: Get purchase order
+      description: Get purchase order specified by id 
+      responses:
+        200:
+          body:
+            application/json:
+              type: string #cim_extended.PurchaseOrder            
+
+    put:
+      is: [lib.ErrorResponses, lib.Trackable]
+      displayName: Update purchase order
+      description: Update purchase order specified by id
+      body:
+        application/json:
+          type: cim_extended.PurchaseOrder
+      responses:
+        200:
+          body:
+            application/json:  
+              type: lib.ResultMessage        
+        
+    delete:
+      is: [lib.ErrorResponses, lib.Trackable]
+      displayName: Delete purchase order
+      description: Delete purchase order specified by id
+      responses:
+        200:
+          body:
+            application/json:
+              type: lib.ResultMessage

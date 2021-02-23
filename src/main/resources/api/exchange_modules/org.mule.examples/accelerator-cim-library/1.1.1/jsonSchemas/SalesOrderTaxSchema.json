@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/SalesOrderTax",
+  "definitions": {
+    "SalesOrderTax": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "id",
+        "taxRatePercent"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "salesOrderTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "taxAddressCityName": {
+          "type": "string"
+        },
+        "taxErrorMessageText": {
+          "type": "string"
+        },
+        "taxAddressStreet1Text": {
+          "type": "string"
+        },
+        "taxRatePercent": {
+          "type": "integer"
+        },
+        "taxAddressStreet2Text": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:s4hana="http://www.mulesoft.org/schema/mule/s4hana" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:coupa="http://www.mulesoft.org/schema/mule/coupa"
+    xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+    http://www.mulesoft.org/schema/mule/coupa http://www.mulesoft.org/schema/mule/coupa/current/mule-coupa.xsd http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/s4hana http://www.mulesoft.org/schema/mule/s4hana/current/mule-s4hana.xsd">
+
+    <sub-flow name="implementation_getPurchaseOrdersList" doc:id="8df8bc01-d4b5-4e43-aa74-40c2f3458a3f">
+        <logger level="INFO" doc:name="Start of transaction" doc:id="9d67545e-ef68-4781-9f88-a7d4c2335ea1" message="Start of transaction for transaction-id #[vars.transactionId]" category="${accelerator.logger}" />
+		<ee:transform doc:name="Caputure lastModificatinDate" doc:id="2a308154-61d6-4f5f-b802-f019c4aa2dfa">
+			<ee:variables>
+				<ee:set-variable variableName="name"><![CDATA[(attributes.queryParams.'name' as String) default null]]></ee:set-variable>
+				<ee:set-variable variableName="lastModificationDate" ><![CDATA[(attributes.queryParams.'lastModificationDate' as DateTime) default null]]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+		<ee:transform doc:name="Create Data for Purchase Order SAP HANA Call" doc:id="97a9941d-7e1c-4188-8f36-822877e45cc6">
+            <ee:message>
+            </ee:message>
+            <ee:variables>
+                <ee:set-variable variableName="filter"><![CDATA[%dw 2.0
+output application/java
+var lastModificationDate = if(vars.lastModificationDate != null) ("LastChangeDateTime gt datetimeoffset'" ++ vars.lastModificationDate as String {format: "yyyy-MM-dd'T'HH:mm:ss.SSS"} ++ "'") else ""
+var nativeId = if(vars.nativeId != null) ("SupplierQuotationExternalID eq '" ++ vars.nativeId ++ "'") else ""
+var bothExists = vars.lastModificationDate != null and vars.nativeId != null
+---
+if (bothExists) lastModificationDate ++ " and " ++ nativeId else lastModificationDate ++ nativeId
+]]></ee:set-variable>
+            </ee:variables>
+        </ee:transform>
+		<try doc:name="Try - Query Purchase Order" doc:id="d49efdcb-ebf4-441d-bbec-fc924a79ed11">
+			<s4hana:query service='#[Mule::p("sap.hana.getPurchaseOrderList.service")]' entityType='#[Mule::p("sap.hana.getPurchaseOrderList.entityType")]' doc:id="601b3161-7465-4b6b-a198-449debda40b5" config-ref="SAP_S_4HANA_Config" select="PurchaseOrder,PurchaseOrderDate,PurchasingOrganization,CompanyCode,DocumentCurrency,Supplier,SupplierQuotationExternalID,LastChangeDateTime,to_PurchaseOrderItem" expand="to_PurchaseOrderItem" filter="#[vars.filter]" orderBy="LastChangeDateTime asc" doc:name="Query Purchase Orders" />
+			<error-handler>
+				<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate - Query Purchase Order Failed" doc:id="b7a2715f-dc94-4f8b-a542-49a4b07ab8a4">
+					<logger level="ERROR" doc:name="Query Supplier failed" doc:id="b6a3d2f5-e77f-453d-b29a-13f73b98adf5" message="Query Supplier failed" category="${accelerator.logger}" />
+					<ee:transform doc:name="500 Internal Server Error" doc:id="6625cdf6-6e57-4ba1-9b92-6805c7fe8467">
+						<ee:message>
+							<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+  "errorCode": "500",
+  "errorMessage": "There was an internal server error " ++ (error.description default ""),
+  "transactionId": vars.transactionId,
+  "timeStamp": now() as DateTime
+}]]></ee:set-payload>
+						</ee:message>
+						<ee:variables>
+							<ee:set-variable variableName="httpStatus"><![CDATA[500]]></ee:set-variable>
+						</ee:variables>
+					</ee:transform>
+				</on-error-propagate>
+			</error-handler>
+		</try>
+		<logger level="DEBUG" doc:name="Debug Log Payload" doc:id="0ca1456f-1540-4bc7-932a-cf63d77fa72c" message="#[output application/json indent=false --- payload]" category="${accelerator.logger}" />
+		<ee:transform doc:name="Transform to Response" doc:id="8dc9a276-cfb8-4421-99a2-66a68e493533">
+            <ee:message>
+				<ee:set-payload resource="dw/getPurchaseOrdersListResponse.dwl" />
+            </ee:message>
+        </ee:transform>
+		<logger level="INFO" doc:name="End of transaction" doc:id="dc1c20ba-948b-4834-b383-58c0147b2fdf" message="End of transaction for transaction-id #[vars.transactionId]" category="${accelerator.logger}" />
+    </sub-flow>
+
+    <sub-flow name="implementation_getPurchaseOrderById" doc:id="32734a8a-f80a-4e33-98c7-4ea44c8947c4" >
+		<logger level="INFO" doc:name="Start of transaction" doc:id="9ab5f129-7641-49bb-a599-4d1191f46bf7" message="Start of transaction for transaction-id #[vars.transactionId]" category="${accelerator.logger}" />
+		<ee:transform doc:name="Capture id value" doc:id="94c4d022-e92f-4137-b338-eb618835650f">
+			<ee:variables>
+				<ee:set-variable variableName="id"><![CDATA[attributes.uriParams.'id']]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+		<try doc:name="Try - Query Purchase Order" doc:id="3c954d1f-24a6-41fa-8455-ee7fac413b69" >
+			<s4hana:query service='#[Mule::p("sap.hana.getPurchaseOrderById.service")]' entityType='#[Mule::p("sap.hana.getPurchaseOrderById.entityType")]' doc:name="Query Purchase Order" doc:id="c9849ac8-67a8-478e-8df3-16b92455f289" config-ref="SAP_S_4HANA_Config" select="PurchaseOrder,PurchaseOrderDate,PurchasingOrganization,CompanyCode,DocumentCurrency,Supplier,SupplierQuotationExternalID,LastChangeDateTime,to_PurchaseOrderItem" expand="to_PurchaseOrderItem" filter="#[&quot;PurchaseOrder eq '&quot; ++ vars.id ++ &quot;'&quot;]" />
+			<error-handler>
+				<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate - PurchaseOrder Not Found" doc:id="30de4e46-a955-4a1f-963d-8ee907efeb3e" type="S4HANA:INVALID_KEY, S4HANA:NO_SUCH_ENTITY_KEY" >
+					<logger level="ERROR" doc:name="Query Purchase Order failed" doc:id="06490383-6cea-4adb-a776-0fbb592df59c" message="Query Purchase Order failed" category="${accelerator.logger}" />
+					<ee:transform doc:name="Purchase Order Not Found Response" doc:id="e613f86d-a979-4ced-b7c1-3bfb368798c1" >
+						<ee:message >
+							<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+  "errorCode": "404",
+  "errorMessage": "Purchase Order not found",
+  "transactionId": vars.transactionId,
+  "timeStamp": now() as DateTime
+}]]></ee:set-payload>
+						</ee:message>
+						<ee:variables >
+							<ee:set-variable variableName="httpStatus" ><![CDATA[404]]></ee:set-variable>
+						</ee:variables>
+					</ee:transform>
+				</on-error-propagate>
+				<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate - Query Purchase Order Failed" doc:id="6e2f6346-c05a-45b8-b6a7-72d051afde22" >
+					<logger level="ERROR" doc:name="Query Purchase Order failed" doc:id="7c597cc5-5742-42f3-a037-db1e3eb5eb87" message="Query Purchase Order failed" category="${accelerator.logger}" />
+					<ee:transform doc:name="500 Internal Server Error" doc:id="2b26227a-fa4c-4d5b-ab96-2e12d524b42b" >
+						<ee:message >
+							<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+  "errorCode": "500",
+  "errorMessage": "There was an internal server error " ++ (error.description default ""),
+  "transactionId": vars.transactionId,
+  "timeStamp": now() as DateTime
+}]]></ee:set-payload>
+						</ee:message>
+						<ee:variables >
+							<ee:set-variable variableName="httpStatus" ><![CDATA[500]]></ee:set-variable>
+						</ee:variables>
+					</ee:transform>
+				</on-error-propagate>
+			</error-handler>
+		</try>
+		<logger level="DEBUG" doc:name="Debug Log Payload" doc:id="21c2d627-0dae-46fd-a623-79d37b5136c6" message="#[output application/json indent=false --- payload]" category="${accelerator.logger}" />
+		<ee:transform doc:name="Transform to Response" doc:id="015831b3-f8e5-45da-980a-15a951c8dffe">
+            <ee:message>
+				<ee:set-payload resource="dw/getPurchaseOrderFromIdResponse.dwl" />
+            </ee:message>
+        </ee:transform>
+		<logger level="INFO" doc:name="End of transaction" doc:id="06f2fb33-e061-4104-b35a-86ac23b2171f" message="End of transaction for transaction-id #[vars.transactionId]" category="${accelerator.logger}" />
+	</sub-flow>
+
+    <sub-flow name="implementation_createPurchaseOrder" doc:id="0c479291-3216-4eb3-b52b-6a7370f18de7">
+        <logger level="INFO" doc:name="Start of transaction" doc:id="e5fcc186-dfaa-4b33-840e-2b750b49dc94" message="Start of transaction for transaction-id #[vars.transactionId]" category="${accelerator.logger}" />
+		<ee:transform doc:name="Create Request Data for SAP HANA Call" doc:id="96faf0ef-4b9f-4771-a5ec-ba69f807a8e3" >
+            <ee:message >
+				<ee:set-payload resource="dw/createPurchaseOrderRequest.dwl" />
+            </ee:message>
+        </ee:transform>
+        <try doc:name="Try" doc:id="30ab1857-6d77-4c2f-957a-d3513b59e13b" >
+			<s4hana:create-entity service='#[Mule::p("sap.hana.createPurchaseOrder.service")]' entityType='#[Mule::p("sap.hana.createPurchaseOrder.entityType")]' doc:name="Create Purchase Order in S4Hana" doc:id="528d1169-8cc7-47bc-acae-fb35d624493d" config-ref="SAP_S_4HANA_Config" />
+			<error-handler >
+				<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate - Create Supplier Failed" doc:id="6593a3b3-15c7-46ed-91d5-38c156366ac0" >
+					<logger level="ERROR" doc:name="Create Supplier failed" doc:id="1c8cb9b9-20d9-4b79-a6bf-f4d921314f37" message="Create Supplier failed" category="${accelerator.logger}" />
+					<ee:transform doc:name="500 Internal Server Error" doc:id="ef527b77-d5eb-4488-ae54-f916c3b3eef5" >
+						<ee:message >
+							<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+  "errorCode": "500",
+  "errorMessage": "There was an internal server error " ++ (error.description default ""),
+  "transactionId": vars.transactionId,
+  "timeStamp": now() as DateTime
+}]]></ee:set-payload>
+						</ee:message>
+						<ee:variables >
+							<ee:set-variable variableName="httpStatus" ><![CDATA[500]]></ee:set-variable>
+						</ee:variables>
+					</ee:transform>
+				</on-error-propagate>
+			</error-handler>
+		</try>
+		<logger level="DEBUG" doc:name="Debug Log Payload" doc:id="754bfa3d-7817-4894-8fae-f2f123f09f9d" message="#[output application/json indent=false --- payload]" category="${accelerator.logger}" />
+		<ee:transform doc:name="Transform Response" doc:id="1e1870ab-2534-474a-b32a-856661be404f" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd" >
+            <ee:message >
+				<ee:set-payload resource="dw/postPurchaseOrderResponse.dwl" />
+            </ee:message>
+        </ee:transform>
+		<logger level="INFO" doc:name="End of transaction" doc:id="29318a06-7b82-4c4d-b57b-00449a0aabf6" message="End of transaction for transaction-id #[vars.transactionId]" category="${accelerator.logger}" />
+    </sub-flow>
+	<sub-flow name="implementation_updatePurchaseOrderById" doc:id="1509ef8f-89a3-4233-a1d0-fd4652d4a572" >
+		<logger level="INFO" doc:name="Start of transaction" doc:id="851f5263-e9bb-4d4d-9879-6d758c6fec52" message="Start of transaction for transaction-id #[vars.transactionId]" category="${accelerator.logger}" />
+		<ee:transform doc:name="Capture id value" doc:id="bf992b53-2a67-45c1-9a8d-a61f2d738995" >
+			<ee:variables >
+				<ee:set-variable variableName="id" ><![CDATA[attributes.uriParams.'id']]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+		<ee:transform doc:name="Create Request Data For SAP HANA Call" doc:id="dc528e3d-163f-4f76-9117-6968d2769bfd">
+            <ee:message>
+				<ee:set-payload resource="dw/putPurchaseOrderRequest.dwl" />
+            </ee:message>
+        </ee:transform>
+		<try doc:name="Try - Update Supplier" doc:id="5c97b59a-c0cc-45ab-a3bf-c44510a97b32" >
+			<s4hana:query service='#[Mule::p("sap.hana.updatePurchaseOrder.service")]' entityType='#[Mule::p("sap.hana.updatePurchaseOrder.entityType")]' doc:name="Query Purchase Order" doc:id="7d5d0579-3d71-4726-a0ac-9b3563944448" config-ref="SAP_S_4HANA_Config" select="PurchaseOrder,PurchaseOrderDate,Supplier,SupplierQuotationExternalID,LastChangeDateTime,to_PurchaseOrderItem" expand="to_PurchaseOrderItem" filter="#[&quot;PurchaseOrder eq '&quot; ++ vars.id ++ &quot;'&quot;]" />
+			<error-handler >
+				<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate - Update Purchase Order Failed" doc:id="e168597e-44d4-4da5-a96f-44a6fba0e872" >
+					<logger level="ERROR" doc:name="Update Purchase Order failed" doc:id="7c9263f0-d5a4-4d07-836f-c61b60e8ca99" message="Update Purchase Order failed" category="${accelerator.logger}" />
+					<ee:transform doc:name="500 Internal Server Error" doc:id="c34f36cf-5beb-48de-8a0b-666821812ef9" >
+						<ee:message >
+							<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+  "errorCode": "500",
+  "errorMessage": "There was an internal server error " ++ (error.description default ""),
+  "transactionId": vars.transactionId,
+  "timeStamp": now() as DateTime
+}]]></ee:set-payload>
+						</ee:message>
+						<ee:variables >
+							<ee:set-variable variableName="httpStatus" ><![CDATA[500]]></ee:set-variable>
+						</ee:variables>
+					</ee:transform>
+				</on-error-propagate>
+			</error-handler>
+		</try>
+		<logger level="DEBUG" doc:name="Debug Log Payload" doc:id="e81ed793-ae8d-4023-839c-b223e21f7785" message="#[output application/json indent=false --- payload]" category="${accelerator.logger}" />
+		<ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd" doc:id="db7f64d3-e21d-48ac-8c57-72ff0404ed3b" doc:name="Transform Response">
+            <ee:message>
+				<ee:set-payload resource="dw/putPurchaseOrderResponse.dwl" />
+            </ee:message>
+        </ee:transform>
+		<logger level="INFO" doc:name="End of transaction" doc:id="72789a36-b940-47ca-86aa-06ece0ade884" message="End of transaction for transaction-id #[vars.transactionId]" category="${accelerator.logger}" />
+	</sub-flow>
+
+</mule>

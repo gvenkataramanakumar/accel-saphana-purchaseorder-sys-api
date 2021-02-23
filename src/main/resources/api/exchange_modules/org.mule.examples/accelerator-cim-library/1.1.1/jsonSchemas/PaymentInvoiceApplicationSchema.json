@@ -1,0 +1,126 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentInvoiceApplication",
+  "definitions": {
+    "PaymentInvoiceApplication": {
+      "type": "object",
+      "example": {
+        "paymentBalanceAmount": -51475814,
+        "id": "est Duis elit commodo sit",
+        "unappliedDate": "1965-06-08",
+        "invoiceBalanceAmount": 97919405,
+        "paymentApplicationType": "esse cupidatat ut eu",
+        "appliedDate": "1975-05-31",
+        "effectiveDate": "1943-05-15",
+        "appliedAmount": -71682709,
+        "externalCreatedDate": "1948-04-09",
+        "payment": [
+          "minim ea"
+        ],
+        "hasBeenUnapplied": null,
+        "paymentInvoiceApplicationType": "incididunt est",
+        "commentText": "voluptate ut ex cillum incididunt",
+        "name": "do aliqua officia",
+        "paymentInvoiceApplicationName": "aute"
+      },
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "invoiceBalanceAmount",
+        "paymentApplicationType",
+        "appliedDate",
+        "effectiveDate",
+        "appliedAmount"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "effectiveDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "paymentApplicationType": {
+          "type": "string"
+        },
+        "commentText": {
+          "type": "string"
+        },
+        "hasBeenUnapplied": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "payment": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "appliedAmount": {
+          "type": "integer"
+        },
+        "paymentBalanceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "appliedDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "externalCreatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unappliedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentInvoiceApplicationName": {
+          "type": "string"
+        },
+        "invoiceBalanceAmount": {
+          "type": "integer"
+        },
+        "paymentInvoiceApplicationType": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

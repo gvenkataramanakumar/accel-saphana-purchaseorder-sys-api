@@ -1,0 +1,35 @@
+#%RAML 1.0 Library
+usage: This library provides Product Availability types
+types:
+  ProductAvailability:
+    type: object
+    description: Availability of product for location
+    properties:
+      # Accelerators: changed to string for Product.id reference 
+      id: 
+        type: string
+        description: Identifier of product
+      name?:
+        type: string
+        description: Name of the product
+      externalId?:
+        type: string
+        description: Id in external system
+      # Accelerators: changed to string for Location.id reference
+      variantId?: 
+        type: string
+        description: Identifier of product variant 
+      # Accelerators: changed to string for Location.id reference
+      locationId?: 
+        type: string
+        description: Identifier of location
+      locationName?: 
+        type: string
+        description: Identifier of location
+      locationType?: 
+        type: string
+        enum: [STORE, WAREHOUSE, PARTNER]
+        description: Type of location
+      quantityInStock?: 
+        type: integer | nil
+        description: Count of products in stock 

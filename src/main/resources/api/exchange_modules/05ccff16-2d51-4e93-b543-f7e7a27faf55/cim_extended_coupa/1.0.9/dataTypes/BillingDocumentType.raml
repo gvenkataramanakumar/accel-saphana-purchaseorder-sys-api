@@ -1,0 +1,31 @@
+#%RAML 1.0 DataType
+description: Defines a customer billing document
+properties:
+  billingId?:
+    type: string
+    description: Billing number on the system
+  customerId?:
+    type: string
+    description: Account number who is being billed
+  netValue?:
+    type: number
+    minimum: 0.00
+    multipleOf: 0.01
+    example: 99.99
+    description: Net value 
+  taxValue?:
+    type: number
+    multipleOf: 0.01
+    minimum: 0.00
+    example: 99.99
+    description: Tax value 
+  grossValue?:
+    type: number
+    minimum: 0.00
+    multipleOf: 0.01
+    example: 99.99
+    description: Gross value 
+  # Accelerators: changed to BillingDocumentItem.Id
+  billingDocumentItems?:
+    type: array
+    items: string

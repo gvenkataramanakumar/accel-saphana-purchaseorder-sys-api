@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/CreditTender",
+  "definitions": {
+    "CreditTender": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "paymentMethodStatus"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "account": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentMethodType": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentMethodStatus": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

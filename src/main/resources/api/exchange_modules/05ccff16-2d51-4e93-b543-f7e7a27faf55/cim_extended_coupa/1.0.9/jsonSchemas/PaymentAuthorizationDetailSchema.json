@@ -1,0 +1,210 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentAuthorizationDetail",
+  "definitions": {
+    "PaymentAuthorizationDetail": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "expirationDate",
+        "totalPaymentCaptureAmount",
+        "paymentGatewayDate",
+        "paymentGatewayReferenceNumber",
+        "id",
+        "paymentAuthorizationProcessingMode",
+        "authorizationAmount",
+        "paymentAuthorizationNumber",
+        "paymentGatewayResult",
+        "gatewayAuthorizationCode",
+        "requestDate",
+        "paymentAuthorizationStatus"
+      ],
+      "properties": {
+        "auditDetail": {
+          "description": "Defines standard system audit fields available for most types",
+          "example": {
+            "createdOn": "2021-01-21T21:21:21Z",
+            "createdBy": "0054x000002IpBlAAK",
+            "updatedOn": "2021-01-21T21:21:21Z",
+            "updatedBy": "0054x000002xBGGAA2",
+            "isDeleted": false
+          },
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "createdOn",
+            "createdBy",
+            "updatedOn",
+            "updatedBy",
+            "isDeleted"
+          ],
+          "properties": {
+            "createdOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "updatedOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedBy": {
+              "type": "string"
+            },
+            "isDeleted": {
+              "type": "boolean"
+            }
+          }
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentGatewayReferenceNumber": {
+          "type": "string"
+        },
+        "salesOrderPaymentSummary": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "iPAddress": {
+          "type": "string"
+        },
+        "totalPaymentCaptureAmount": {
+          "type": "integer"
+        },
+        "paymentAuthorizationProcessingMode": {
+          "type": "string"
+        },
+        "authorizationAmount": {
+          "type": "integer"
+        },
+        "expirationDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "paymentGroup": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentGatewayInternalReferenceNumber": {
+          "type": "string"
+        },
+        "gatewayReferenceDetailsText": {
+          "type": "string"
+        },
+        "totalAuthorizationReversalAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentGateway": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentGatewayResult": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "paymentAuthorizationCommentText": {
+          "type": "string"
+        },
+        "externalCreatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentAuthorizationNumber": {
+          "type": "string"
+        },
+        "requestDate": {
+          "type": "string",
+          "format": "time"
+        },
+        "availableBalanceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentMethodID": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "gatewayResultCodeDescription": {
+          "type": "string"
+        },
+        "macAddress": {
+          "type": "string"
+        },
+        "gatewayAuthorizationCode": {
+          "type": "string"
+        },
+        "paymentGatewayDate": {
+          "type": "string",
+          "format": "time"
+        },
+        "paymentAuthorizationStatus": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

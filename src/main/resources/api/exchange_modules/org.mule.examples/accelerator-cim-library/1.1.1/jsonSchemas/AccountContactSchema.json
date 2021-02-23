@@ -1,0 +1,170 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/AccountContact",
+  "definitions": {
+    "AccountContact": {
+      "type": "object",
+      "example": {
+        "id": "labore in",
+        "account": [
+          "ex tempor",
+          "do tempor"
+        ],
+        "individual": [
+          "aute Excepteur voluptate ex Duis",
+          "consequat ex"
+        ],
+        "departmentName": "et",
+        "contactEmail": [
+          "minim sint quis deserunt qui",
+          "dolor do cillum ipsum sed"
+        ],
+        "mailingAddress": [
+          "proident cillum ullamco sed",
+          "qui"
+        ],
+        "assistantName": "in dolor esse",
+        "faxPhone": [
+          "est aliqua velit ullamco occaecat",
+          "eu dolor nisi sed"
+        ],
+        "businessPhone": [
+          "enim velit eiusmod Duis amet",
+          "quis ut enim elit"
+        ],
+        "assistantPhone": "dolor sit ipsum dolore",
+        "lastActivityDate": "2020-01-29",
+        "indirectRelationAccountContact": [
+          "deserunt",
+          "ut ullamco culpa tempor sint"
+        ],
+        "title": "reprehenderit incididunt Excepteur aute",
+        "mobilePhone": [
+          "commodo tempor",
+          "elit ut ad labore"
+        ],
+        "homePhone": [
+          "elit",
+          "anim"
+        ],
+        "contactNote": "qui in elit",
+        "reportsToAccountContact": [
+          "incididunt",
+          "enim officia do cupidatat et"
+        ],
+        "otherContactAddress": [
+          "exercitation magna",
+          "reprehenderit"
+        ]
+      },
+      "additionalProperties": true,
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reportsToAccountContact": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mailingAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "account": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "faxPhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "departmentName": {
+          "type": "string"
+        },
+        "businessPhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "contactEmail": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mobilePhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "assistantPhone": {
+          "type": "string"
+        },
+        "indirectRelationAccountContact": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "title": {
+          "type": "string"
+        },
+        "lastActivityDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "contactNote": {
+          "type": "string"
+        },
+        "assistantName": {
+          "type": "string"
+        },
+        "individual": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "otherContactAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "homePhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

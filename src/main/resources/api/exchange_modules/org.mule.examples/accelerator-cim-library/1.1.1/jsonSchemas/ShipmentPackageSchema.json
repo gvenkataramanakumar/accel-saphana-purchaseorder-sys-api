@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/ShipmentPackage",
+  "definitions": {
+    "ShipmentPackage": {
+      "type": "object",
+      "example": {
+        "id": "dolore sint",
+        "shipment": [
+          "nisi",
+          "velit ad dolor incididunt"
+        ],
+        "shipmentProductCount": -86076272,
+        "shipmentProductDescription": "incididunt veniam"
+      },
+      "additionalProperties": true,
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shipment": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "shipmentProductCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shipmentProductDescription": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

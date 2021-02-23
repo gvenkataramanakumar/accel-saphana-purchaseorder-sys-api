@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="implementation-suite.xml" />
+	<munit:test name="implementation_getSuppliers-test" doc:id="76ae4ddc-304b-43d9-bc9d-4983485b1bee" >
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock Query for Suppliers" doc:id="7d2b723d-c82d-4af3-a590-9ba70da0c1e0" processor="coupa:query-objects">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="Query Suppliers" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="a75cad28-7605-498a-a31d-d775bed78e66" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[output application/java --- readUrl('classpath://implementationgetSupplierListtest/mock_payload.dwl')]" mediaType="application/java" encoding="UTF-8" />
+					<munit-tools:variables >
+						<munit-tools:variable key="exported" value="#[output application/java --- readUrl('classpath://implementationgetSupplierListtest/mock_variable_5.dwl')]" mediaType="application/java" encoding="UTF-8" />
+						<munit-tools:variable key="outboundHeaders" value="#[readUrl('classpath://implementationgetSupplierListtest/mock_variable_6.dwl')]" />
+					</munit-tools:variables>
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit:set-event doc:name="Set Input" doc:id="85f06855-9d0e-4413-a0e1-9e9ab8883131" >
+				<munit:payload value="#[readUrl('classpath://implementationgetSupplierListtest/set-event_payload.dwl')]" encoding="UTF-8" />
+				<munit:attributes value="#[readUrl('classpath://implementationgetSupplierListtest/set-event_attributes.dwl')]" />
+				<munit:variables >
+					<munit:variable key="outboundHeaders" value="#[readUrl('classpath://implementationgetSupplierListtest/set-event_variable.dwl')]" />
+				</munit:variables>
+			</munit:set-event>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="get:\suppliers:accel-coupa-suppliers-sys-api-config" doc:id="037cb622-e47e-4d5c-b588-c336618fec88" name="get:\suppliers:accel-coupa-suppliers-sys-api-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert doc:name="Assert payload" doc:id="e4f7b91f-382a-4221-8b16-52dea6d60c1f" message="The payload does not match">
+				<munit-tools:that ><![CDATA[#[%dw 2.0
+import implementationgetSupplierListtest::assert_expression_payload
+---
+assert_expression_payload::main({payload: payload, attributes: attributes, vars: vars})]]]></munit-tools:that>
+			</munit-tools:assert>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="implementation_getSupplierFromId-test" doc:id="f85436e3-63e4-4a62-beff-f77183ccb531" >
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock Get Supplier From Id" doc:id="257d6e34-5a60-4fec-8563-fd8351b7b61c" processor="coupa:get-object">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="Get Supplier" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="3c2f12f8-52db-4487-973a-201b0819790a" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[output application/json --- readUrl('classpath://implementationgetSupplierByIdtest/mock_payload.dwl')]" mediaType="application/json" encoding="UTF-8" />
+					<munit-tools:variables >
+						<munit-tools:variable key="outboundHeaders" value="#[readUrl('classpath://implementationgetSupplierByIdtest/mock_variable_.dwl')]" />
+						<munit-tools:variable key="id" value="#[output application/java --- readUrl('classpath://implementationgetSupplierByIdtest/mock_variable_1.dwl')]" mediaType="application/java" encoding="UTF-8" />
+					</munit-tools:variables>
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit:set-event doc:name="Set Input" doc:id="f2e21d94-8ca5-4f99-8bab-e8551c7122c1" >
+				<munit:payload value="#[readUrl('classpath://implementationgetSupplierByIdtest/set-event_payload.dwl')]" encoding="UTF-8" />
+				<munit:attributes value="#[readUrl('classpath://implementationgetSupplierByIdtest/set-event_attributes.dwl')]" />
+				<munit:variables >
+					<munit:variable key="outboundHeaders" value="#[readUrl('classpath://implementationgetSupplierByIdtest/set-event_variable_.dwl')]" />
+				</munit:variables>
+			</munit:set-event>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to get:\suppliers\(id):accel-coupa-suppliers-sys-api-config" doc:id="4c704355-9289-426b-a23b-df9e964fa958" name="get:\suppliers\(id):accel-coupa-suppliers-sys-api-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert doc:name="Assert payload" doc:id="2beec20e-3ffd-48b4-8f91-3205128e739e" message="The payload does not match">
+				<munit-tools:that ><![CDATA[#[%dw 2.0
+import implementationgetSupplierByIdtest::assert_expression_payload
+---
+assert_expression_payload::main({payload: payload, attributes: attributes, vars: vars})]]]></munit-tools:that>
+			</munit-tools:assert>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="implementation_updateSuppliersFromId-test" doc:id="d0dbac7d-94da-4384-a276-e496edf59800" >
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock Update Supplier Transaction" doc:id="6c01b650-ce11-40dc-ae5b-5007db556818" processor="coupa:update-object">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="Update Supplier" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="793a7b4f-c054-48e7-b9d4-2e83b6a0bdcb" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[output application/json --- readUrl('classpath://implementationupdateSupplierByIdtest/mock_payload.dwl')]" mediaType="application/json" encoding="UTF-8" />
+					<munit-tools:variables >
+						<munit-tools:variable key="outboundHeaders" value="#[readUrl('classpath://implementationupdateSupplierByIdtest/mock_variable_.dwl')]" />
+						<munit-tools:variable key="id" value="#[output application/java --- readUrl('classpath://implementationupdateSupplierByIdtest/mock_variable_1.dwl')]" mediaType="application/java" encoding="UTF-8" />
+					</munit-tools:variables>
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit:set-event doc:name="Set Input" doc:id="2036dcdf-d384-4593-863f-ef05ce22309a" >
+				<munit:payload value="#[output application/json --- readUrl('classpath://implementationupdateSupplierByIdtest/set-event_payload.dwl')]" encoding="UTF-8" mediaType="application/json" />
+				<munit:attributes value="#[readUrl('classpath://implementationupdateSupplierByIdtest/set-event_attributes.dwl')]" />
+				<munit:variables >
+					<munit:variable key="outboundHeaders" value="#[readUrl('classpath://implementationupdateSupplierByIdtest/set-event_variable_.dwl')]" />
+				</munit:variables>
+			</munit:set-event>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="put:\suppliers\(id):application\json:accel-coupa-suppliers-sys-api-config" doc:id="31c07c3b-b8c4-4646-956c-58443f665d88" name="put:\suppliers\(id):application\json:accel-coupa-suppliers-sys-api-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert doc:name="Assert payload" doc:id="aad57ab9-4c74-455c-aa66-2fa294485e26" message="The payload does not match">
+				<munit-tools:that ><![CDATA[#[%dw 2.0
+import implementationupdateSupplierByIdtest::assert_expression_payload
+---
+assert_expression_payload::main({payload: payload, attributes: attributes, vars: vars})]]]></munit-tools:that>
+			</munit-tools:assert>
+		</munit:validation>
+	</munit:test>
+
+</mule>

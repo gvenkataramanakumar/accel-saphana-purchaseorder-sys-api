@@ -1,0 +1,156 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentAuthorizationReversal",
+  "definitions": {
+    "PaymentAuthorizationReversal": {
+      "type": "object",
+      "example": {
+        "id": "non aliquip tempor amet",
+        "paymentGatewayReferenceNumber": "irure",
+        "authorizationReversalAmount": -31812780,
+        "paymentAuthorizationReversalStatus": "ea ipsum",
+        "paymentAuthorizationProcessingMode": "exercitation Duis ad",
+        "paymentGatewayInternalReferenceNumber": "proident cillum",
+        "paymentGatewayResult": [
+          {
+            "id": "dolor anim eu",
+            "name": "Excepteur aliqua",
+            "description": "minim dolore"
+          }
+        ],
+        "paymentAuthorization": [
+          "ut ullamco sint Lorem tempor"
+        ],
+        "externalCreatedDate": "1997-11-21",
+        "requestDate": "06:10:42",
+        "paymentGatewayDate": "13:28:54",
+        "paymentAuthorizationReversalName": "incididunt anim nisi",
+        "customerAuthorizationReversalEmail": "non exercitation officia",
+        "paymentAuthorizationReversalCommentText": "esse",
+        "iPAddress": "aute",
+        "customerAuthorizationReversalPhone": "sit fugiat ea esse mollit",
+        "macAddress": "sint occaecat tempor nulla",
+        "capturePayment": [
+          "tempor esse"
+        ]
+      },
+      "additionalProperties": true,
+      "required": [
+        "authorizationReversalAmount",
+        "paymentGatewayDate",
+        "paymentGatewayReferenceNumber",
+        "id",
+        "paymentAuthorizationProcessingMode",
+        "paymentGatewayResult",
+        "paymentAuthorizationReversalStatus",
+        "requestDate"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentGatewayReferenceNumber": {
+          "type": "string"
+        },
+        "authorizationReversalAmount": {
+          "type": "integer"
+        },
+        "capturePayment": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "customerAuthorizationReversalPhone": {
+          "type": "string"
+        },
+        "iPAddress": {
+          "type": "string"
+        },
+        "paymentAuthorizationReversalStatus": {
+          "type": "string"
+        },
+        "paymentAuthorizationProcessingMode": {
+          "type": "string"
+        },
+        "paymentGatewayInternalReferenceNumber": {
+          "type": "string"
+        },
+        "paymentAuthorizationReversalName": {
+          "type": "string"
+        },
+        "paymentGatewayResult": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "paymentAuthorization": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "externalCreatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "requestDate": {
+          "type": "string",
+          "format": "time"
+        },
+        "paymentAuthorizationReversalCommentText": {
+          "type": "string"
+        },
+        "macAddress": {
+          "type": "string"
+        },
+        "customerAuthorizationReversalEmail": {
+          "type": "string"
+        },
+        "paymentGatewayDate": {
+          "type": "string",
+          "format": "time"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentPolicy",
+  "definitions": {
+    "PaymentPolicy": {
+      "type": "object",
+      "example": {
+        "id": "Duis est eiusmod voluptate quis",
+        "name": "et tempor incididunt aute",
+        "description": "Duis aliqua fugiat minim",
+        "paymentPolicyTreatmentSelection": "velit voluptate anim",
+        "paymentPolicyStatus": "incididunt veniam consectetur aliquip"
+      },
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "id",
+        "paymentPolicyStatus",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "paymentPolicyTreatmentSelection": {
+          "type": "string"
+        },
+        "paymentPolicyStatus": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

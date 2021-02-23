@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentCard",
+  "definitions": {
+    "PaymentCard": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "paymentCardType",
+        "name",
+        "id",
+        "cardHolderName",
+        "paymentMethodStatus",
+        "expirationYear",
+        "expirationMonth",
+        "numberLastDigits",
+        "maskedNumber",
+        "issueNumber",
+        "cardToken"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "creditCardExpired": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cardToken": {
+          "type": "string"
+        },
+        "issueNumber": {
+          "type": "string"
+        },
+        "billToCity": {
+          "type": "string"
+        },
+        "maskedNumber": {
+          "type": "string"
+        },
+        "companyName": {
+          "type": "string"
+        },
+        "cardHolderName": {
+          "type": "string"
+        },
+        "numberLastDigits": {
+          "type": "string"
+        },
+        "paymentCardType": {
+          "type": "string"
+        },
+        "derivedCardTypeCode": {
+          "type": "string"
+        },
+        "billToFirstName": {
+          "type": "string"
+        },
+        "billToStreet": {
+          "type": "string"
+        },
+        "expirationYear": {
+          "type": "string"
+        },
+        "billToStreet2": {
+          "type": "string"
+        },
+        "expirationMonth": {
+          "type": "string"
+        },
+        "billToLastName": {
+          "type": "string"
+        },
+        "paymentMethodType": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentMethodStatus": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

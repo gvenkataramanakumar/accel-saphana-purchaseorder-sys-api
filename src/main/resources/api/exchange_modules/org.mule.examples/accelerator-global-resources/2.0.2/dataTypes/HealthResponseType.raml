@@ -1,0 +1,24 @@
+#%RAML 1.0 DataType
+displayName: HealthResponseType
+description: Standard response structure for /health endpoints
+properties:
+  status:
+    description: Status of the API, including system connectivity
+    type: string
+    enum: [ "OK", "DISCONNECTED" ]
+  apiName:
+    description: Identifier of the API reporting the error
+    type: string
+    maxLength: 128
+  apiVersion: 
+    description: Complete version of the API reporting the error (format is major.minor.revision)
+    type: string
+    minLength: 5
+    maxLength: 11
+  timestamp:
+    type: datetime
+example:
+  status: "OK"
+  apiName: "accelerator-salesforce-sys-api"
+  apiVersion: "1.3.0"
+  timestamp: "2020-08-01T13:15:25.000Z"

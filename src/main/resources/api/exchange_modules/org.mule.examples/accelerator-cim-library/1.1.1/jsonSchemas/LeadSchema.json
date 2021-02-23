@@ -1,0 +1,206 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Lead",
+  "definitions": {
+    "Lead": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "leadSource"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "faxContactPhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "stateProvinceName": {
+          "type": "string"
+        },
+        "leadStatus": {
+          "type": "string"
+        },
+        "photoURL": {
+          "type": "string"
+        },
+        "countryName": {
+          "type": "string"
+        },
+        "partyRole": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "convertedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "contactPointEmail": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "companyName": {
+          "type": "string"
+        },
+        "streetName": {
+          "type": "string"
+        },
+        "leadScore": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "mobileContactPhone": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "contactAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "geoCodeLatitude": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "leadRating": {
+          "type": "string"
+        },
+        "geoCodeLongitude": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "emailBouncedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "geoCodeAccuracy": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "leadSource": {
+          "type": "string"
+        },
+        "convertedToAccount": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "convertedToAccountContact": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "phoneContactPoint": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "lastActivityDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "annualRevenue": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "emailBouncedReason": {
+          "type": "string"
+        },
+        "website": {
+          "type": "string"
+        },
+        "isConverted": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "partnerAccount": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

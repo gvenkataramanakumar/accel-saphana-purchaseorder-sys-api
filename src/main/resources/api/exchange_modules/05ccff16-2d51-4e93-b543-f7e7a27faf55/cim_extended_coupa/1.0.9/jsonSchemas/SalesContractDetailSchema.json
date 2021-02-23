@@ -1,0 +1,256 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/SalesContractDetail",
+  "definitions": {
+    "SalesContractDetail": {
+      "description": "Defines a sales order contract",
+      "type": "object",
+      "example": {
+        "salesDocApprovalStatus": "eu culpa ipsum incididunt",
+        "salesContractType": "dolore esse id",
+        "salesContractDate": "2012-04-15",
+        "salesContractValidityStartDate": "2002-09-18",
+        "id": "officia voluptate exercitation minim",
+        "salesContractItems": [
+          "non irure velit incididunt"
+        ],
+        "salesOrder": "Excepteur incididunt nostrud Ut",
+        "totalNetAmount": 97918600.96328998,
+        "salesContractValidityEndDate": "2019-07-14",
+        "transactionCurrency": "elit",
+        "salesOrganization": "veniam pariatur incididunt dolor laborum",
+        "createdByUser": "ad quis fugiat ea veniam",
+        "creationDate": "2012-06-10",
+        "customer": "sit"
+      },
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Saled Contract Identifier"
+        },
+        "creationDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Creation Date"
+        },
+        "salesContractType": {
+          "type": "string",
+          "description": "salesContractType"
+        },
+        "createdByUser": {
+          "type": "string",
+          "description": "Created by user"
+        },
+        "customer": {
+          "type": "string",
+          "description": "Sold to Customer"
+        },
+        "salesContractItemsDetail": {
+          "type": "array",
+          "items": {
+            "description": "Defines a line item in a sales order contract",
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "itemNetWeight"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Id of the sales contract for the item being recorded"
+              },
+              "salesContractItemText": {
+                "type": "string",
+                "description": "salesContractItemText of the item"
+              },
+              "salesContractSignedDate": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "SignedDate of the item"
+              },
+              "itemGrossWeight": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "itemNetWeight": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "itemWeightUnit": {
+                "type": "string",
+                "description": "Weight unit of the item"
+              },
+              "pricingDate": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "Pricing date for the item"
+              },
+              "product": {
+                "type": "string",
+                "description": "material making of the item"
+              },
+              "productGroup": {
+                "type": "string",
+                "description": "material group of the item"
+              },
+              "productPricingGroup": {
+                "type": "string",
+                "description": "material pricing group of the item"
+              },
+              "requestedQuantity": {
+                "type": "integer",
+                "minimum": 0,
+                "example": 99,
+                "description": "Quantity of the item requested"
+              },
+              "customerPaymentTerms": {
+                "type": "string",
+                "description": "Customer's payment term of the item"
+              }
+            }
+          }
+        },
+        "salesOrder": {
+          "type": "string",
+          "description": "Associated sales order id"
+        },
+        "auditDetail": {
+          "description": "Defines standard system audit fields available for most types",
+          "example": {
+            "createdOn": "2021-01-21T21:21:21Z",
+            "createdBy": "0054x000002IpBlAAK",
+            "updatedOn": "2021-01-21T21:21:21Z",
+            "updatedBy": "0054x000002xBGGAA2",
+            "isDeleted": false
+          },
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "createdOn",
+            "createdBy",
+            "updatedOn",
+            "updatedBy",
+            "isDeleted"
+          ],
+          "properties": {
+            "createdOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "updatedOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedBy": {
+              "type": "string"
+            },
+            "isDeleted": {
+              "type": "boolean"
+            }
+          }
+        },
+        "totalNetAmount": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "example": 99.99,
+          "description": "Net value"
+        },
+        "transactionCurrency": {
+          "type": "string",
+          "description": "Currency of the transaction",
+          "example": "USD"
+        },
+        "salesContractValidityStartDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesContractValidityEndDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesContractDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesOrganization": {
+          "type": "string",
+          "description": "Sales organization"
+        },
+        "salesDocApprovalStatus": {
+          "type": "string",
+          "description": "Approval status of the sales contract"
+        },
+        "salesContractItems": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

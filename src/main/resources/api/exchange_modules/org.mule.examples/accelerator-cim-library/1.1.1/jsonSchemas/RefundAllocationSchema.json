@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/RefundAllocation",
+  "definitions": {
+    "RefundAllocation": {
+      "type": "object",
+      "example": {
+        "id": "id1",
+        "effectiveDate": "1987-03-10",
+        "relatedRefundAllocation": [
+          "Ut"
+        ],
+        "refundAllocationType": "ullamco irure",
+        "refundPayment": [
+          "ex consectetur Duis labore"
+        ],
+        "allocatedAmount": 82286349,
+        "refundBalanceAmount": -30811109,
+        "appliedDate": "2019-12-11",
+        "externalCreatedDate": "2015-12-24",
+        "unappliedDate": "1984-07-11",
+        "refundAllocationName": "officia cillum",
+        "hasBeenUnapplied": true
+      },
+      "additionalProperties": true,
+      "required": [
+        "allocatedAmount",
+        "id",
+        "appliedDate",
+        "effectiveDate",
+        "refundAllocationType"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "effectiveDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "relatedRefundAllocation": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "hasBeenUnapplied": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "refundAllocationType": {
+          "type": "string"
+        },
+        "refundPayment": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allocatedAmount": {
+          "type": "integer"
+        },
+        "refundBalanceAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "refundAllocationName": {
+          "type": "string"
+        },
+        "appliedDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "externalCreatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unappliedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

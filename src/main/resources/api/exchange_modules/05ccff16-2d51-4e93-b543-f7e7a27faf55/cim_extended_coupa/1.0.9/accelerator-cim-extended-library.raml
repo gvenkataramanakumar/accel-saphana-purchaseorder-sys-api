@@ -1,0 +1,239 @@
+#%RAML 1.0 Library
+usage: Extensions to CIM required by various Accelerator APIs
+uses:
+  AccountDetailTypes: libraries/AccountDetailTypeLibrary.raml
+  PartyDetailTypes: libraries/PartyDetailTypeLibrary.raml
+  PartyRoleDetailTypes: libraries/PartyRoleDetailTypeLibrary.raml
+  PaymentDetailTypes: libraries/PaymentDetailTypeLibrary.raml
+  PaymentMethodDetailTypes: libraries/PaymentMethodDetailTypeLibrary.raml
+  ProductDetailTypes: libraries/ProductDetailTypeLibrary.raml
+  SalesOrderDetailTypes: libraries/SalesOrderDetailTypeLibrary.raml
+  ShipmentDetailTypes: libraries/ShipmentDetailTypeLibrary.raml
+  GoodsReceiptDetailTypes: libraries/GoodsReceiptDetailTypeLibrary.raml
+  PurchaseOrderTypes : libraries/PurchaseOrderTypeLibrary.raml
+  InvoiceDetailTypes: libraries/InvoiceDetailTypeLibrary.raml
+
+types:
+  # Extended Account types
+  AccountDetail:
+    type: AccountDetailTypes.AccountDetail
+    example: !include ./examples/AccountDetailExample.json
+  AccountContactDetail:
+    type: AccountDetailTypes.AccountContactDetail
+    example: !include ./examples/AccountContactDetailExample.json
+  AccountContactRoleDetail:
+    type: AccountDetailTypes.AccountContactRoleDetail
+    example: !include ./examples/AccountContactRoleDetailExample.json
+  AccountPartnerDetail:
+    type: AccountDetailTypes.AccountPartnerDetail
+    example: !include ./examples/AccountPartnerDetailExample.json
+  LeadDetail:
+    type: AccountDetailTypes.LeadDetail
+    example: !include ./examples/LeadDetailExample.json
+  
+  # Extended Party types
+  ContactPointDetail:
+    type: PartyDetailTypes.ContactPointDetail
+    example: !include ./examples/ContactPointDetailExample.json
+  ContactPointAddressDetail:
+    type: PartyDetailTypes.ContactPointAddressDetail
+    example: !include ./examples/ContactPointAddressDetailExample.json
+  ContactPointAppDetail:
+    type: PartyDetailTypes.ContactPointAppDetail
+    example: !include ./examples/ContactPointAppDetailExample.json
+  ContactPointEmailDetail:
+    type: PartyDetailTypes.ContactPointEmailDetail
+    example: !include ./examples/ContactPointEmailDetailExample.json
+  ContactPointLocationDetail:
+    type: PartyDetailTypes.ContactPointLocationDetail
+    example: !include ./examples/ContactPointLocationDetailExample.json
+  ContactPointPhoneDetail:
+    type: PartyDetailTypes.ContactPointPhoneDetail
+    example: !include ./examples/ContactPointPhoneDetailExample.json
+  ContactPointSocialDetail:
+    type: PartyDetailTypes.ContactPointSocialDetail
+    example: !include ./examples/ContactPointSocialDetailExample.json
+  HouseholdDetail:
+    type: PartyDetailTypes.HouseholdDetail
+    example: !include ./examples/HouseholdDetailExample.json
+  IndividualDetail:
+    type: PartyDetailTypes.IndividualDetail
+    example: !include ./examples/IndividualDetailExample.json
+  InternalBusinessUnitDetail:
+    type: PartyDetailTypes.InternalBusinessUnitDetail
+    example: !include ./examples/InternalBusinessUnitDetailExample.json
+  PartyDetail:
+    type: PartyDetailTypes.PartyDetail
+    example: !include ./examples/PartyDetailExample.json
+  PartyIdentificationDetail:
+    type: PartyDetailTypes.PartyIdentificationDetail
+    example: !include ./examples/PartyIdentificationDetailExample.json
+  UncategorizedPartyDetail:
+    type: PartyDetailTypes.UncategorizedPartyDetail
+    example: !include ./examples/UncategorizedPartyDetailExample.json
+  
+  # Extended PartyRole types
+  CompetitorDetail:
+    type: PartyRoleDetailTypes.CompetitorDetail
+    example: !include ./examples/CompetitorDetailExample.json
+  CustomerDetail:
+    type: PartyRoleDetailTypes.CustomerDetail
+    example: !include ./examples/CustomerDetailExample.json
+  PartyRoleDetail:
+    type: PartyRoleDetailTypes.PartyRoleDetail
+    example: !include ./examples/PartyRoleDetailExample.json
+  SellerDetail:
+    type: PartyRoleDetailTypes.SellerDetail
+    example: !include ./examples/SellerDetailExample.json
+  SupplierDetail:
+    type: PartyRoleDetailTypes.SupplierDetail
+    example: !include ./examples/SupplierDetailExample.json
+  SupplierDetailExt:
+    type: PartyRoleDetailTypes.SupplierDetail
+    example: !include ./examples/SupplierDetailsExample.json 
+  
+  # Extended Payment types
+  CapturePaymentDetail:
+    type: PaymentDetailTypes.CapturePaymentDetail
+    example: !include ./examples/CapturePaymentDetailExample.json
+  PaymentDetail:
+    type: PaymentDetailTypes.PaymentDetail
+    example: !include ./examples/PaymentDetailExample.json
+  PaymentAuthorizationDetail:
+    type: PaymentDetailTypes.PaymentAuthorizationDetail
+    example: !include ./examples/PaymentAuthorizationDetailExample.json
+  PaymentAuthorizationReversalDetail:
+    type: PaymentDetailTypes.PaymentAuthorizationReversalDetail
+    example: !include ./examples/PaymentAuthorizationReversalDetailExample.json
+  PaymentGatewayDetail:
+    type: PaymentDetailTypes.PaymentGatewayDetail
+    example: !include ./examples/PaymentGatewayDetailExample.json
+  PaymentGatewayProviderDetail:
+    type: PaymentDetailTypes.PaymentGatewayProviderDetail
+    example: !include ./examples/PaymentGatewayProviderDetailExample.json
+  PaymentGroupDetail:
+    type: PaymentDetailTypes.PaymentGroupDetail
+    example: !include ./examples/PaymentGroupDetailExample.json
+  PaymentPolicyDetail:
+    type: PaymentDetailTypes.PaymentPolicyDetail
+    example: !include ./examples/PaymentPolicyDetailExample.json
+  PaymentTreatmentDetail:
+    type: PaymentDetailTypes.PaymentTreatmentDetail
+    example: !include ./examples/PaymentTreatmentDetailExample.json
+  PaymentTreatmentMethodDetail:
+    type: PaymentDetailTypes.PaymentTreatmentMethodDetail
+    example: !include ./examples/PaymentTreatmentMethodDetailExample.json
+  RefundPaymentDetail:
+    type: PaymentDetailTypes.RefundPaymentDetail
+    example: !include ./examples/RefundPaymentDetailExample.json
+  GoodsReceiptDetail:
+    type: GoodsReceiptDetailTypes.GoodsReceiptDetail
+    example: !include ./examples/GoodsReceiptDetailExample.json
+      
+  
+  # Extended PaymentMethod types
+  CouponDetail:
+    type: PaymentMethodDetailTypes.CouponDetail
+    example: !include ./examples/CouponDetailExample.json
+  CreditTenderDetail:
+    type: PaymentMethodDetailTypes.CreditTenderDetail
+    example: !include ./examples/CreditTenderDetailExample.json
+  PaymentCardDetail:
+    type: PaymentMethodDetailTypes.PaymentCardDetail
+    example: !include ./examples/PaymentCardDetailExample.json
+  PaymentMethodDetail:
+    type: PaymentMethodDetailTypes.PaymentMethodDetail
+    example: !include ./examples/PaymentMethodDetailExample.json
+  PaymentMethodTypeDetail:
+    type: PaymentMethodDetailTypes.PaymentMethodTypeDetail
+    example: !include ./examples/PaymentMethodTypeDetailExample.json
+  
+  # Extended Product types
+  BrandDetail:
+    type: ProductDetailTypes.BrandDetail
+    example: !include ./examples/BrandDetailExample.json
+  BundleProductDetail:
+    type: ProductDetailTypes.BundleProductDetail
+    example: !include ./examples/BundleProductDetailExample.json
+  GoodsProductDetail:
+    type: ProductDetailTypes.GoodsProductDetail
+    example: !include ./examples/GoodsProductDetailExample.json
+  PriceBookEntryDetail:
+    type: ProductDetailTypes.PriceBookEntryDetail
+    example: !include ./examples/PriceBookEntryDetailExample.json
+  ProductAvailabilityDetail:
+    type: ProductDetailTypes.ProductAvailabilityDetail
+    example: !include ./examples/ProductAvailabilityDetailExample.json
+  ProductDetail:
+    type: ProductDetailTypes.ProductDetail
+    example: !include ./examples/ProductDetailExample.json
+  ProductCatalogDetail:
+    type: ProductDetailTypes.ProductCatalogDetail
+    example: !include ./examples/ProductCatalogDetailExample.json
+  ProductCategoryDetail:
+    type: ProductDetailTypes.ProductCategoryDetail
+    example: !include ./examples/ProductCategoryDetailExample.json
+  ProductImageDetail:
+    type: ProductDetailTypes.ProductImageDetail
+    example: !include ./examples/ProductImageDetailExample.json
+  ProductTranslationDetail:
+    type: ProductDetailTypes.ProductTranslationDetail
+    example: !include ./examples/ProductTranslationDetailExample.json
+  ServiceProductDetail:
+    type: ProductDetailTypes.ServiceProductDetail
+    example: !include ./examples/ServiceProductDetailExample.json
+  
+  # Extended SalesOrder types
+  BillingDocumentDetail:
+    type: SalesOrderDetailTypes.BillingDocumentDetail
+    example: !include ./examples/BillingDocumentDetailExample.json
+  SalesChannelDetail:
+    type: SalesOrderDetailTypes.SalesChannelDetail
+    example: !include ./examples/SalesChannelDetailExample.json
+  SalesContractDetail:
+    type: SalesOrderDetailTypes.SalesContractDetail
+    example: !include ./examples/SalesContractDetailExample.json
+  SalesOrderDetail:
+    type: SalesOrderDetailTypes.SalesOrderDetail
+    example: !include ./examples/SalesOrderDetailExample.json
+  SalesOrderDeliveryGroupDetail:
+    type: SalesOrderDetailTypes.SalesOrderDeliveryGroupDetail
+    example: !include ./examples/SalesOrderDeliveryGroupDetailExample.json
+  SalesOrderPaymentSummaryDetail:
+    type: SalesOrderDetailTypes.SalesOrderPaymentSummaryDetail
+    example: !include ./examples/SalesOrderPaymentSummaryDetailExample.json
+  SalesOrderProductDetail:
+    type: SalesOrderDetailTypes.SalesOrderProductDetail
+    example: !include ./examples/SalesOrderProductDetailExample.json
+  SalesOrderProductTaxDetail:
+    type: SalesOrderDetailTypes.SalesOrderProductTaxDetail
+    example: !include ./examples/SalesOrderProductTaxDetailExample.json
+  SalesOrderTaxDetail:
+    type: SalesOrderDetailTypes.SalesOrderTaxDetail
+    example: !include ./examples/SalesOrderTaxDetailExample.json
+  
+  # Extended Shipment types
+  ShipmentDetail:
+    type: ShipmentDetailTypes.ShipmentDetail
+    example: !include ./examples/ShipmentDetailExample.json
+  ShipmentDocumentDetail:
+    type: ShipmentDetailTypes.ShipmentDocumentDetail
+    example: !include ./examples/ShipmentDocumentDetailExample.json
+  ShipmentPackageDetail:
+    type: ShipmentDetailTypes.ShipmentPackageDetail
+    example: !include ./examples/ShipmentPackageDetailExample.json
+  ShipmentProductDetail:
+    type: ShipmentDetailTypes.ShipmentProductDetail
+    example: !include ./examples/ShipmentProductDetailExample.json
+  ShippingMethodDetail:
+    type: ShipmentDetailTypes.ShippingMethodDetail
+    example: !include ./examples/ShippingMethodDetailExample.json
+
+  # Purchase Order Details
+  PurchaseOrder: 
+    type: PurchaseOrderTypes.PurchaseOrderDetails
+    example: !include ./examples/PurchaseOrderExample.json
+    
+  # InvoiceDetail Order Details
+  InvoiceDetail:
+    type: InvoiceDetailTypes.InvoiceDetail

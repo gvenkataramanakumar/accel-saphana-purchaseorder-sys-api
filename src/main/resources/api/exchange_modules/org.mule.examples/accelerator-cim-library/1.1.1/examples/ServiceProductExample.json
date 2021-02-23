@@ -1,0 +1,121 @@
+{
+  "name": "sit",
+  "longDescription": "in incididunt exercitation cupidatat in",
+  "id": "eu in ullamco mollit",
+  "serviceType": "laboris incididunt ad nisi laborum",
+  "productStatus": "nostrud",
+  "description": "aute labore",
+  "productSKU": "dolor aute",
+  "isPreOrderable": false,
+  "modelYear": 23427307,
+  "manufacturerName": "fugiat et veniam nulla",
+  "priceChargeType": "esse incididunt velit",
+  "isFoodstampPaymentAllowed": false,
+  "evergreenContractEstimatedMonthCount": 73968418,
+  "quantityScheduleType": "aliquip consectetur est ullamco",
+  "isManualPriceEntryRequired": true,
+  "isCustomerDiscountAllowed": false,
+  "isInstallable": true,
+  "validForPeriodUOM": [
+    {
+      "id": "aute do Ut",
+      "name": "aliqua sit eu",
+      "pluralName": "mollit"
+    },
+    {
+      "id": "anim tempor",
+      "name": "incididunt commodo ut consectetur dolore",
+      "pluralName": "nostrud aliqua"
+    },
+    {
+      "id": "do enim in aute",
+      "name": "Duis",
+      "pluralName": "Ut dolor consequat eiusmod"
+    },
+    {
+      "id": "cupidatat nulla ut dolor tempor",
+      "name": "proident in dolor",
+      "pluralName": "velit"
+    },
+    {
+      "id": "dolore ipsum fugiat velit",
+      "name": "ullamco Excepteur",
+      "pluralName": "id dolor"
+    },
+    {
+      "id": "dolore et",
+      "name": "Excepteur voluptate",
+      "pluralName": "mollit ut elit nostrud"
+    },
+    {
+      "id": "Excepteur labore in ut qui",
+      "name": "voluptate",
+      "pluralName": "nisi"
+    },
+    {
+      "id": "nostrud",
+      "name": "consequat",
+      "pluralName": "ipsum sed magna"
+    },
+    {
+      "id": "minim tempor Lorem voluptate",
+      "name": "reprehenderit in occaecat tempor quis",
+      "pluralName": "magna minim sint laboris"
+    },
+    {
+      "id": "sit adipisicing irure et amet",
+      "name": "enim Lorem",
+      "pluralName": "id occaecat fugiat"
+    },
+    {
+      "id": "pariatur irure in",
+      "name": "culpa",
+      "pluralName": "labore laboris"
+    },
+    {
+      "id": "amet sed et do velit",
+      "name": "cupidatat quis",
+      "pluralName": "aute"
+    },
+    {
+      "id": "mollit dolore qui voluptate nisi",
+      "name": "dolor dolore aute ad cupidatat",
+      "pluralName": "qui consectetur amet deserunt tempor"
+    },
+    {
+      "id": "minim commodo nisi deserunt culpa",
+      "name": "laboris dolore quis in eiusmod",
+      "pluralName": "culpa"
+    },
+    {
+      "id": "anim velit nulla Duis tempor",
+      "name": "velit aliqua adipisicing",
+      "pluralName": "officia voluptate do reprehenderit"
+    },
+    {
+      "id": "ut cupidatat quis dolore",
+      "name": "eiusmod fugiat amet",
+      "pluralName": "nostrud"
+    },
+    {
+      "id": "proident velit ea labore sint",
+      "name": "dolore amet aliqua reprehenderit",
+      "pluralName": "irure aliqua officia"
+    },
+    {
+      "id": "adipisicing in in dolore occaecat",
+      "name": "dolor in dolore",
+      "pluralName": "culpa est et aliqua"
+    },
+    {
+      "id": "irure esse",
+      "name": "quis nostrud ea et",
+      "pluralName": "officia"
+    },
+    {
+      "id": "in minim laborum",
+      "name": "adipisicing",
+      "pluralName": "proident magna do occaecat"
+    }
+  ]
+}

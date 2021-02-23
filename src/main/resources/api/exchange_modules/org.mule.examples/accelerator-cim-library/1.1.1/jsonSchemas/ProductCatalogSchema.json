@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/ProductCatalog",
+  "definitions": {
+    "ProductCatalog": {
+      "type": "object",
+      "example": {
+        "id": "id1",
+        "name": "mollit laborum sit eu dolore",
+        "activeFromDate": "1982-01-08",
+        "activeToDate": "2000-01-01"
+      },
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "id",
+        "activeFromDate"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "activeToDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "activeFromDate": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  }
+}

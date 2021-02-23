@@ -1,0 +1,194 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/ShipmentDocumentDetail",
+  "definitions": {
+    "ShipmentDocumentDetail": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "shipment",
+        "id"
+      ],
+      "properties": {
+        "auditDetail": {
+          "description": "Defines standard system audit fields available for most types",
+          "example": {
+            "createdOn": "2021-01-21T21:21:21Z",
+            "createdBy": "0054x000002IpBlAAK",
+            "updatedOn": "2021-01-21T21:21:21Z",
+            "updatedBy": "0054x000002xBGGAA2",
+            "isDeleted": false
+          },
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "createdOn",
+            "createdBy",
+            "updatedOn",
+            "updatedBy",
+            "isDeleted"
+          ],
+          "properties": {
+            "createdOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "updatedOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedBy": {
+              "type": "string"
+            },
+            "isDeleted": {
+              "type": "boolean"
+            }
+          }
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shipment": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "shipmentDate"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "giftMessageText": {
+                "type": "string"
+              },
+              "shipmentNumber": {
+                "type": "string"
+              },
+              "shipmentStatus": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "required": [
+                    "id",
+                    "name",
+                    "description"
+                  ],
+                  "properties": {
+                    "id": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "salesOrder": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "isGift": {
+                "anyOf": [
+                  {
+                    "type": "boolean"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "actualDeliveryDateTime": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "time"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "specialInstructionsText": {
+                "type": "string"
+              },
+              "carrierTrackingNumber": {
+                "type": "string"
+              },
+              "shipToAddress": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "estimatedDeliveryDateTime": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "time"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "salesOrderDeliveryGroup": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "scheduledDeliveryDateTime": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "time"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "shipmentDate": {
+                "type": "string",
+                "format": "date"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

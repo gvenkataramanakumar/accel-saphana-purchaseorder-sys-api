@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/BillingDocument",
+  "definitions": {
+    "BillingDocument": {
+      "type": "object",
+      "example": {
+        "id": "est reprehenderit",
+        "accountId": "ipsum occaecat tempor Duis ad",
+        "taxValue": 4438.55,
+        "billingDocumentItems": [
+          "nisi",
+          "minim eiusmod anim"
+        ],
+        "grossValue": 566.07,
+        "netValue": 9240.08
+      },
+      "additionalProperties": true,
+      "properties": {
+        "billingId": {
+          "type": "string",
+          "description": "Billing number on the system"
+        },
+        "customerId": {
+          "type": "string",
+          "description": "Account number who is being billed"
+        },
+        "netValue": {
+          "type": "number",
+          "minimum": 0,
+          "multipleOf": 0.01,
+          "example": 99.99,
+          "description": "Net value"
+        },
+        "taxValue": {
+          "type": "number",
+          "multipleOf": 0.01,
+          "minimum": 0,
+          "example": 99.99,
+          "description": "Tax value"
+        },
+        "grossValue": {
+          "type": "number",
+          "minimum": 0,
+          "multipleOf": 0.01,
+          "example": 99.99,
+          "description": "Gross value"
+        },
+        "billingDocumentItems": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

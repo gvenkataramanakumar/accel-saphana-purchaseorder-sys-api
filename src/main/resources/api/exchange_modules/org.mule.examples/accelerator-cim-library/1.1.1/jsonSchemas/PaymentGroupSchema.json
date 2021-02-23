@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentGroup",
+  "definitions": {
+    "PaymentGroup": {
+      "type": "object",
+      "example": {
+        "id": "non id minim commodo reprehenderit",
+        "totalReversalAmount": 32179667,
+        "totalAuthorizationAmount": -83824381,
+        "totalPaymentAmount": -48783422,
+        "paymentGroupNumber": "non adipisicing in anim"
+      },
+      "additionalProperties": true,
+      "required": [
+        "paymentGroupNumber",
+        "totalReversalAmount",
+        "id",
+        "totalPaymentAmount",
+        "totalAuthorizationAmount"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalReversalAmount": {
+          "type": "integer"
+        },
+        "totalAuthorizationAmount": {
+          "type": "integer"
+        },
+        "totalPaymentAmount": {
+          "type": "integer"
+        },
+        "paymentGroupNumber": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

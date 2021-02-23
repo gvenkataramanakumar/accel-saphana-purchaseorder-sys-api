@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentTreatment",
+  "definitions": {
+    "PaymentTreatment": {
+      "type": "object",
+      "example": {
+        "id": "dolore",
+        "paymentTreatmentMethod": [
+          "est veniam ad cupidatat esse"
+        ],
+        "paymentTreatmentStatus": "cillum commodo culpa enim",
+        "paymentPolicy": [
+          "aliquip ut"
+        ],
+        "paymentTreatmentName": "velit ex dolor",
+        "paymentApplicationLevel": "ut officia sint",
+        "shouldAutoInvoice": true
+      },
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "paymentTreatmentStatus"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentTreatmentMethod": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentApplicationLevel": {
+          "type": "string"
+        },
+        "shouldAutoInvoice": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentTreatmentStatus": {
+          "type": "string"
+        },
+        "paymentPolicy": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentTreatmentName": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

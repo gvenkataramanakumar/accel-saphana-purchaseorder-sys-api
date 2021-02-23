@@ -1,0 +1,28 @@
+api:
+  autodiscoveryID: ""
+  
+accelerator:
+  logger: "com.mulesoft.accelerator.saphana"
+
+https:
+  host: "0.0.0.0"
+  port: "8082"
+  
+until:
+  successful:
+    maxretries: "3"
+    timebetween: "3000"
+    
+coupa:
+   instance: ""
+   api:
+    key: ""
+    
+            
+reconnection:
+  frequency: "3000"
+  attempts: "3"
+  
+keystore:
+  path: "accelerator-keystore.jks"           
+ 

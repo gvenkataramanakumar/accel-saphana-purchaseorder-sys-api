@@ -1,0 +1,262 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/SalesOrderDeliveryGroup",
+  "definitions": {
+    "SalesOrderDeliveryGroup": {
+      "type": "object",
+      "example": {
+        "id": "pariatur sunt ut cupidatat",
+        "name": "eu",
+        "totalPriceAmount": -76563983,
+        "description": "labore qui Excepteur est cupidatat",
+        "contactPointAddress": [
+          "qui"
+        ],
+        "salesOrder": [
+          "officia ut laboris dolor"
+        ],
+        "salesOrderDeliveryStatus": [
+          {
+            "id": "ad",
+            "name": "occaecat id"
+          }
+        ],
+        "salesOrderDeliveryGroupNumber": "voluptate Excepteur",
+        "totalUnitPriceAmount": 61095544,
+        "orderDeliveryMethod": [
+          "Ut"
+        ],
+        "accountContact": [
+          "consequat occaecat irure Duis esse"
+        ],
+        "totalDeliveryTaxAmount": -25102032,
+        "deliveryInstructionsText": "Lorem Duis ullamco",
+        "desiredDeliveryDate": "1960-10-12",
+        "isGift": false,
+        "promisedDate": "1956-06-10",
+        "giftMessageText": "cillum sed",
+        "totalDeliveryChargeTaxAmount": -94670537,
+        "totalDeliveryAdjustmentAmount": 91625199,
+        "totalProductTaxAmount": 9225301,
+        "totalTaxAmount": -47914749,
+        "originalDeliveryGroup": [
+          "labore eiusmod non dolore dolore"
+        ],
+        "grandTotalDeliveryAmount": -59153587,
+        "totalDeliveryChargeAmount": 82670808,
+        "totalDeliveryAdjustmentTaxAmount": 25576535
+      },
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "id",
+        "salesOrderDeliveryStatus",
+        "totalUnitPriceAmount",
+        "totalPriceAmount",
+        "salesOrderDeliveryGroupNumber",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "totalPriceAmount": {
+          "type": "integer"
+        },
+        "totalDeliveryAdjustmentTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "promisedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "giftMessageText": {
+          "type": "string"
+        },
+        "deliveryInstructionsText": {
+          "type": "string"
+        },
+        "totalProductTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalDeliveryChargeAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "grandTotalDeliveryAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "contactPointAddress": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "salesOrder": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "isGift": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salesOrderDeliveryStatus": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "totalDeliveryAdjustmentAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalDeliveryTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalDeliveryChargeTaxAmount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "originalDeliveryGroup": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "salesOrderDeliveryGroupNumber": {
+          "type": "string"
+        },
+        "desiredDeliveryDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "totalUnitPriceAmount": {
+          "type": "integer"
+        },
+        "orderDeliveryMethod": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "accountContact": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

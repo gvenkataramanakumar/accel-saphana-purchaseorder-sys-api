@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentMethod",
+  "definitions": {
+    "PaymentMethod": {
+      "type": "object",
+      "example": {
+        "id": "ut consectetur velit adipisicing deserunt",
+        "paymentMethodType": [
+          "eiusmod in veniam ea pariatur",
+          "veniam deserunt"
+        ],
+        "paymentMethodStatus": "consectetur eu"
+      },
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "paymentMethodStatus"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentMethodType": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paymentMethodStatus": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

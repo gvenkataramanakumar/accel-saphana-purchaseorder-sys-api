@@ -1,0 +1,163 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/BillingDocumentDetail",
+  "definitions": {
+    "BillingDocumentDetail": {
+      "description": "Defines a customer billing document",
+      "type": "object",
+      "example": {
+        "id": "est reprehenderit",
+        "accountId": "ipsum occaecat tempor Duis ad",
+        "taxValue": 4438.55,
+        "billingDocumentItems": [
+          "nisi",
+          "minim eiusmod anim"
+        ],
+        "grossValue": 566.07,
+        "netValue": 9240.08
+      },
+      "additionalProperties": true,
+      "properties": {
+        "billingId": {
+          "type": "string",
+          "description": "Billing number on the system"
+        },
+        "customerId": {
+          "type": "string",
+          "description": "Account number who is being billed"
+        },
+        "billingDocumentItemsDetail": {
+          "type": "array",
+          "items": {
+            "description": "Defines a line item in a billing document",
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "itemNum": {
+                "type": "string",
+                "description": "Id of the billing document for the item being recorded"
+              },
+              "currency": {
+                "type": "string",
+                "description": "currency of usage",
+                "example": "USD"
+              },
+              "itemNetValue": {
+                "type": "number",
+                "minimum": 0,
+                "multipleOf": 0.01,
+                "example": 99.99,
+                "description": "Net value of the item"
+              },
+              "itemTaxValue": {
+                "type": "number",
+                "minimum": 0,
+                "multipleOf": 0.01,
+                "example": 99.99,
+                "description": "Tax value of the item"
+              },
+              "itemGrossValue": {
+                "type": "number",
+                "minimum": 0,
+                "multipleOf": 0.01,
+                "example": 99.99,
+                "description": "Gross value of the item"
+              },
+              "organizationDivision": {
+                "type": "string",
+                "description": "Organization Division for the item"
+              },
+              "salesOffice": {
+                "type": "string",
+                "description": "Sales Office making the sale"
+              },
+              "material": {
+                "type": "string",
+                "description": "Material Id or Product Id being billed"
+              },
+              "requestedQuantity": {
+                "type": "integer",
+                "minimum": 0,
+                "example": 99,
+                "description": "Quantity of the item requested"
+              },
+              "baseUnit": {
+                "type": "string",
+                "description": "Unit of measure of the item"
+              },
+              "orderId": {
+                "type": "string",
+                "description": "Order Id through which the item was ordered"
+              }
+            }
+          }
+        },
+        "netValue": {
+          "type": "number",
+          "minimum": 0,
+          "multipleOf": 0.01,
+          "example": 99.99,
+          "description": "Net value"
+        },
+        "auditDetail": {
+          "description": "Defines standard system audit fields available for most types",
+          "example": {
+            "createdOn": "2021-01-21T21:21:21Z",
+            "createdBy": "0054x000002IpBlAAK",
+            "updatedOn": "2021-01-21T21:21:21Z",
+            "updatedBy": "0054x000002xBGGAA2",
+            "isDeleted": false
+          },
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "createdOn",
+            "createdBy",
+            "updatedOn",
+            "updatedBy",
+            "isDeleted"
+          ],
+          "properties": {
+            "createdOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "updatedOn": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedBy": {
+              "type": "string"
+            },
+            "isDeleted": {
+              "type": "boolean"
+            }
+          }
+        },
+        "taxValue": {
+          "type": "number",
+          "multipleOf": 0.01,
+          "minimum": 0,
+          "example": 99.99,
+          "description": "Tax value"
+        },
+        "grossValue": {
+          "type": "number",
+          "minimum": 0,
+          "multipleOf": 0.01,
+          "example": 99.99,
+          "description": "Gross value"
+        },
+        "billingDocumentItems": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

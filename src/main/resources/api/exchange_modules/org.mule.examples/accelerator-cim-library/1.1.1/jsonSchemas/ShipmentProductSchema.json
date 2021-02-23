@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/ShipmentProduct",
+  "definitions": {
+    "ShipmentProduct": {
+      "type": "object",
+      "example": {
+        "id": "ut",
+        "product": [
+          "eu",
+          "aliquip deserunt non"
+        ],
+        "shipment": [
+          "tempor anim labore dolore",
+          "proident ut qui id in"
+        ],
+        "shipmentPackage": [
+          "quis",
+          "Ut ad"
+        ],
+        "salesOrderProduct": [
+          "consequat dolore Duis eu",
+          "laboris cillum proident commodo"
+        ],
+        "shipmentProductCount": 57181520
+      },
+      "additionalProperties": true,
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "product": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "shipment": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "shipmentPackage": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "salesOrderProduct": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "shipmentProductCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

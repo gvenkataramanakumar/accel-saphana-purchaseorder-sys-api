@@ -1,0 +1,31 @@
+{
+  "lastModificationDateTime": null,
+  "id": "fugiat ex commodo exercitation",
+  "purchaseOrderDate": "1971-02-10",
+  "nativelId": "in adipisicing commodo consequat magna",
+  "orderLine": [
+    {
+      "code": "id eu",
+      "quantity": -12014100,
+      "unitPrice": -33577997.28322766,
+      "name": "deserunt Excepteur id",
+      "enim_c5": -12051370.408601075
+    },
+    {
+      "code": "dolore",
+      "quantity": 55388905,
+      "unitPrice": -74039839.09017837,
+      "name": "Ut elit"
+    }
+  ],
+  "supplierId": "consectetur cillum dolor",
+  "auditDetail": {
+    "createdOn": "2020-07-19T18:32:24.855Z",
+    "createdBy": "ullamco",
+    "updatedOn": "1946-01-24T23:49:48.319Z",
+    "updatedBy": "ut incididunt",
+    "isDeleted": false
+  },
+  "purchasingOrganization": "dolore labore tempor",
+  "purchaseOrderNumber": "in dolor anim nulla"
+}

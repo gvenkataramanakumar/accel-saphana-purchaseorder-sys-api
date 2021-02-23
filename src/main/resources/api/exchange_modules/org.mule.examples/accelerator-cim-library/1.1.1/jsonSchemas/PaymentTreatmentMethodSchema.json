@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/PaymentTreatmentMethod",
+  "definitions": {
+    "PaymentTreatmentMethod": {
+      "type": "object",
+      "example": {
+        "id": "et aliqua",
+        "paymentTreatmentMethodName": "veniam",
+        "paymentTreatmentMethodCode": "dolor in sint et consectetur",
+        "paymentTreatmentMethodDescription": "enim sint anim amet sit"
+      },
+      "additionalProperties": true,
+      "required": [
+        "paymentTreatmentMethodCode",
+        "paymentTreatmentMethodName",
+        "id",
+        "paymentTreatmentMethodDescription"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paymentTreatmentMethodName": {
+          "type": "string"
+        },
+        "paymentTreatmentMethodCode": {
+          "type": "string"
+        },
+        "paymentTreatmentMethodDescription": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

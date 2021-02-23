@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Household",
+  "definitions": {
+    "Household": {
+      "type": "object",
+      "example": {
+        "partyType": "anim labore",
+        "name": "mollit adipisicing cillum exercitation",
+        "id": "eiusmod",
+        "householdFormedDate": "2003-11-23",
+        "noMergeReason": "velit cillum",
+        "householdMemberCount": -86607440,
+        "primaryAccount": [
+          "ut dolor"
+        ],
+        "householdDissolvedDate": "2015-06-03",
+        "globalParty": "irure sunt"
+      },
+      "additionalProperties": true,
+      "required": [
+        "partyType",
+        "name",
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "householdMemberCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "householdFormedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "householdDissolvedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "partyType": {
+          "type": "string"
+        },
+        "globalParty": {
+          "type": "string"
+        },
+        "noMergeReason": {
+          "type": "string"
+        },
+        "primaryAccount": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
